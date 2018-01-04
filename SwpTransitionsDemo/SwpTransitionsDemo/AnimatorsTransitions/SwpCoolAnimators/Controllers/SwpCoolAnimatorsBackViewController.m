@@ -30,6 +30,7 @@
 
 #pragma mark - Data Propertys
 /* ---------------------- Data Property  ---------------------- */
+@property (nonatomic, assign) BOOL isPush_;
 /* ---------------------- Data Property  ---------------------- */
 
 
@@ -53,10 +54,15 @@
     self
     .buttonTitle(@"点击返回")
     .imageName(@"animators_transitions_2")
-//    .imageName(@"p2")
     .buttonClickEventChain(^(UIButton *button){
         __strong __typeof(weakSelf)strongSelf = weakSelf;
-        [strongSelf dismissViewControllerAnimated:YES completion:nil];
+        
+        if (strongSelf.isPush_) {
+            [strongSelf.navigationController popViewControllerAnimated:YES];
+        } else {
+            [strongSelf dismissViewControllerAnimated:YES completion:nil];
+        }
+        
     });
     
     [super viewDidLoad];
@@ -126,6 +132,20 @@
  */
 - (void)dealloc {
     NSLog(@"%s", __FUNCTION__);
+}
+
+
+/**
+ *  @author swp_song
+ *
+ *  @brief  isPush  ( 是否是 push )
+ */
+- (SwpCoolAnimatorsBackViewController * _Nonnull (^)(BOOL))isPush {
+    
+    return ^(BOOL isPush) {
+        self.isPush_ = isPush;
+        return self;
+    };
 }
 
 

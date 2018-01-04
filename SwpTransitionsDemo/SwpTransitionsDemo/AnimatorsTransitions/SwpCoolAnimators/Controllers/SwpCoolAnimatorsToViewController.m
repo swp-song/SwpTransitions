@@ -27,6 +27,7 @@
 
 #pragma mark - UI   Propertys
 /* ---------------------- UI   Property  ---------------------- */
+@property (nonatomic, strong) UISwitch *navigationSwitch;
 /* ---------------------- UI   Property  ---------------------- */
 
 #pragma mark - Data Propertys
@@ -55,15 +56,17 @@
     self
     .buttonTitle(@"点击跳转")
     .imageName(@"animators_transitions_1")
-//    .imageName(@"p1")
     .buttonClickEventChain(^(UIButton *button){
         __strong __typeof(weakSelf)strongSelf = weakSelf;
-        [strongSelf jumpSwpCoolAnimatorsBackViewController:strongSelf.swpCoolAnimatorsTransitionsType_];
+        [strongSelf jumpSwpCoolAnimatorsBackViewController:strongSelf.swpCoolAnimatorsTransitionsType_ isPush:strongSelf.navigationSwitch.on];
     });
     
     
     
     [super viewDidLoad];
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.navigationSwitch];
+    [self.navigationSwitch addTarget:self action:@selector(navigationSwitch:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 /**
@@ -135,14 +138,34 @@
 /**
  *  @author swp_song
  *
- *  @brief  jumpSwpCoolAnimatorsBackViewController: (  )
+ *  @brief  navigationSwitch:   ( 按钮绑定方法 )
  *
- *  @param  transitionsType transitionsType
+ *  @param  switch_ switch_
  */
-- (void)jumpSwpCoolAnimatorsBackViewController:(NSInteger)transitionsType {
+- (void)navigationSwitch:(UISwitch *)switch_ {
     
+}
+
+/**
+ *  @author swp_song
+ *
+ *  @brief  jumpSwpCoolAnimatorsBackViewController:push:    (  )
+ *
+ *  @param transitionsType  transitionsType
+ *
+ *  @param isPush           isPush
+ */
+- (void)jumpSwpCoolAnimatorsBackViewController:(NSInteger)transitionsType isPush:(BOOL)isPush {
+    
+    SwpCoolAnimatorsBackViewController *swpCoolAnimatorsBackViewController = [SwpCoolAnimatorsBackViewController new].isPush(isPush);
     SwpCoolAnimators *swpCoolAnimator = SwpCoolAnimators.swpCoolAnimatorInitWithAnimatorsOption(transitionsType);
-    [self.navigationController swpTransitionsPresentViewController:[SwpCoolAnimatorsBackViewController new] animated:swpCoolAnimator];
+    
+    if (isPush) {
+        [self.navigationController swpPushViewController:swpCoolAnimatorsBackViewController animated:swpCoolAnimator];
+    } else {
+        [self.navigationController swpTransitionsPresentViewController:swpCoolAnimatorsBackViewController animated:swpCoolAnimator];
+    }
+    
 }
 
 /**
@@ -156,6 +179,14 @@
         self.swpCoolAnimatorsTransitionsType_ = swpCoolAnimatorsTransitionsType;
         return self;
     };
+}
+
+- (UISwitch *)navigationSwitch {
+    
+    return !_navigationSwitch ? _navigationSwitch = ({
+        UISwitch *switch_ = [UISwitch new];
+        switch_;
+    }) : _navigationSwitch;
 }
 
 

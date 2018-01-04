@@ -29,6 +29,7 @@
 #pragma mark - UI   Propertys
 /* ---------------------- UI   Property  ---------------------- */
 @property (nonatomic, strong) SwpTransitionsTableView *swpTransitionsTableView;
+
 /* ---------------------- UI   Property  ---------------------- */
 
 #pragma mark - Data Propertys

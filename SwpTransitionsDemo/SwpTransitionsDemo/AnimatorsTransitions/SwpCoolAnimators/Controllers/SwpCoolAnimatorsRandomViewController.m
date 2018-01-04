@@ -29,6 +29,7 @@
 
 #pragma mark - UI   Propertys
 /* ---------------------- UI   Property  ---------------------- */
+@property (nonatomic, strong) UISwitch *navigationSwitch;
 /* ---------------------- UI   Property  ---------------------- */
 
 #pragma mark - Data Propertys
@@ -56,12 +57,15 @@
     .imageName(@"animators_transitions_1")
     .buttonClickEventChain(^(UIButton *button){
         __strong __typeof(weakSelf)strongSelf = weakSelf;
-        [strongSelf jumpSwpCoolAnimatorsBackViewController];
+        [strongSelf jumpSwpCoolAnimatorsBackViewController:strongSelf.navigationSwitch.on];
     });
     
     
     // Do any additional setup after loading the view.
     [super viewDidLoad];
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.navigationSwitch];
+    [self.navigationSwitch addTarget:self action:@selector(navigationSwitch:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 /**
@@ -133,12 +137,42 @@
 /**
  *  @author swp_song
  *
- *  @brief  jumpSwpCoolAnimatorsBackViewController: (  )
+ *  @brief  navigationSwitch:   ( 按钮绑定方法 )
+ *
+ *  @param  switch_ switch_
  */
-- (void)jumpSwpCoolAnimatorsBackViewController {
-    SwpCoolAnimators *swpCoolAnimator = SwpCoolAnimators.swpCoolAnimatorInitRandom();
-    [self.navigationController swpTransitionsPresentViewController:[SwpCoolAnimatorsBackViewController new] animated:swpCoolAnimator];
+- (void)navigationSwitch:(UISwitch *)switch_ {
+    
 }
+
+/**
+ *  @author swp_song
+ *
+ *  @brief  jumpSwpCoolAnimatorsBackViewController: (  )
+ *
+ *  @param isPush           isPush
+ */
+- (void)jumpSwpCoolAnimatorsBackViewController:(BOOL)isPush {
+    
+    SwpCoolAnimatorsBackViewController *swpCoolAnimatorsBackViewController = [SwpCoolAnimatorsBackViewController new].isPush(isPush);
+    SwpCoolAnimators *swpCoolAnimator = SwpCoolAnimators.swpCoolAnimatorInitRandom();
+    
+    if (isPush) {
+        [self.navigationController swpPushViewController:swpCoolAnimatorsBackViewController animated:swpCoolAnimator];
+    } else {
+        [self.navigationController swpTransitionsPresentViewController:swpCoolAnimatorsBackViewController animated:swpCoolAnimator];
+    }
+}
+
+
+- (UISwitch *)navigationSwitch {
+    
+    return !_navigationSwitch ? _navigationSwitch = ({
+        UISwitch *switch_ = [UISwitch new];
+        switch_;
+    }) : _navigationSwitch;
+}
+
 
 
 /*

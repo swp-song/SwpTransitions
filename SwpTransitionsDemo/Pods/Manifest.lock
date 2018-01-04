@@ -1,7 +1,7 @@
 PODS:
   - Masonry (1.1.0)
   - SwpCateGory (2.2.2)
-  - SwpTransitions (1.0.0)
+  - SwpTransitions (1.1.0)
 
 DEPENDENCIES:
   - Masonry
@@ -15,7 +15,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SwpCateGory: 52fca58aa3c539098728bdada08e6f909f434132
-  SwpTransitions: 5d3af90b211f57dd8ffd0c2bd65744b4ca2f41b9
+  SwpTransitions: 9e9a5c3f03fe7d256ce2a5ce0eb9bfa5d3866343
 
 PODFILE CHECKSUM: bbd0a2d38debff13874b770d6695d939428ceb6d
 

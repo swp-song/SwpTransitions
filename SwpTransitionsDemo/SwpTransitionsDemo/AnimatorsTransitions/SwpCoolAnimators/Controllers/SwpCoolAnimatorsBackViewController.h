@@ -12,6 +12,13 @@
 NS_ASSUME_NONNULL_BEGIN
 @interface SwpCoolAnimatorsBackViewController : SwpTransitionsBaseViewController
 
-@end
 
+/**
+ *  @author swp_song
+ *
+ *  @brief  isPush  ( 是否是 push )
+ */
+- (SwpCoolAnimatorsBackViewController * _Nonnull (^)(BOOL))isPush;
+
+@end
 NS_ASSUME_NONNULL_END
