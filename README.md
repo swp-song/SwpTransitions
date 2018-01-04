@@ -32,6 +32,14 @@
 
 ### 版本记录
 
+> * 版本版本：1.0.1
+> * 更新时间：2018-01-04 10:14:04
+> * 更新内容：
+> 
+>> * 修复 pod 警告问题
+
+-------
+
 > * 版本版本：1.0.0
 > * 更新时间：2018-01-04 09:19:08
 > * 更新内容：
@@ -53,9 +61,10 @@
 -------
 
 ### 参考文献
-> * **https://github.com/wazrx/XWTransition**
-> * **https://github.com/ColinEberhardt/VCTransitionsLibrary**
 
+> * **https://github.com/ColinEberhardt/VCTransitionsLibrary**
+> * **https://github.com/wazrx/XWTransition**
+> 
 -------
 
 

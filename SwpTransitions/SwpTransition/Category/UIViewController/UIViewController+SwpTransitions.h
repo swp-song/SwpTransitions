@@ -23,7 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @param  animated        animated
  */
-- (void)swpTransitionsPresentViewController:(UIViewController *)viewController animated:(SwpTransitions *)animated;
+- (void)swpTransitionsPresentViewController:(UIViewController *)viewController animated:(SwpTransitions * _Nullable)animated;
 
 /**
  *  @author swp_song
@@ -36,7 +36,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @param  completion      completion
  */
-- (void)swpTransitionsPresentViewController:(UIViewController *)viewController animated:(SwpTransitions *)animated completion:(void (^)(void))completion;
+- (void)swpTransitionsPresentViewController:(UIViewController *)viewController animated:(SwpTransitions * _Nullable)animated completion:(void (^ _Nullable)(void))completion;
 
 
 @end

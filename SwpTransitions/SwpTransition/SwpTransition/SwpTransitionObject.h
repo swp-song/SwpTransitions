@@ -12,7 +12,7 @@ typedef void(^SwpAnimationTransitionConfig)(id<UIViewControllerContextTransition
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface SwpTransitionObject : NSObject 
+@interface SwpTransitionObject : NSObject  <UIViewControllerAnimatedTransitioning>
 
 /**
  *  @author swp_song

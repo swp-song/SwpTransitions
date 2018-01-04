@@ -31,7 +31,7 @@
  *
  *  @brief  swpTransitionsSetToAnimation:   ( 转场开始执行动画方法 )
  *
- *  @param  transitionContext
+ *  @param  transitionContext   transitionContext
  */
 - (void)swpTransitionsSetToAnimation:(id<UIViewControllerContextTransitioning>)transitionContext {
     [super swpTransitionsSetToAnimation:transitionContext];
@@ -116,7 +116,7 @@
  *
  *  @brief  swpTransitionsSetBackAnimation: ( 转场关闭执行动画方法 )
  *
- *  @param  transitionContext
+ *  @param  transitionContext   transitionContext
  */
 - (void)swpTransitionsSetBackAnimation:(id<UIViewControllerContextTransitioning>)transitionContext {
     
@@ -316,7 +316,7 @@
  *
  *  @brief  swpCoolAnimatorsOptionRandom    ( 设置随机转场 )
  */
-- (SwpCoolAnimators * _Nonnull (^)())swpCoolAnimatorsOptionRandom {
+- (SwpCoolAnimators * _Nonnull (^)(void))swpCoolAnimatorsOptionRandom {
     return ^(void) {
         self.swpCoolAnimatorsOption(arc4random_uniform(16));
         return self;

@@ -21,7 +21,7 @@ UIKIT_EXTERN NSString * const kSwpTransitionsKey;
  *
  *  @brief  swpTransitionsSetToAnimation:   ( 转场开始执行动画方法 )
  *
- *  @param  transitionContext
+ *  @param  transitionContext   transitionContext
  */
 - (void)swpTransitionsSetToAnimation:(id<UIViewControllerContextTransitioning>)transitionContext;
 /**
@@ -29,7 +29,7 @@ UIKIT_EXTERN NSString * const kSwpTransitionsKey;
  *
  *  @brief  swpTransitionsSetBackAnimation: ( 转场关闭执行动画方法  )
  *
- *  @param  transitionContext
+ *  @param  transitionContext   transitionContext
  */
 - (void)swpTransitionsSetBackAnimation:(id<UIViewControllerContextTransitioning>)transitionContext;
 

@@ -28,7 +28,7 @@
  *
  *  @param  completion      completion
  */
-- (void)swpTransitionsPresentViewController:(UIViewController *)viewController animated:(SwpTransitions *)animated completion:(void (^)(void))completion {
+- (void)swpTransitionsPresentViewController:(UIViewController *)viewController animated:(SwpTransitions * _Nullable)animated completion:(void (^)(void))completion {
     [self _transitionsPresentViewController:viewController animated:animated completion:completion];
 }
 
@@ -43,7 +43,7 @@
  *
  *  @param  animated        animated
  */
-- (void)swpTransitionsPresentViewController:(UIViewController *)viewController animated:(SwpTransitions *)animated {
+- (void)swpTransitionsPresentViewController:(UIViewController *)viewController animated:(SwpTransitions * _Nullable)animated {
     [self swpTransitionsPresentViewController:viewController animated:animated completion:nil];
 }
 
@@ -62,7 +62,7 @@
  *
  *  @return UIViewController
  */
-- (instancetype)_transitionsPresentViewController:(UIViewController *)viewController animated:(SwpTransitions *)animated completion:(void (^)(void))completion {
+- (instancetype)_transitionsPresentViewController:(UIViewController *)viewController animated:(SwpTransitions * _Nullable)animated completion:(void (^ _Nullable)(void))completion {
     if (!viewController) return self;
     if (!animated) animated = [SwpTransitions new];
     viewController.transitioningDelegate = animated;

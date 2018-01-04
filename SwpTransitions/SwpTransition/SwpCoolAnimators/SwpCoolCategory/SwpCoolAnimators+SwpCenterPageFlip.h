@@ -36,7 +36,6 @@ typedef NS_ENUM(NSUInteger, SwpCoolCenterPageFlipEdge) {
  *
  *  @param  pageFlipEdge        pageFlipEdge
  */
-
 - (void)swpCoolCenterPageFlipAnimation:(id<UIViewControllerContextTransitioning>)transitionContext pageFlipEdge:(SwpCoolCenterPageFlipEdge)pageFlipEdge;
 
 /**
@@ -48,7 +47,7 @@ typedef NS_ENUM(NSUInteger, SwpCoolCenterPageFlipEdge) {
  *
  *  @param  pageFlipEdge        pageFlipEdge
  */
-- (void)swpCoolCenterPageFlipBackAnimation:(id<UIViewControllerContextTransitioning>)transitionContext pageFlipEdge:(SwpCoolCenterPageFlipEdge)centerPageFlipEdge;
+- (void)swpCoolCenterPageFlipBackAnimation:(id<UIViewControllerContextTransitioning>)transitionContext pageFlipEdge:(SwpCoolCenterPageFlipEdge)pageFlipEdge;
 
 @end
 NS_ASSUME_NONNULL_END

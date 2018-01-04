@@ -43,7 +43,7 @@
  *
  *  @brief  setSwpAnimatorsContentImage:    ( 设置 contents )
  *
- *  @param  contentImage
+ *  @param  contentImage    contentImage
  */
 - (void)setSwpAnimatorsContentImage:(UIImage *)contentImage {
     self.layer.contents = (__bridge id)contentImage.CGImage;;

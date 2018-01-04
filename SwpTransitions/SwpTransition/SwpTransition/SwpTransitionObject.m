@@ -9,7 +9,7 @@
 #import "SwpTransitionObject.h"
 
 
-@interface SwpTransitionObject () <UIViewControllerAnimatedTransitioning>
+@interface SwpTransitionObject () 
 
 
 #pragma mark - Data Propertys
