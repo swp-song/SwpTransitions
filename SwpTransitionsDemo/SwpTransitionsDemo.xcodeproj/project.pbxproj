@@ -1,0 +1,567 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D000F5A1FECB42900CC844A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D000F591FECB42900CC844A /* AppDelegate.m */; };
+		2D000F5C1FECB42900CC844A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D000F5B1FECB42900CC844A /* Assets.xcassets */; };
+		2D000F5F1FECB42900CC844A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D000F5D1FECB42900CC844A /* LaunchScreen.storyboard */; };
+		2D000F621FECB42900CC844A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D000F611FECB42900CC844A /* main.m */; };
+		2D000F711FECB95800CC844A /* SwpTransitionsBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D000F701FECB95800CC844A /* SwpTransitionsBaseViewController.m */; };
+		2D7D45FB1FF7A0C0007C58C9 /* SwpTransitionsNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7D45FA1FF7A0C0007C58C9 /* SwpTransitionsNavigationController.m */; };
+		2D7D46071FF8CEEE007C58C9 /* SwpTransitionsTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7D46061FF8CEEE007C58C9 /* SwpTransitionsTableView.m */; };
+		2D7D46101FF8D024007C58C9 /* SwpTransitionsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7D460F1FF8D024007C58C9 /* SwpTransitionsCell.m */; };
+		2D7D46131FF8EB5F007C58C9 /* SwpTransitionsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7D46121FF8EB5F007C58C9 /* SwpTransitionsListViewController.m */; };
+		2D7D46151FF8EE32007C58C9 /* SwpTransitionsModel.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D7D46141FF8EE32007C58C9 /* SwpTransitionsModel.plist */; };
+		2D7D46181FF8F7B7007C58C9 /* SwpTransitionsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7D46171FF8F7B7007C58C9 /* SwpTransitionsModel.m */; };
+		2D7D46261FFA3989007C58C9 /* SwpCoolAnimatorsBackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7D461F1FFA3989007C58C9 /* SwpCoolAnimatorsBackViewController.m */; };
+		2D7D46271FFA3989007C58C9 /* SwpCoolAnimatorsToViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7D46211FFA3989007C58C9 /* SwpCoolAnimatorsToViewController.m */; };
+		2D7D46281FFA3989007C58C9 /* SwpCoolAnimatorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7D46241FFA3989007C58C9 /* SwpCoolAnimatorsViewController.m */; };
+		2D7D462A1FFA3CD7007C58C9 /* SwpCoolAnimatorsModel.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D7D46291FFA3CD7007C58C9 /* SwpCoolAnimatorsModel.plist */; };
+		2D7D462D1FFA3CF1007C58C9 /* SwpCoolAnimatorsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7D462C1FFA3CF1007C58C9 /* SwpCoolAnimatorsModel.m */; };
+		2D94EEE91FFCD79200BC7624 /* SwpCoolAnimatorsRandomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D94EEE81FFCD79200BC7624 /* SwpCoolAnimatorsRandomViewController.m */; };
+		BD1577E033F69827D53ABF5D /* libPods-SwpTransitionsDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 52B9F06AA15A6304993E7A44 /* libPods-SwpTransitionsDemo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2D000F551FECB42900CC844A /* SwpTransitionsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwpTransitionsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D000F581FECB42900CC844A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2D000F591FECB42900CC844A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2D000F5B1FECB42900CC844A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2D000F5E1FECB42900CC844A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2D000F601FECB42900CC844A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D000F611FECB42900CC844A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2D000F6F1FECB95800CC844A /* SwpTransitionsBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwpTransitionsBaseViewController.h; sourceTree = "<group>"; };
+		2D000F701FECB95800CC844A /* SwpTransitionsBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwpTransitionsBaseViewController.m; sourceTree = "<group>"; };
+		2D7D45F91FF7A0C0007C58C9 /* SwpTransitionsNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwpTransitionsNavigationController.h; sourceTree = "<group>"; };
+		2D7D45FA1FF7A0C0007C58C9 /* SwpTransitionsNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwpTransitionsNavigationController.m; sourceTree = "<group>"; };
+		2D7D46051FF8CEEE007C58C9 /* SwpTransitionsTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwpTransitionsTableView.h; sourceTree = "<group>"; };
+		2D7D46061FF8CEEE007C58C9 /* SwpTransitionsTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwpTransitionsTableView.m; sourceTree = "<group>"; };
+		2D7D460E1FF8D024007C58C9 /* SwpTransitionsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwpTransitionsCell.h; sourceTree = "<group>"; };
+		2D7D460F1FF8D024007C58C9 /* SwpTransitionsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwpTransitionsCell.m; sourceTree = "<group>"; };
+		2D7D46111FF8EB5F007C58C9 /* SwpTransitionsListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwpTransitionsListViewController.h; sourceTree = "<group>"; };
+		2D7D46121FF8EB5F007C58C9 /* SwpTransitionsListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwpTransitionsListViewController.m; sourceTree = "<group>"; };
+		2D7D46141FF8EE32007C58C9 /* SwpTransitionsModel.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SwpTransitionsModel.plist; sourceTree = "<group>"; };
+		2D7D46161FF8F7B7007C58C9 /* SwpTransitionsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwpTransitionsModel.h; sourceTree = "<group>"; };
+		2D7D46171FF8F7B7007C58C9 /* SwpTransitionsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwpTransitionsModel.m; sourceTree = "<group>"; };
+		2D7D461F1FFA3989007C58C9 /* SwpCoolAnimatorsBackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwpCoolAnimatorsBackViewController.m; sourceTree = "<group>"; };
+		2D7D46201FFA3989007C58C9 /* SwpCoolAnimatorsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwpCoolAnimatorsViewController.h; sourceTree = "<group>"; };
+		2D7D46211FFA3989007C58C9 /* SwpCoolAnimatorsToViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwpCoolAnimatorsToViewController.m; sourceTree = "<group>"; };
+		2D7D46221FFA3989007C58C9 /* SwpCoolAnimatorsBackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwpCoolAnimatorsBackViewController.h; sourceTree = "<group>"; };
+		2D7D46231FFA3989007C58C9 /* SwpCoolAnimatorsToViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwpCoolAnimatorsToViewController.h; sourceTree = "<group>"; };
+		2D7D46241FFA3989007C58C9 /* SwpCoolAnimatorsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwpCoolAnimatorsViewController.m; sourceTree = "<group>"; };
+		2D7D46291FFA3CD7007C58C9 /* SwpCoolAnimatorsModel.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SwpCoolAnimatorsModel.plist; sourceTree = "<group>"; };
+		2D7D462B1FFA3CF1007C58C9 /* SwpCoolAnimatorsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwpCoolAnimatorsModel.h; sourceTree = "<group>"; };
+		2D7D462C1FFA3CF1007C58C9 /* SwpCoolAnimatorsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwpCoolAnimatorsModel.m; sourceTree = "<group>"; };
+		2D94EEE71FFCD79200BC7624 /* SwpCoolAnimatorsRandomViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwpCoolAnimatorsRandomViewController.h; sourceTree = "<group>"; };
+		2D94EEE81FFCD79200BC7624 /* SwpCoolAnimatorsRandomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwpCoolAnimatorsRandomViewController.m; sourceTree = "<group>"; };
+		3ACB6D1E28E6E7904CF8000C /* Pods-SwpTransitionsDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwpTransitionsDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwpTransitionsDemo/Pods-SwpTransitionsDemo.release.xcconfig"; sourceTree = "<group>"; };
+		52B9F06AA15A6304993E7A44 /* libPods-SwpTransitionsDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SwpTransitionsDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5CB3F30294204A6A71E187F /* Pods-SwpTransitionsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwpTransitionsDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwpTransitionsDemo/Pods-SwpTransitionsDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2D000F521FECB42900CC844A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD1577E033F69827D53ABF5D /* libPods-SwpTransitionsDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D000F4C1FECB42900CC844A = {
+			isa = PBXGroup;
+			children = (
+				2D000F571FECB42900CC844A /* SwpTransitionsDemo */,
+				2D000F561FECB42900CC844A /* Products */,
+				3DFEF9F79D023BB668BB54EA /* Pods */,
+				FC5F68528F043903B940BE3A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2D000F561FECB42900CC844A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D000F551FECB42900CC844A /* SwpTransitionsDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2D000F571FECB42900CC844A /* SwpTransitionsDemo */ = {
+			isa = PBXGroup;
+			children = (
+				2D7446D11FF4ED7600D29CAD /* AnimatorsTransitions */,
+				2D08C1F11FECBAB80007F07E /* Transitions */,
+				2D000F6B1FECB89700CC844A /* Main */,
+				2D000F581FECB42900CC844A /* AppDelegate.h */,
+				2D000F591FECB42900CC844A /* AppDelegate.m */,
+				2D000F5B1FECB42900CC844A /* Assets.xcassets */,
+				2D000F5D1FECB42900CC844A /* LaunchScreen.storyboard */,
+				2D000F601FECB42900CC844A /* Info.plist */,
+				2D000F611FECB42900CC844A /* main.m */,
+			);
+			path = SwpTransitionsDemo;
+			sourceTree = "<group>";
+		};
+		2D000F6B1FECB89700CC844A /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				2D000F6C1FECB89700CC844A /* Models */,
+				2D000F6D1FECB89700CC844A /* Controllers */,
+				2D000F6E1FECB89700CC844A /* Views */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		2D000F6C1FECB89700CC844A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2D7D46141FF8EE32007C58C9 /* SwpTransitionsModel.plist */,
+				2D7D46161FF8F7B7007C58C9 /* SwpTransitionsModel.h */,
+				2D7D46171FF8F7B7007C58C9 /* SwpTransitionsModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2D000F6D1FECB89700CC844A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2D000F6F1FECB95800CC844A /* SwpTransitionsBaseViewController.h */,
+				2D000F701FECB95800CC844A /* SwpTransitionsBaseViewController.m */,
+				2D7D45F91FF7A0C0007C58C9 /* SwpTransitionsNavigationController.h */,
+				2D7D45FA1FF7A0C0007C58C9 /* SwpTransitionsNavigationController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2D000F6E1FECB89700CC844A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2D7D46051FF8CEEE007C58C9 /* SwpTransitionsTableView.h */,
+				2D7D46061FF8CEEE007C58C9 /* SwpTransitionsTableView.m */,
+				2D7D460E1FF8D024007C58C9 /* SwpTransitionsCell.h */,
+				2D7D460F1FF8D024007C58C9 /* SwpTransitionsCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2D08C1F11FECBAB80007F07E /* Transitions */ = {
+			isa = PBXGroup;
+			children = (
+				2D08C1F41FECBAE30007F07E /* Controllers */,
+				2D08C1F31FECBAE30007F07E /* Views */,
+			);
+			path = Transitions;
+			sourceTree = "<group>";
+		};
+		2D08C1F31FECBAE30007F07E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2D08C1F41FECBAE30007F07E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2D7D46111FF8EB5F007C58C9 /* SwpTransitionsListViewController.h */,
+				2D7D46121FF8EB5F007C58C9 /* SwpTransitionsListViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2D7446D11FF4ED7600D29CAD /* AnimatorsTransitions */ = {
+			isa = PBXGroup;
+			children = (
+				2D7D461C1FFA3989007C58C9 /* SwpCoolAnimators */,
+			);
+			path = AnimatorsTransitions;
+			sourceTree = "<group>";
+		};
+		2D7D461C1FFA3989007C58C9 /* SwpCoolAnimators */ = {
+			isa = PBXGroup;
+			children = (
+				2D7D461D1FFA3989007C58C9 /* Models */,
+				2D7D461E1FFA3989007C58C9 /* Controllers */,
+				2D7D46251FFA3989007C58C9 /* Views */,
+			);
+			path = SwpCoolAnimators;
+			sourceTree = "<group>";
+		};
+		2D7D461D1FFA3989007C58C9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2D7D46291FFA3CD7007C58C9 /* SwpCoolAnimatorsModel.plist */,
+				2D7D462B1FFA3CF1007C58C9 /* SwpCoolAnimatorsModel.h */,
+				2D7D462C1FFA3CF1007C58C9 /* SwpCoolAnimatorsModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2D7D461E1FFA3989007C58C9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2D7D46201FFA3989007C58C9 /* SwpCoolAnimatorsViewController.h */,
+				2D7D46241FFA3989007C58C9 /* SwpCoolAnimatorsViewController.m */,
+				2D7D46231FFA3989007C58C9 /* SwpCoolAnimatorsToViewController.h */,
+				2D7D46211FFA3989007C58C9 /* SwpCoolAnimatorsToViewController.m */,
+				2D7D46221FFA3989007C58C9 /* SwpCoolAnimatorsBackViewController.h */,
+				2D7D461F1FFA3989007C58C9 /* SwpCoolAnimatorsBackViewController.m */,
+				2D94EEE71FFCD79200BC7624 /* SwpCoolAnimatorsRandomViewController.h */,
+				2D94EEE81FFCD79200BC7624 /* SwpCoolAnimatorsRandomViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2D7D46251FFA3989007C58C9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3DFEF9F79D023BB668BB54EA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D5CB3F30294204A6A71E187F /* Pods-SwpTransitionsDemo.debug.xcconfig */,
+				3ACB6D1E28E6E7904CF8000C /* Pods-SwpTransitionsDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FC5F68528F043903B940BE3A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52B9F06AA15A6304993E7A44 /* libPods-SwpTransitionsDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2D000F541FECB42900CC844A /* SwpTransitionsDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D000F651FECB42900CC844A /* Build configuration list for PBXNativeTarget "SwpTransitionsDemo" */;
+			buildPhases = (
+				EC304B1E482B77976A28A8A5 /* [CP] Check Pods Manifest.lock */,
+				2D000F511FECB42900CC844A /* Sources */,
+				2D000F521FECB42900CC844A /* Frameworks */,
+				2D000F531FECB42900CC844A /* Resources */,
+				38B075152E6811677E39D826 /* [CP] Embed Pods Frameworks */,
+				442527636154B1C722AF01BB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwpTransitionsDemo;
+			productName = SwpTransitionsDemo;
+			productReference = 2D000F551FECB42900CC844A /* SwpTransitionsDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2D000F4D1FECB42900CC844A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = swp_song;
+				TargetAttributes = {
+					2D000F541FECB42900CC844A = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2D000F501FECB42900CC844A /* Build configuration list for PBXProject "SwpTransitionsDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2D000F4C1FECB42900CC844A;
+			productRefGroup = 2D000F561FECB42900CC844A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2D000F541FECB42900CC844A /* SwpTransitionsDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2D000F531FECB42900CC844A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D7D46151FF8EE32007C58C9 /* SwpTransitionsModel.plist in Resources */,
+				2D000F5C1FECB42900CC844A /* Assets.xcassets in Resources */,
+				2D000F5F1FECB42900CC844A /* LaunchScreen.storyboard in Resources */,
+				2D7D462A1FFA3CD7007C58C9 /* SwpCoolAnimatorsModel.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		38B075152E6811677E39D826 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwpTransitionsDemo/Pods-SwpTransitionsDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		442527636154B1C722AF01BB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwpTransitionsDemo/Pods-SwpTransitionsDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC304B1E482B77976A28A8A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SwpTransitionsDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2D000F511FECB42900CC844A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D7D462D1FFA3CF1007C58C9 /* SwpCoolAnimatorsModel.m in Sources */,
+				2D000F621FECB42900CC844A /* main.m in Sources */,
+				2D7D46071FF8CEEE007C58C9 /* SwpTransitionsTableView.m in Sources */,
+				2D7D46101FF8D024007C58C9 /* SwpTransitionsCell.m in Sources */,
+				2D7D46271FFA3989007C58C9 /* SwpCoolAnimatorsToViewController.m in Sources */,
+				2D7D45FB1FF7A0C0007C58C9 /* SwpTransitionsNavigationController.m in Sources */,
+				2D7D46261FFA3989007C58C9 /* SwpCoolAnimatorsBackViewController.m in Sources */,
+				2D000F711FECB95800CC844A /* SwpTransitionsBaseViewController.m in Sources */,
+				2D000F5A1FECB42900CC844A /* AppDelegate.m in Sources */,
+				2D7D46131FF8EB5F007C58C9 /* SwpTransitionsListViewController.m in Sources */,
+				2D7D46281FFA3989007C58C9 /* SwpCoolAnimatorsViewController.m in Sources */,
+				2D94EEE91FFCD79200BC7624 /* SwpCoolAnimatorsRandomViewController.m in Sources */,
+				2D7D46181FF8F7B7007C58C9 /* SwpTransitionsModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2D000F5D1FECB42900CC844A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D000F5E1FECB42900CC844A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2D000F631FECB42900CC844A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2D000F641FECB42900CC844A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2D000F661FECB42900CC844A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5CB3F30294204A6A71E187F /* Pods-SwpTransitionsDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = SwpTransitionsDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SwpTransitionsDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		2D000F671FECB42900CC844A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3ACB6D1E28E6E7904CF8000C /* Pods-SwpTransitionsDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = SwpTransitionsDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = SwpTransitionsDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D000F501FECB42900CC844A /* Build configuration list for PBXProject "SwpTransitionsDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D000F631FECB42900CC844A /* Debug */,
+				2D000F641FECB42900CC844A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D000F651FECB42900CC844A /* Build configuration list for PBXNativeTarget "SwpTransitionsDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D000F661FECB42900CC844A /* Debug */,
+				2D000F671FECB42900CC844A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2D000F4D1FECB42900CC844A /* Project object */;
+}
