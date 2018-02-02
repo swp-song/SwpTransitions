@@ -66,7 +66,7 @@
     } else if ([self.delegate isKindOfClass:[SwpTransitions class]]){
         self.delegate = nil;
     } else {
-        self.delegate = nil;
+        
     }
 
     //  调回系统方法

@@ -11,7 +11,7 @@
 @implementation SwpAttributedString
 
 #pragma mark - SwpAttributed Delegate Methods
-/**!
+/**
  *  @author swp_song
  *
  *  @brief  swpAttributeName    ( 设置 Attributed Key )
@@ -22,7 +22,7 @@
     return nil;
 }
 
-/**!
+/**
  *  @author swp_song
  *
  *  @brief  swpAttributeValue   ( 设置 Attributed Value )
@@ -33,7 +33,7 @@
     return nil;
 }
 
-/**!
+/**
  *  @author swp_song
  *
  *  @brief  swpAttributeEffectiveStringRange    ( 设置 Attributed 生效的范围   )

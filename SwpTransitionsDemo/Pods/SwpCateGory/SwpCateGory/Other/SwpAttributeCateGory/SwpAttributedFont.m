@@ -1,6 +1,6 @@
 //
 //  SwpAttributedFont.m
-//  SwpFormwork
+//  swp_song
 //
 //  Created by swp_song on 16/8/15.
 //  Copyright © 2016年 swp_song. All rights reserved.
@@ -14,7 +14,7 @@
 
 
 #pragma mark - SwpAttributed Delegate Methods
-/**!
+/**
  *  @author swp_song
  *
  *  @brief  swpAttributeName    ( 设置 Attributed Font Key )
@@ -25,7 +25,7 @@
     return NSFontAttributeName;
 }
 
-/**!
+/**
  *  @author swp_song
  *
  *  @brief  swpAttributeValue   ( 设置 Attributed Font )

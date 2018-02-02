@@ -11,7 +11,7 @@
 @protocol SwpAttributedDelegate <NSObject>
 
 @required
-/**!
+/**
  *  @author swp_song
  *
  *  @brief  swpAttributeName    ( 属性名字 )
@@ -20,7 +20,7 @@
  */
 - (NSString *)swpAttributeName;
 
-/**!
+/**
  *  @author swp_song
  *
  *  @brief  swpAttributeValue   ( 属性对应的值 )
@@ -33,7 +33,7 @@
 
 
 #pragma mark -
-/**!
+/**
  *  @author swp_song
  *
  *  @brief  swpAttributeEffectiveStringRange    ( 生效的范围 )

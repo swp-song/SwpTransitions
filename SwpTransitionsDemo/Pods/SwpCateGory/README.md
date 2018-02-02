@@ -1,6 +1,6 @@
 # SwpCateGory
 
-[![Version](https://img.shields.io/cocoapods/v/SwpCateGory.svg?style=flat)](http://cocoapods.org/pods/SwpCateGory) &nbsp; [![License](https://img.shields.io/cocoapods/l/SwpCateGory.svg?style=flat)](http://cocoapods.org/pods/SwpCateGory) &nbsp; [![Platform](https://img.shields.io/cocoapods/p/SwpCateGory.svg?style=flat)](http://cocoapods.org/pods/SwpCateGory)
+[![Version](https://img.shields.io/cocoapods/v/SwpCateGory.svg?style=flat)](http://cocoapods.org/pods/SwpCateGory) [![License](https://img.shields.io/cocoapods/l/SwpCateGory.svg?style=flat)](http://cocoapods.org/pods/SwpCateGory) [![Platform](https://img.shields.io/cocoapods/p/SwpCateGory.svg?style=flat)](http://cocoapods.org/pods/SwpCateGory)
 
 -------
 
@@ -13,18 +13,43 @@
 ### 导入
 
 > * 手动导入：
-> 
+>
 >> * **SwpCateGory** 文件夹导入项目中。
 >> * **`#import "UIColor+SwpColor.h`**
->> 
+>>
 > -------
 
 > * CocoaPods 导入:
-> 
->> * **pod search SwpCateGory**
->> * **pod 'SwpCateGory'**
->> * **`#import <SwpCateGory/UIColor+SwpColor.h>`**
->> 
+>
+```run
+pod search SwpCateGory
+>
+pod 全部：
+pod 'SwpCateGory'
+>
+pod 单体：
+pod 'SwpCateGory/SwpOrderByCharacter'
+pod 'SwpCateGory/SwpGenerateProperty'
+pod 'SwpCateGory/SwpMD5'
+pod 'SwpCateGory/SwpBase64'
+pod 'SwpCateGory/SwpDateString'
+pod 'SwpCateGory/SwpUserDefaults'
+pod 'SwpCateGory/SwpAttributed'
+pod 'SwpCateGory/SwpSetNavigationBarItem'
+pod 'SwpCateGory/SwpSetButton'
+pod 'SwpCateGory/SwpColor'
+pod 'SwpCateGory/SwpFont'
+pod 'SwpCateGory/SwpQrCodeImage'
+pod 'SwpCateGory/SwpBarCodeImage'
+pod 'SwpCateGory/SwpImageScreenshots'
+pod 'SwpCateGory/SwpNavigationBar'
+pod 'SwpCateGory/SwpSetTextField'
+pod 'SwpCateGory/SwpExtension'
+pod 'SwpCateGory/SwpViewScreenshots'
+
+> #import <SwpCateGory/UIColor+SwpColor.h>
+```
+
 > -------
 
 > * **...更多工具请查看 Demo**
@@ -34,10 +59,10 @@
 
 ### 版本记录
 
-> * 版本版本：2.2.2
-> * 更新时间：2017-10-25 14:40:18
+> * 版本版本：2.4.0
+> * 更新时间：2018-02-02 10:29:24
 > * 更新内容：
-    * 新增截取全屏方法
+    * 修改Demo，修改 .md 文件
 
 -------
 

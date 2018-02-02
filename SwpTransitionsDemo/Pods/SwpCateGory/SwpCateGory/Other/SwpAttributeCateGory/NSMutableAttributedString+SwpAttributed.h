@@ -13,7 +13,7 @@
 NS_ASSUME_NONNULL_BEGIN
 @interface NSMutableAttributedString (SwpAttributed)
 
-/**!
+/**
  *  @author swp_song
  *
  *  @brief  addStringAttribute: ( 添加 富文本 )
@@ -22,7 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)addStringAttribute:(id<SwpAttributedDelegate>)stringAttribute;
 
-/**!
+/**
  *  @author swp_song
  *
  *  @brief  removeStringAttribute:  ( 移除富文本 )

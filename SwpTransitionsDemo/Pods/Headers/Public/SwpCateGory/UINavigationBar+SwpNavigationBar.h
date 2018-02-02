@@ -1,1 +1,1 @@
-../../../SwpCateGory/SwpCateGory/UIKit/UINavigationBarCateGory/UINavigationBar+SwpNavigationBar.h
+../../../SwpCateGory/SwpCateGory/UIKit/UINavigationBarCateGory/SwpNavigationBar/UINavigationBar+SwpNavigationBar.h

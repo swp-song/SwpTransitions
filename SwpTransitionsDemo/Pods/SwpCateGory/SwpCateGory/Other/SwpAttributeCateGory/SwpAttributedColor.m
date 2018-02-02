@@ -14,7 +14,7 @@
 
 
 #pragma mark - SwpAttributed Delegate Methods
-/**!
+/**
  *  @author swp_song
  *
  *  @brief  swpAttributeName    ( 设置 Attributed Color Key )
@@ -25,7 +25,7 @@
     return NSForegroundColorAttributeName;
 }
 
-/**!
+/**
  *  @author swp_song
  *
  *  @brief  swpAttributeValue   ( 设置 Attributed Color )

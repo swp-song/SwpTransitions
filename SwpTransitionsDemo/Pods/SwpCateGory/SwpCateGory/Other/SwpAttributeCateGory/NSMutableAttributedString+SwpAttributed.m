@@ -10,7 +10,7 @@
 
 @implementation NSMutableAttributedString (SwpAttributed)
 
-/**!
+/**
  *  @author swp_song
  *
  *  @brief  addStringAttribute: ( 添加 富文本 )
@@ -24,7 +24,7 @@
 }
 
 
-/**!
+/**
  *  @author swp_song
  *
  *  @brief  removeStringAttribute:  ( 移除富文本 )

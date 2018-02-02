@@ -1,7 +1,9 @@
 PODS:
   - Masonry (1.1.0)
-  - SwpCateGory (2.2.2)
-  - SwpTransitions (1.1.0)
+  - SwpCateGory (2.4.0):
+    - SwpCateGory/SwpCateGory (= 2.4.0)
+  - SwpCateGory/SwpCateGory (2.4.0)
+  - SwpTransitions (1.2.0)
 
 DEPENDENCIES:
   - Masonry
@@ -14,9 +16,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  SwpCateGory: 52fca58aa3c539098728bdada08e6f909f434132
-  SwpTransitions: 9e9a5c3f03fe7d256ce2a5ce0eb9bfa5d3866343
+  SwpCateGory: f0030607074c18e03f4cf485d14640542343156d
+  SwpTransitions: 726fdd06b57fced1d3f1ebd38f181c90683175f4
 
 PODFILE CHECKSUM: bbd0a2d38debff13874b770d6695d939428ceb6d
 
-COCOAPODS: 1.4.0.rc.1
+COCOAPODS: 1.4.0
