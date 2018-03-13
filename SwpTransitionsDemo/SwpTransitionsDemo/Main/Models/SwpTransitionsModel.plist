@@ -14,5 +14,11 @@
 		<key>jumpController</key>
 		<string>SwpCoolAnimatorsRandomViewController</string>
 	</dict>
+	<dict>
+		<key>title</key>
+		<string>Swp Drawer Animators</string>
+		<key>jumpController</key>
+		<string>SwpDrawerAnimatorsViewController</string>
+	</dict>
 </array>
 </plist>

@@ -12,6 +12,12 @@
 		2D000F5F1FECB42900CC844A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D000F5D1FECB42900CC844A /* LaunchScreen.storyboard */; };
 		2D000F621FECB42900CC844A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D000F611FECB42900CC844A /* main.m */; };
 		2D000F711FECB95800CC844A /* SwpTransitionsBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D000F701FECB95800CC844A /* SwpTransitionsBaseViewController.m */; };
+		2D09E5FA2052742A00D264A9 /* SwpDrawerAnimatorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D09E5F92052742A00D264A9 /* SwpDrawerAnimatorsViewController.m */; };
+		2D09E5FD2052774600D264A9 /* SwpDrawerAnimatorsToViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D09E5FC2052774600D264A9 /* SwpDrawerAnimatorsToViewController.m */; };
+		2D09E6002052775400D264A9 /* SwpDrawerAnimatorsBackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D09E5FF2052775400D264A9 /* SwpDrawerAnimatorsBackViewController.m */; };
+		2D1D302220562C7300960569 /* SwpDrawerDataType.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D1D302120562C7300960569 /* SwpDrawerDataType.m */; };
+		2D1D30252057638000960569 /* SwpDrawerAnimatorsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D1D30242057638000960569 /* SwpDrawerAnimatorsModel.m */; };
+		2D1D3027205763A000960569 /* SwpDrawerAnimatorsModel.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D1D3026205763A000960569 /* SwpDrawerAnimatorsModel.plist */; };
 		2D7D45FB1FF7A0C0007C58C9 /* SwpTransitionsNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7D45FA1FF7A0C0007C58C9 /* SwpTransitionsNavigationController.m */; };
 		2D7D46071FF8CEEE007C58C9 /* SwpTransitionsTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7D46061FF8CEEE007C58C9 /* SwpTransitionsTableView.m */; };
 		2D7D46101FF8D024007C58C9 /* SwpTransitionsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D7D460F1FF8D024007C58C9 /* SwpTransitionsCell.m */; };
@@ -37,6 +43,17 @@
 		2D000F611FECB42900CC844A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2D000F6F1FECB95800CC844A /* SwpTransitionsBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwpTransitionsBaseViewController.h; sourceTree = "<group>"; };
 		2D000F701FECB95800CC844A /* SwpTransitionsBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwpTransitionsBaseViewController.m; sourceTree = "<group>"; };
+		2D09E5F82052742A00D264A9 /* SwpDrawerAnimatorsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwpDrawerAnimatorsViewController.h; sourceTree = "<group>"; };
+		2D09E5F92052742A00D264A9 /* SwpDrawerAnimatorsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwpDrawerAnimatorsViewController.m; sourceTree = "<group>"; };
+		2D09E5FB2052774600D264A9 /* SwpDrawerAnimatorsToViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwpDrawerAnimatorsToViewController.h; sourceTree = "<group>"; };
+		2D09E5FC2052774600D264A9 /* SwpDrawerAnimatorsToViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwpDrawerAnimatorsToViewController.m; sourceTree = "<group>"; };
+		2D09E5FE2052775400D264A9 /* SwpDrawerAnimatorsBackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwpDrawerAnimatorsBackViewController.h; sourceTree = "<group>"; };
+		2D09E5FF2052775400D264A9 /* SwpDrawerAnimatorsBackViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwpDrawerAnimatorsBackViewController.m; sourceTree = "<group>"; };
+		2D1D302020562C7300960569 /* SwpDrawerDataType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwpDrawerDataType.h; sourceTree = "<group>"; };
+		2D1D302120562C7300960569 /* SwpDrawerDataType.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwpDrawerDataType.m; sourceTree = "<group>"; };
+		2D1D30232057638000960569 /* SwpDrawerAnimatorsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwpDrawerAnimatorsModel.h; sourceTree = "<group>"; };
+		2D1D30242057638000960569 /* SwpDrawerAnimatorsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwpDrawerAnimatorsModel.m; sourceTree = "<group>"; };
+		2D1D3026205763A000960569 /* SwpDrawerAnimatorsModel.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SwpDrawerAnimatorsModel.plist; sourceTree = "<group>"; };
 		2D7D45F91FF7A0C0007C58C9 /* SwpTransitionsNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwpTransitionsNavigationController.h; sourceTree = "<group>"; };
 		2D7D45FA1FF7A0C0007C58C9 /* SwpTransitionsNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwpTransitionsNavigationController.m; sourceTree = "<group>"; };
 		2D7D46051FF8CEEE007C58C9 /* SwpTransitionsTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwpTransitionsTableView.h; sourceTree = "<group>"; };
@@ -106,6 +123,8 @@
 				2D000F5D1FECB42900CC844A /* LaunchScreen.storyboard */,
 				2D000F601FECB42900CC844A /* Info.plist */,
 				2D000F611FECB42900CC844A /* main.m */,
+				2D1D302020562C7300960569 /* SwpDrawerDataType.h */,
+				2D1D302120562C7300960569 /* SwpDrawerDataType.m */,
 			);
 			path = SwpTransitionsDemo;
 			sourceTree = "<group>";
@@ -177,9 +196,50 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		2D09E5F4205273F900D264A9 /* SwpDrawerAnimators */ = {
+			isa = PBXGroup;
+			children = (
+				2D09E5F5205273F900D264A9 /* Models */,
+				2D09E5F6205273F900D264A9 /* Controllers */,
+				2D09E5F7205273F900D264A9 /* Views */,
+			);
+			path = SwpDrawerAnimators;
+			sourceTree = "<group>";
+		};
+		2D09E5F5205273F900D264A9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2D1D30232057638000960569 /* SwpDrawerAnimatorsModel.h */,
+				2D1D30242057638000960569 /* SwpDrawerAnimatorsModel.m */,
+				2D1D3026205763A000960569 /* SwpDrawerAnimatorsModel.plist */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2D09E5F6205273F900D264A9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2D09E5F82052742A00D264A9 /* SwpDrawerAnimatorsViewController.h */,
+				2D09E5F92052742A00D264A9 /* SwpDrawerAnimatorsViewController.m */,
+				2D09E5FB2052774600D264A9 /* SwpDrawerAnimatorsToViewController.h */,
+				2D09E5FC2052774600D264A9 /* SwpDrawerAnimatorsToViewController.m */,
+				2D09E5FE2052775400D264A9 /* SwpDrawerAnimatorsBackViewController.h */,
+				2D09E5FF2052775400D264A9 /* SwpDrawerAnimatorsBackViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2D09E5F7205273F900D264A9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		2D7446D11FF4ED7600D29CAD /* AnimatorsTransitions */ = {
 			isa = PBXGroup;
 			children = (
+				2D09E5F4205273F900D264A9 /* SwpDrawerAnimators */,
 				2D7D461C1FFA3989007C58C9 /* SwpCoolAnimators */,
 			);
 			path = AnimatorsTransitions;
@@ -307,6 +367,7 @@
 			files = (
 				2D7D46151FF8EE32007C58C9 /* SwpTransitionsModel.plist in Resources */,
 				2D000F5C1FECB42900CC844A /* Assets.xcassets in Resources */,
+				2D1D3027205763A000960569 /* SwpDrawerAnimatorsModel.plist in Resources */,
 				2D000F5F1FECB42900CC844A /* LaunchScreen.storyboard in Resources */,
 				2D7D462A1FFA3CD7007C58C9 /* SwpCoolAnimatorsModel.plist in Resources */,
 			);
@@ -373,15 +434,20 @@
 				2D7D462D1FFA3CF1007C58C9 /* SwpCoolAnimatorsModel.m in Sources */,
 				2D000F621FECB42900CC844A /* main.m in Sources */,
 				2D7D46071FF8CEEE007C58C9 /* SwpTransitionsTableView.m in Sources */,
+				2D09E5FD2052774600D264A9 /* SwpDrawerAnimatorsToViewController.m in Sources */,
 				2D7D46101FF8D024007C58C9 /* SwpTransitionsCell.m in Sources */,
 				2D7D46271FFA3989007C58C9 /* SwpCoolAnimatorsToViewController.m in Sources */,
+				2D09E5FA2052742A00D264A9 /* SwpDrawerAnimatorsViewController.m in Sources */,
+				2D1D302220562C7300960569 /* SwpDrawerDataType.m in Sources */,
 				2D7D45FB1FF7A0C0007C58C9 /* SwpTransitionsNavigationController.m in Sources */,
 				2D7D46261FFA3989007C58C9 /* SwpCoolAnimatorsBackViewController.m in Sources */,
 				2D000F711FECB95800CC844A /* SwpTransitionsBaseViewController.m in Sources */,
 				2D000F5A1FECB42900CC844A /* AppDelegate.m in Sources */,
+				2D1D30252057638000960569 /* SwpDrawerAnimatorsModel.m in Sources */,
 				2D7D46131FF8EB5F007C58C9 /* SwpTransitionsListViewController.m in Sources */,
 				2D7D46281FFA3989007C58C9 /* SwpCoolAnimatorsViewController.m in Sources */,
 				2D94EEE91FFCD79200BC7624 /* SwpCoolAnimatorsRandomViewController.m in Sources */,
+				2D09E6002052775400D264A9 /* SwpDrawerAnimatorsBackViewController.m in Sources */,
 				2D7D46181FF8F7B7007C58C9 /* SwpTransitionsModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

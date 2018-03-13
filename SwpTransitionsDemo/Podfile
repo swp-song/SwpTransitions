@@ -9,8 +9,8 @@ target 'SwpTransitionsDemo' do
   # use_frameworks!
 
   # Pods for SwpTransitionsDemo
-   inhibit_all_warnings!
-  
+  inhibit_all_warnings!
+
   pod 'SwpTransitions', :path => '../'
   pod 'Masonry'
   pod 'SwpCateGory' # 分类工具类

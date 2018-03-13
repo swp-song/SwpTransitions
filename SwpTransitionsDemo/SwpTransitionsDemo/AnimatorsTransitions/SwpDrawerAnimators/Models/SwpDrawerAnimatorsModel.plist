@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>Swp Drawer Sideslip Animator Top</string>
+		<key>screenSizes</key>
+		<integer>500</integer>
+		<key>drawerAnimatorsType</key>
+		<integer>0</integer>
+		<key>drawerAnimatorDirection</key>
+		<string>0</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Swp Drawer Sideslip Animator Left</string>
+		<key>screenSizes</key>
+		<integer>260</integer>
+		<key>drawerAnimatorsType</key>
+		<integer>0</integer>
+		<key>drawerAnimatorDirection</key>
+		<string>1</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Swp Drawer Sideslip Animator Bottom</string>
+		<key>screenSizes</key>
+		<integer>500</integer>
+		<key>drawerAnimatorsType</key>
+		<integer>0</integer>
+		<key>drawerAnimatorDirection</key>
+		<string>2</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Swp Drawer Sideslip Animator Right</string>
+		<key>screenSizes</key>
+		<integer>260</integer>
+		<key>drawerAnimatorsType</key>
+		<integer>0</integer>
+		<key>drawerAnimatorDirection</key>
+		<string>3</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Swp Drawer Slide Eject Animator Top</string>
+		<key>screenSizes</key>
+		<integer>500</integer>
+		<key>drawerAnimatorsType</key>
+		<integer>1</integer>
+		<key>drawerAnimatorDirection</key>
+		<string>0</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Swp Drawer Slide Eject Animator Left</string>
+		<key>screenSizes</key>
+		<integer>260</integer>
+		<key>drawerAnimatorsType</key>
+		<integer>1</integer>
+		<key>drawerAnimatorDirection</key>
+		<string>1</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Swp Drawer Slide Eject Animator Bottom</string>
+		<key>screenSizes</key>
+		<integer>400</integer>
+		<key>drawerAnimatorsType</key>
+		<integer>1</integer>
+		<key>drawerAnimatorDirection</key>
+		<string>2</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Swp Drawer Slide Eject Animator Right</string>
+		<key>screenSizes</key>
+		<integer>260</integer>
+		<key>drawerAnimatorsType</key>
+		<integer>1</integer>
+		<key>drawerAnimatorDirection</key>
+		<string>3</string>
+	</dict>
+</array>
+</plist>

@@ -36,7 +36,7 @@ NSString * const kSwpTransitionsKey = @"kSwpTransitionsKey";
 @implementation SwpTransitions
 
 
-/**!
+/**
  *  @author swp_song
  *
  *  @brief  init    ( Override Init )

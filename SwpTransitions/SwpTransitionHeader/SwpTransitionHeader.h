@@ -11,6 +11,7 @@
 #define SwpTransitionHeader_h
 
     #import "SwpCoolAnimators.h"
+    #import "SwpDrawerAnimators.h"
     #import "UIViewController+SwpTransitions.h"
     #import "UINavigationController+SwpTransitions.h"
 

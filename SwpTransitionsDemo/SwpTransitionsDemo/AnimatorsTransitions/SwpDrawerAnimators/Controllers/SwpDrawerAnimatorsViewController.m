@@ -1,20 +1,21 @@
 
+
 //
-//  SwpCoolAnimatorsViewController.m
+//  SwpDrawerAnimatorsViewController.m
 //  SwpTransitionsDemo
 //
-//  Created by swp_song on 2018/1/1.
-//Copyright © 2018年 swp_song. All rights reserved.
+//  Created by swp_song on 2018/3/9.
+//  Copyright © 2018年 swp_song. All rights reserved.
 //
 
-#import "SwpCoolAnimatorsViewController.h"
+#import "SwpDrawerAnimatorsViewController.h"
 
 /* ---------------------- Tool       ---------------------- */
 #import <SwpTransitions/SwpTransitionHeader.h>
 /* ---------------------- Tool       ---------------------- */
 
 /* ---------------------- Model      ---------------------- */
-#import "SwpCoolAnimatorsModel.h"
+#import "SwpDrawerAnimatorsModel.h"
 /* ---------------------- Model      ---------------------- */
 
 /* ---------------------- View       ---------------------- */
@@ -22,11 +23,10 @@
 /* ---------------------- View       ---------------------- */
 
 /* ---------------------- Controller ---------------------- */
-#import "SwpCoolAnimatorsToViewController.h"
+#import "SwpDrawerAnimatorsToViewController.h"
 /* ---------------------- Controller ---------------------- */
 
-
-@interface SwpCoolAnimatorsViewController ()
+@interface SwpDrawerAnimatorsViewController ()
 
 #pragma mark - UI   Propertys
 /* ---------------------- UI   Property  ---------------------- */
@@ -41,8 +41,7 @@
 
 @end
 
-@implementation SwpCoolAnimatorsViewController
-
+@implementation SwpDrawerAnimatorsViewController
 
 #pragma mark - Lifecycle Methods
 /**
@@ -51,9 +50,10 @@
  *  @brief  viewDidLoad ( 视图载入完成, 调用 )
  */
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
     
+    // Do any additional setup after loading the view.
+    [super viewDidLoad];
+
     [self setUI];
     
     [self setData];
@@ -165,7 +165,7 @@
  *  @brief  setUpUI ( 添加控件 )
  */
 - (void)setUpUI {
- 
+    
     [self.view addSubview:self.swpTransitionsTableView];
 }
 
@@ -202,12 +202,27 @@
 - (void)swpTransitionsTableViewBlock:(SwpTransitionsTableView *)swpTransitionsTableView {
     
     __weak typeof(self) weakSelf = self;
-    swpTransitionsTableView.swpTransitionsTableViewClickCellEventChain(^(SwpTransitionsTableView *swpTransitionsTableView, NSIndexPath *indexPath, SwpCoolAnimatorsModel *model){
+    swpTransitionsTableView.swpTransitionsTableViewClickCellEventChain(^(SwpTransitionsTableView *swpTransitionsTableView, NSIndexPath *indexPath, SwpDrawerAnimatorsModel *model){
         __strong __typeof(weakSelf)strongSelf = weakSelf;
-        SwpCoolAnimatorsToViewController *swpCoolAnimatorsToViewController = [SwpCoolAnimatorsToViewController new];
-        swpCoolAnimatorsToViewController.swpCoolAnimatorsTransitionsType(model.coolAnimatorsType);
-        [strongSelf.navigationController pushViewController:swpCoolAnimatorsToViewController animated:YES];
+        SwpDrawerAnimatorsToViewController *swpDrawerAnimatorsToViewController =
+        [SwpDrawerAnimatorsToViewController new]
+//        .transitionsType(model.drawerAnimatorsType)
+        .swpDrawerAnimators(model);
+        [strongSelf.navigationController pushViewController:swpDrawerAnimatorsToViewController animated:YES];
     });
+}
+
+
+
+/**
+ *  @author swp_song
+ *
+ *  @brief  navigationSwitch:   ( 按钮绑定方法 )
+ *
+ *  @param  switch_ switch_
+ */
+- (void)navigationSwitch:(UISwitch *)switch_ {
+    
 }
 
 #pragma mark - Init UI Methods
@@ -219,17 +234,14 @@
     }) : _swpTransitionsTableView;
 }
 
+
 #pragma mark - Init Data Methods
 - (NSArray *)datas_ {
-    
     return !_datas_ ? _datas_ = ({
-        [SwpCoolAnimatorsModel swpCoolAnimatorsWithDictionarys:[NSArray arrayWithContentsOfFile:[NSBundle.mainBundle pathForResource:@"SwpCoolAnimatorsModel" ofType:@"plist"]]];
+        [SwpDrawerAnimatorsModel swpDrawerAnimatorsWithDictionarys:[NSArray arrayWithContentsOfFile:[NSBundle.mainBundle pathForResource:@"SwpDrawerAnimatorsModel" ofType:@"plist"]]];
     }) : _datas_;
     
 }
-
-
-
 
 
 /*

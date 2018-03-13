@@ -26,8 +26,6 @@
  */
 - (void)swpCoolDebrisToAnimation:(id<UIViewControllerContextTransitioning>)transitionContext {
     [self _animation:transitionContext duration:self.transitionsToDuration];
-    
-
 }
 
 
