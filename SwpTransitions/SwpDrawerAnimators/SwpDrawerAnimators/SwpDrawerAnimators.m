@@ -8,8 +8,10 @@
 
 #import "SwpDrawerAnimators.h"
 
+/* ---------------------- Tool       ---------------------- */
 #import "SwpDrawerAnimators+SwpSideslip.h"
 #import "SwpDrawerAnimators+SwpSlideEject.h"
+/* ---------------------- Tool       ---------------------- */
 
 
 @interface SwpDrawerAnimators ()

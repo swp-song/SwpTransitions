@@ -8,7 +8,9 @@
 
 #import "SwpDrawerAnimators+SwpSideslip.h"
 
+/* ---------------------- Tool       ---------------------- */
 #import "UIView+SwpAnimatorsSnapshot.h"
+/* ---------------------- Tool       ---------------------- */
 
 @implementation SwpDrawerAnimators (SwpSideslip)
 
