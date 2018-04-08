@@ -1,1 +1,1 @@
-../../../../../SwpTransitions/SwpCoolAnimators/SwpCoolCategory/SwpCoolAnimators+SwpPageFlip.h
+../../../../../SwpTransitions/Class/SwpCoolAnimators/SwpCoolCategory/SwpCoolAnimators+SwpPageFlip.h

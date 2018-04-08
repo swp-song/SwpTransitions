@@ -1,6 +1,11 @@
 # SwpTransitions
 
-[![Version](https://img.shields.io/cocoapods/v/SwpTransitions.svg?style=flat)](http://cocoapods.org/pods/SwpTransitions) [![License](https://img.shields.io/cocoapods/l/SwpTransitions.svg?style=flat)](http://cocoapods.org/pods/SwpTransitions) [![Platform](https://img.shields.io/cocoapods/p/SwpTransitions.svg?style=flat)](http://cocoapods.org/pods/SwpTransitions)
+[![Xcode](https://img.shields.io/badge/Xcode-9.3-25B1F6.svg)](https://developer.apple.com/xcode)
+[![iOS](https://img.shields.io/badge/iOS-8.0+-1C75AF.svg)](https://developer.apple.com/xcode)
+[![Build Status](https://travis-ci.org/swp-song/SwpTransitions.svg?branch=master)](https://travis-ci.org/swp-song/SwpTransitions)
+[![Version](https://img.shields.io/cocoapods/v/SwpTransitions.svg?style=flat)](http://cocoapods.org/pods/SwpTransitions) 
+[![License](https://img.shields.io/cocoapods/l/SwpTransitions.svg?style=flat)](http://cocoapods.org/pods/SwpTransitions) 
+[![Platform](https://img.shields.io/cocoapods/p/SwpTransitions.svg?style=flat)](http://cocoapods.org/pods/SwpTransitions)
 
 -------
 
@@ -32,6 +37,12 @@
 
 ### 版本记录
 
+> * 版本版本：1.4.0
+> * 更新时间：2018-04-08 22:26:52
+> * 更新内容：
+> 
+>> * 新增资源文件，获取信息
+
 -------
 
 > * 版本版本：1.3.1
@@ -41,16 +52,6 @@
 >> * 修复备注，更新 Demo
 
 -------
-
-> * 版本版本：1.3.0
-> * 更新时间：2018-03-13 11:40:37
-> * 更新内容：
-> 
->> * 新增 SwpDrawerAnimators 转场动画，抽屉效果。
-
--------
-
-
 
 ### 备注
 

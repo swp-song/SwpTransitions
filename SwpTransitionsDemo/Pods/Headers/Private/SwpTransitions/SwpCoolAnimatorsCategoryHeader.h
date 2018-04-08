@@ -1,1 +1,1 @@
-../../../../../SwpTransitions/SwpCoolAnimators/SwpCoolAnimators/SwpCoolAnimatorsCategoryHeader.h
+../../../../../SwpTransitions/Class/SwpCoolAnimators/SwpCoolAnimators/SwpCoolAnimatorsCategoryHeader.h

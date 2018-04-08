@@ -1,60 +1,86 @@
 PODS:
   - Masonry (1.1.0)
-  - SwpCateGory (2.5.0):
-    - SwpCateGory/SwpAttributed (= 2.5.0)
-    - SwpCateGory/SwpBarCodeImage (= 2.5.0)
-    - SwpCateGory/SwpBase64 (= 2.5.0)
-    - SwpCateGory/SwpColor (= 2.5.0)
-    - SwpCateGory/SwpCreateImage (= 2.5.0)
-    - SwpCateGory/SwpDateString (= 2.5.0)
-    - SwpCateGory/SwpExtension (= 2.5.0)
-    - SwpCateGory/SwpFont (= 2.5.0)
-    - SwpCateGory/SwpGenerateProperty (= 2.5.0)
-    - SwpCateGory/SwpImageScreenshots (= 2.5.0)
-    - SwpCateGory/SwpMD5 (= 2.5.0)
-    - SwpCateGory/SwpNavigationBar (= 2.5.0)
-    - SwpCateGory/SwpOrderByCharacter (= 2.5.0)
-    - SwpCateGory/SwpQrCodeImage (= 2.5.0)
-    - SwpCateGory/SwpSetButton (= 2.5.0)
-    - SwpCateGory/SwpSetNavigationBarItem (= 2.5.0)
-    - SwpCateGory/SwpSetTextField (= 2.5.0)
-    - SwpCateGory/SwpUserDefaults (= 2.5.0)
-    - SwpCateGory/SwpViewScreenshots (= 2.5.0)
-  - SwpCateGory/SwpAttributed (2.5.0)
-  - SwpCateGory/SwpBarCodeImage (2.5.0)
-  - SwpCateGory/SwpBase64 (2.5.0)
-  - SwpCateGory/SwpColor (2.5.0)
-  - SwpCateGory/SwpCreateImage (2.5.0)
-  - SwpCateGory/SwpDateString (2.5.0)
-  - SwpCateGory/SwpExtension (2.5.0)
-  - SwpCateGory/SwpFont (2.5.0)
-  - SwpCateGory/SwpGenerateProperty (2.5.0)
-  - SwpCateGory/SwpImageScreenshots (2.5.0)
-  - SwpCateGory/SwpMD5 (2.5.0)
-  - SwpCateGory/SwpNavigationBar (2.5.0)
-  - SwpCateGory/SwpOrderByCharacter (2.5.0)
-  - SwpCateGory/SwpQrCodeImage (2.5.0)
-  - SwpCateGory/SwpSetButton (2.5.0)
-  - SwpCateGory/SwpSetNavigationBarItem (2.5.0)
-  - SwpCateGory/SwpSetTextField (2.5.0)
-  - SwpCateGory/SwpUserDefaults (2.5.0)
-  - SwpCateGory/SwpViewScreenshots (2.5.0)
-  - SwpTransitions (1.3.1)
+  - SwpCateGory (2.6.0):
+    - SwpCateGory/SwpAttributed (= 2.6.0)
+    - SwpCateGory/SwpBarCodeImage (= 2.6.0)
+    - SwpCateGory/SwpBase64 (= 2.6.0)
+    - SwpCateGory/SwpCateGory (= 2.6.0)
+    - SwpCateGory/SwpColor (= 2.6.0)
+    - SwpCateGory/SwpCreateImage (= 2.6.0)
+    - SwpCateGory/SwpDateString (= 2.6.0)
+    - SwpCateGory/SwpExtension (= 2.6.0)
+    - SwpCateGory/SwpFont (= 2.6.0)
+    - SwpCateGory/SwpGenerateProperty (= 2.6.0)
+    - SwpCateGory/SwpImageScreenshots (= 2.6.0)
+    - SwpCateGory/SwpMD5 (= 2.6.0)
+    - SwpCateGory/SwpNavigationBar (= 2.6.0)
+    - SwpCateGory/SwpOrderByCharacter (= 2.6.0)
+    - SwpCateGory/SwpQrCodeImage (= 2.6.0)
+    - SwpCateGory/SwpSetButton (= 2.6.0)
+    - SwpCateGory/SwpSetNavigationBarItem (= 2.6.0)
+    - SwpCateGory/SwpSetTextField (= 2.6.0)
+    - SwpCateGory/SwpUserDefaults (= 2.6.0)
+    - SwpCateGory/SwpViewScreenshots (= 2.6.0)
+  - SwpCateGory/SwpAttributed (2.6.0):
+    - SwpCateGory/SwpCateGory
+  - SwpCateGory/SwpBarCodeImage (2.6.0):
+    - SwpCateGory/SwpCateGory
+  - SwpCateGory/SwpBase64 (2.6.0):
+    - SwpCateGory/SwpCateGory
+  - SwpCateGory/SwpCateGory (2.6.0)
+  - SwpCateGory/SwpColor (2.6.0):
+    - SwpCateGory/SwpCateGory
+  - SwpCateGory/SwpCreateImage (2.6.0):
+    - SwpCateGory/SwpCateGory
+  - SwpCateGory/SwpDateString (2.6.0):
+    - SwpCateGory/SwpCateGory
+  - SwpCateGory/SwpExtension (2.6.0):
+    - SwpCateGory/SwpCateGory
+  - SwpCateGory/SwpFont (2.6.0):
+    - SwpCateGory/SwpCateGory
+  - SwpCateGory/SwpGenerateProperty (2.6.0):
+    - SwpCateGory/SwpCateGory
+  - SwpCateGory/SwpImageScreenshots (2.6.0):
+    - SwpCateGory/SwpCateGory
+  - SwpCateGory/SwpMD5 (2.6.0):
+    - SwpCateGory/SwpCateGory
+  - SwpCateGory/SwpNavigationBar (2.6.0):
+    - SwpCateGory/SwpCateGory
+  - SwpCateGory/SwpOrderByCharacter (2.6.0):
+    - SwpCateGory/SwpCateGory
+  - SwpCateGory/SwpQrCodeImage (2.6.0):
+    - SwpCateGory/SwpCateGory
+  - SwpCateGory/SwpSetButton (2.6.0):
+    - SwpCateGory/SwpCateGory
+  - SwpCateGory/SwpSetNavigationBarItem (2.6.0):
+    - SwpCateGory/SwpCateGory
+  - SwpCateGory/SwpSetTextField (2.6.0):
+    - SwpCateGory/SwpCateGory
+  - SwpCateGory/SwpUserDefaults (2.6.0):
+    - SwpCateGory/SwpCateGory
+  - SwpCateGory/SwpViewScreenshots (2.6.0):
+    - SwpCateGory/SwpCateGory
+  - SwpTransitions (1.4.0)
 
 DEPENDENCIES:
   - Masonry
   - SwpCateGory
   - SwpTransitions (from `../`)
 
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Masonry
+    - SwpCateGory
+
 EXTERNAL SOURCES:
   SwpTransitions:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  SwpCateGory: ae95e6280805186bf86315e58d8e96b745107c32
-  SwpTransitions: 69400710cf0e0d8bdb0a1c3286d3ae606b6c077b
+  SwpCateGory: 598c36c43c11dd59bc91f57f30edd2e1ca74252d
+  SwpTransitions: f26214d93841e87e08caf44b46685d1f81373c2f
 
 PODFILE CHECKSUM: c78cecd1b31c8b26647ed6e23cfdb599098d33a2
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.0

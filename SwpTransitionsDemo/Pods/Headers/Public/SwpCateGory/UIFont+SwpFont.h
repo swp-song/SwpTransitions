@@ -1,1 +1,1 @@
-../../../SwpCateGory/SwpCateGory/UIKit/UIFontCateGory/SwpFont/UIFont+SwpFont.h
+../../../SwpCateGory/SwpCateGory/Class/UIKit/UIFontCateGory/SwpFont/UIFont+SwpFont.h

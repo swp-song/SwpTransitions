@@ -1,1 +1,1 @@
-../../../SwpCateGory/SwpCateGory/UIKit/UIButtonCateGory/SwpSetButton/UIButton+SwpSetButton.h
+../../../SwpCateGory/SwpCateGory/Class/UIKit/UIButtonCateGory/SwpSetButton/UIButton+SwpSetButton.h

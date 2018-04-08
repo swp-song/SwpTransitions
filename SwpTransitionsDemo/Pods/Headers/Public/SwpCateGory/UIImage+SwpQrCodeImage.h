@@ -1,1 +1,1 @@
-../../../SwpCateGory/SwpCateGory/UIKit/UIImageCateGory/SwpQrCodeImage/UIImage+SwpQrCodeImage.h
+../../../SwpCateGory/SwpCateGory/Class/UIKit/UIImageCateGory/SwpQrCodeImage/UIImage+SwpQrCodeImage.h

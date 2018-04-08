@@ -284,8 +284,8 @@
 - (SwpDrawerAnimators * _Nonnull (^)(CGFloat))slideEjectAnimatorScaleRatio {
     return ^(CGFloat slideEjectAnimatorScaleRatio) {
         self.slideEjectAnimatorScaleRatio_ = slideEjectAnimatorScaleRatio;
-        _stepOneScale_ = fmin(1.0, self.slideEjectAnimatorScaleRatio_ + 0.15);
-        _stepTwoScale_ = fmax(0.1, self.slideEjectAnimatorScaleRatio_);
+        self.stepOneScale_ = fmin(1.0, self.slideEjectAnimatorScaleRatio_ + 0.15);
+        self.stepTwoScale_ = fmax(0.1, self.slideEjectAnimatorScaleRatio_);
         return self;
     };
 }
@@ -321,7 +321,7 @@
  */
 - (SwpDrawerAnimators * _Nonnull (^)(dispatch_block_t))swpDrawerAnimatorEnableClickGestureEvent {
     return ^(dispatch_block_t swpDrawerAnimatorEnableClickGesture) {
-        _swpDrawerAnimatorEnableClickGesture = swpDrawerAnimatorEnableClickGesture;
+        [self swpDrawerAnimatorEnableClickGestureEvent:swpDrawerAnimatorEnableClickGesture];
         return self;
     };
 }

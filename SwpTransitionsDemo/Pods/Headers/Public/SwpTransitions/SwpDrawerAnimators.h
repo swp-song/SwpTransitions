@@ -1,1 +1,1 @@
-../../../../../SwpTransitions/SwpDrawerAnimators/SwpDrawerAnimators/SwpDrawerAnimators.h
+../../../../../SwpTransitions/Class/SwpDrawerAnimators/SwpDrawerAnimators/SwpDrawerAnimators.h

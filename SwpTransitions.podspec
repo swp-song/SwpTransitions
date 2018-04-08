@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SwpTransitions'
-  s.version          = '1.3.1'
+  s.version          = '1.4.0'
   s.summary          = 'SwpTransitions 转场动画'
 
 # This description is used to generate tags and improve search results.
@@ -30,7 +30,8 @@ TODO: SwpTransitions 转场动画
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'SwpTransitions/**/*'
+  s.source_files          = 'SwpTransitions/Class/**/*.{h,m}'
+  s.resource              = 'SwpTransitions/Resources/SwpTransitions.bundle'
   # s.source_files  = 'SwpTransitions', 'SwpTransitions/**/*.{h,m}'
 
   # s.resource_bundles = {
@@ -38,6 +39,7 @@ TODO: SwpTransitions 转场动画
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  s.frameworks = 'UIKit'
+  s.frameworks    = 'UIKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  s.requires_arc  = true
 end

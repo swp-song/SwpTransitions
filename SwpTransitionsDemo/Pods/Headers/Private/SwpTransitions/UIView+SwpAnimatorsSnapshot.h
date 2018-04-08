@@ -1,1 +1,1 @@
-../../../../../SwpTransitions/Category/UIView/UIView+SwpAnimatorsSnapshot.h
+../../../../../SwpTransitions/Class/Category/UIView/UIView+SwpAnimatorsSnapshot.h

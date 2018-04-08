@@ -1,1 +1,1 @@
-../../../SwpCateGory/SwpCateGory/Other/SwpAttributeCateGory/NSMutableAttributedString+SwpAttributed.h
+../../../SwpCateGory/SwpCateGory/Class/Other/SwpAttributeCateGory/NSMutableAttributedString+SwpAttributed.h

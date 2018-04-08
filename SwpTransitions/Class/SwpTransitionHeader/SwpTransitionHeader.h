@@ -10,6 +10,7 @@
 #ifndef SwpTransitionHeader_h
 #define SwpTransitionHeader_h
 
+    #import "SwpTransitionsInfo.h"
     #import "SwpCoolAnimators.h"
     #import "SwpDrawerAnimators.h"
     #import "UIViewController+SwpTransitions.h"

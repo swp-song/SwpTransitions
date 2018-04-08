@@ -305,7 +305,7 @@
 - (__kindof SwpTransitionsBaseViewController * _Nonnull (^)(void (^ _Nonnull)(UIButton * _Nonnull)))buttonClickEventChain {
     
     return ^(void(^buttonClickEvent)(UIButton *button)) {
-        _buttonClickEvent = buttonClickEvent;
+        [self buttonClickEvent:buttonClickEvent];
         return self;
     };
 }

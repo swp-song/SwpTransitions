@@ -51,6 +51,9 @@
     
     // Do any additional setup after loading the view.
     
+    NSLog(@"swpTransitionsInfo    = %@", [SwpTransitionsInfo swpTransitionsInfo]);
+    NSLog(@"swpTransitionsVersion = %@", [SwpTransitionsInfo swpTransitionsVersion]);
+    
     __weak typeof(self) weakSelf = self;
     
     self

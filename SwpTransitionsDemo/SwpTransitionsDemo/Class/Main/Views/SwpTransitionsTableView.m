@@ -152,7 +152,7 @@
  */
 - (SwpTransitionsTableView * _Nonnull (^)(void (^ _Nonnull)(SwpTransitionsTableView * _Nonnull, NSIndexPath * _Nonnull, id _Nonnull)))swpTransitionsTableViewClickCellEventChain {
     return ^(void(^swpTransitionsTableViewClickCellEvent)(SwpTransitionsTableView *, NSIndexPath *, SwpTransitionsModel *)) {
-        _swpTransitionsTableViewClickCellEvent = swpTransitionsTableViewClickCellEvent;
+        [self swpTransitionsTableViewClickCellEvent:swpTransitionsTableViewClickCellEvent];
         return self;
     };
     

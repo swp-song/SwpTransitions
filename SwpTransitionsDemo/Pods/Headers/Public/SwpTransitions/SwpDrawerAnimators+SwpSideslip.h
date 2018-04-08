@@ -1,1 +1,1 @@
-../../../../../SwpTransitions/SwpDrawerAnimators/SwpDrawerCategory/SwpDrawerAnimators+SwpSideslip.h
+../../../../../SwpTransitions/Class/SwpDrawerAnimators/SwpDrawerCategory/SwpDrawerAnimators+SwpSideslip.h

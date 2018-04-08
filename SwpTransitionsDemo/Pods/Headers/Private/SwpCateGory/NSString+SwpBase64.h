@@ -1,1 +1,1 @@
-../../../SwpCateGory/SwpCateGory/NSObject/NSStringCateGory/SwpBase64/NSString+SwpBase64.h
+../../../SwpCateGory/SwpCateGory/Class/NSObject/NSStringCateGory/SwpBase64/NSString+SwpBase64.h

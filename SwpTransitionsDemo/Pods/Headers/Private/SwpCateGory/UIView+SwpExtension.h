@@ -1,1 +1,1 @@
-../../../SwpCateGory/SwpCateGory/UIKit/UIViewCateGory/SwpExtension/UIView+SwpExtension.h
+../../../SwpCateGory/SwpCateGory/Class/UIKit/UIViewCateGory/SwpExtension/UIView+SwpExtension.h

@@ -1,1 +1,1 @@
-../../../SwpCateGory/SwpCateGory/UIKit/UIViewCateGory/SwpViewScreenshots/UIView+SwpViewScreenshots.h
+../../../SwpCateGory/SwpCateGory/Class/UIKit/UIViewCateGory/SwpViewScreenshots/UIView+SwpViewScreenshots.h

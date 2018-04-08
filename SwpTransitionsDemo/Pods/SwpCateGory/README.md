@@ -1,6 +1,6 @@
 # SwpCateGory
 
-[![Version](https://img.shields.io/cocoapods/v/SwpCateGory.svg?style=flat)](http://cocoapods.org/pods/SwpCateGory) [![License](https://img.shields.io/cocoapods/l/SwpCateGory.svg?style=flat)](http://cocoapods.org/pods/SwpCateGory) [![Platform](https://img.shields.io/cocoapods/p/SwpCateGory.svg?style=flat)](http://cocoapods.org/pods/SwpCateGory)
+[![Build Status](https://travis-ci.org/swp-song/SwpCateGory.svg?branch=master)](https://travis-ci.org/swp-song/SwpCateGory) [![Version](https://img.shields.io/cocoapods/v/SwpCateGory.svg?style=flat)](http://cocoapods.org/pods/SwpCateGory) [![License](https://img.shields.io/cocoapods/l/SwpCateGory.svg?style=flat)](http://cocoapods.org/pods/SwpCateGory) [![Platform](https://img.shields.io/cocoapods/p/SwpCateGory.svg?style=flat)](http://cocoapods.org/pods/SwpCateGory)
 
 -------
 
@@ -26,6 +26,7 @@ pod search SwpCateGory
 全部：
 pod 'SwpCateGory'
 单体：
+pod 'SwpCateGory/SwpCateGory'
 pod 'SwpCateGory/SwpOrderByCharacter'
 pod 'SwpCateGory/SwpGenerateProperty'
 pod 'SwpCateGory/SwpMD5'
@@ -57,21 +58,23 @@ pod 'SwpCateGory/SwpViewScreenshots'
 
 ### 版本记录
 
+> * 版本版本：2.6.0
+> * 更新时间：2018-03-27 10:58:12
+> * 更新内容：
+> 
+>> *  新增版本信息。
+
+-------
+
 > * 版本版本：2.5.0
 > * 更新时间：2018-03-04 19:22:52
 > * 更新内容：
 > 
-    > * 新增 SwpCreateImage 分类。
+>> * 新增 SwpCreateImage 分类。
 
 -------
 
-> * 版本版本：2.4.1
-> * 更新时间：2018-02-04 13:10:20
-> * 更新内容：
-> 
-    > * 修改 pod 配置文件 
 
--------
 
 ### 备注
 

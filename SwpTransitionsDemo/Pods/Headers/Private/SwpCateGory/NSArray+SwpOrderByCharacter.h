@@ -1,1 +1,1 @@
-../../../SwpCateGory/SwpCateGory/NSObject/NSArrayCateGory/SwpOrderByCharacter/NSArray+SwpOrderByCharacter.h
+../../../SwpCateGory/SwpCateGory/Class/NSObject/NSArrayCateGory/SwpOrderByCharacter/NSArray+SwpOrderByCharacter.h
