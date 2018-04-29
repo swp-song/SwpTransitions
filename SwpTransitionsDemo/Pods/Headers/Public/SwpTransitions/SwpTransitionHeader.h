@@ -1,1 +1,0 @@
-../../../../../SwpTransitions/Class/SwpTransitionHeader/SwpTransitionHeader.h

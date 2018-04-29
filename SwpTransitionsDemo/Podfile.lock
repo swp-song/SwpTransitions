@@ -63,7 +63,7 @@ PODS:
     - SwpCateGory/SwpCateGory
   - SwpCateGory/SwpViewScreenshots (2.6.8):
     - SwpCateGory/SwpCateGory
-  - SwpTransitions (1.4.1)
+  - SwpTransitions (1.4.2)
 
 DEPENDENCIES:
   - Masonry
@@ -82,7 +82,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SwpCateGory: 4c7281646214d7a8f07b6ca41e272442a4965349
-  SwpTransitions: d5477eadcd9f68aa5bfe74cf98b65da0d06fab54
+  SwpTransitions: da48bad11a4018159740668b7cb489a01ec1146b
 
 PODFILE CHECKSUM: c78cecd1b31c8b26647ed6e23cfdb599098d33a2
 

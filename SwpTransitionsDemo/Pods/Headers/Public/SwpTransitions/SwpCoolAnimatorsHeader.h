@@ -1,0 +1,1 @@
+../../../../../SwpTransitions/Class/Main/SwpCoolAnimators/SwpCoolAnimators/SwpCoolAnimatorsHeader.h

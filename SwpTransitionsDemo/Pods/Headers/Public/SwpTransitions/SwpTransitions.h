@@ -1,1 +1,1 @@
-../../../../../SwpTransitions/Class/SwpTransition/SwpTransitions.h
+../../../../../SwpTransitions/Class/Main/SwpTransition/SwpTransitions.h

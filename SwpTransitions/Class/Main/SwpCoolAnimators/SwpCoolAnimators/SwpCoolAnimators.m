@@ -9,7 +9,7 @@
 #import "SwpCoolAnimators.h"
 
 /* ---------------------- Tool       ---------------------- */
-#import "SwpCoolAnimatorsCategoryHeader.h"
+#import "SwpCoolAnimatorsHeader.h"
 /* ---------------------- Tool       ---------------------- */
 
 
@@ -17,10 +17,11 @@
 
 #pragma mark - Data Propertys
 /* ---------------------- Data Property  ---------------------- */
+/** 转场 type */
 @property (nonatomic, assign) SwpCoolAnimatorsOptions animatorsOption_;
+/** 折纸效果这都，页数 */
 @property (nonatomic, assign) NSUInteger origamiCount_;
 /* ---------------------- Data Property  ---------------------- */
-
 
 @end
 

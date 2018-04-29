@@ -104,7 +104,6 @@ NSString * const kSwpTransitionsKey = @"kSwpTransitionsKey";
  *  @param  transitionContext   transitionContext
  */
 - (void)swpTransitionsSetToAnimation:(id<UIViewControllerContextTransitioning>)transitionContext {
-    
     //  跳转执行专场动画
 }
 

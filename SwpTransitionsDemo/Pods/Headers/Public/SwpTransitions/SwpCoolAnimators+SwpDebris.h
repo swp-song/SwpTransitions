@@ -1,1 +1,1 @@
-../../../../../SwpTransitions/Class/SwpCoolAnimators/SwpCoolCategory/SwpCoolAnimators+SwpDebris.h
+../../../../../SwpTransitions/Class/Main/SwpCoolAnimators/SwpCoolCategory/SwpCoolAnimators+SwpDebris.h

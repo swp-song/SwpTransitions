@@ -9,8 +9,7 @@
 #import "SwpDrawerAnimators.h"
 
 /* ---------------------- Tool       ---------------------- */
-#import "SwpDrawerAnimators+SwpSideslip.h"
-#import "SwpDrawerAnimators+SwpSlideEject.h"
+#import "SwpDrawerAnimatorsHeader.h"
 /* ---------------------- Tool       ---------------------- */
 
 

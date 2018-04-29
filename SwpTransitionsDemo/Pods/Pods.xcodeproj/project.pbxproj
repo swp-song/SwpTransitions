@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		09451F48AF8569E33C66FF9AA2BF987E /* UIImage+SwpBarCodeImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 4281F2FCCEC4E2770FE53D347004B814 /* UIImage+SwpBarCodeImage.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		0A613D3775DB80C32465A491359C1056 /* SwpCoolAnimators+SwpDebris.h in Headers */ = {isa = PBXBuildFile; fileRef = A4978E852EBE35BA181AF9C922C6BDE5 /* SwpCoolAnimators+SwpDebris.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		0B8032F0BDDB17ED70051B8F228DD3A6 /* UIColor+SwpColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 9209B61768D0D9DCA74BF249430F1A38 /* UIColor+SwpColor.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		0D6ADC32D583CD7C8D2DFC7676CF90A9 /* NSString+SwpBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D0AF0BDADE4F9836B2DE3C3D599F14A /* NSString+SwpBase64.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		0ED02B53AFEFBB392396A68304EF8D4B /* NSMutableAttributedString+SwpAttributed.h in Headers */ = {isa = PBXBuildFile; fileRef = 69070C09B8CD1FC500B25C217EF68257 /* NSMutableAttributedString+SwpAttributed.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -17,7 +16,7 @@
 		10C09A4F18945086C25EEA89C3831143 /* UITextField+SwpSetTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = D3CCE755DF8544BCCB91D366982431C8 /* UITextField+SwpSetTextField.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		14B65CE3038761FA8F6F5D1ECED6A562 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = FDC8E894038FAC97F7BBB1336A58CCA7 /* NSArray+MASAdditions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		16EB4E9F729F0F4AB48C320894BF1393 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
-		1952C4DA52BE0176EA4D6DCF96018444 /* SwpDrawerAnimators+SwpSlideEject.m in Sources */ = {isa = PBXBuildFile; fileRef = 94E4E9D13533FECAFEFF19012854E3EC /* SwpDrawerAnimators+SwpSlideEject.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		1952C4DA52BE0176EA4D6DCF96018444 /* SwpDrawerAnimators+SwpSlideEject.m in Sources */ = {isa = PBXBuildFile; fileRef = 382B1353DE53EC7374A265EE884ADD19 /* SwpDrawerAnimators+SwpSlideEject.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		1A300EA1E35148FCE13C982D08907421 /* NSString+SwpMD5Encryption.m in Sources */ = {isa = PBXBuildFile; fileRef = BB1D6DA3BE298EC71545DC12A79FF371 /* NSString+SwpMD5Encryption.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		1ACC95C4A93C6CEEA26CFA1483EB61BF /* NSArray+SwpOrderByCharacter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5532E13963B26012AB8620F8099DCC08 /* NSArray+SwpOrderByCharacter.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		1AF513D8D71B663D5422760106B13723 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = EB680D70ECEAF18DADEEA0E029FBF027 /* MASConstraint.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -26,56 +25,61 @@
 		1F8DC483EAE5DB60CE5ABFE4D5BE2A2B /* UIImage+SwpBarCodeImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DC71CA9370E8BEED8D3F915718A0D28 /* UIImage+SwpBarCodeImage.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		204BA65265721CDC24F90AB9E380FAEA /* NSString+SwpDate.h in Headers */ = {isa = PBXBuildFile; fileRef = 2183DFDD23931CF8580528B0ED8A8543 /* NSString+SwpDate.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		214DF0B6664033C87D6B846599FB477A /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FEC3C0C80BB71CD7A1448BFF92731F7 /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		267AC834CD242F565E1F9450C819278B /* SwpCoolAnimators+SwpCenterPageFlip.h in Headers */ = {isa = PBXBuildFile; fileRef = 1089AE15642DD8815B385612FE0058AB /* SwpCoolAnimators+SwpCenterPageFlip.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		268B503668A38AB951246253A0630DEB /* NSDictionary+SwpGenerateProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 21382202249606223FBCD2BDF1D10F53 /* NSDictionary+SwpGenerateProperty.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		28D9F1E23C44B9D8A525B2DB840BFE68 /* UIViewController+SwpTransitions.h in Headers */ = {isa = PBXBuildFile; fileRef = 261C239FFD0E6701BAE4057322610184 /* UIViewController+SwpTransitions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		28D3E2A763E67C34964DB16765A402B6 /* SwpCoolAnimatorsHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = B9BD6E8B952DE929D6166A4656197C6E /* SwpCoolAnimatorsHeader.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		2AA5B1B9D7B7BB9BC42001D4E410A1D0 /* UIBarButtonItem+SwpSetNavigationBarItem.h in Headers */ = {isa = PBXBuildFile; fileRef = CE4874413177B032F9E9F2BFAC754C22 /* UIBarButtonItem+SwpSetNavigationBarItem.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		2DD29C5EF321078B369643FF2469596B /* SwpTransitionObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 655135243B35A65B051411959DA0CEAC /* SwpTransitionObject.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		2E5E443ABA5C9FD191CA2EFCFB1C6237 /* SwpCoolAnimators.h in Headers */ = {isa = PBXBuildFile; fileRef = 2706995A0BC078B5817C5889F4AFC820 /* SwpCoolAnimators.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		3159E6B32B6A17B7DAB9FD026BF8F67E /* SwpCoolAnimators.m in Sources */ = {isa = PBXBuildFile; fileRef = 3752DF41040F5D793628AA5CF3E1A2F6 /* SwpCoolAnimators.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		2DD29C5EF321078B369643FF2469596B /* SwpTransitionObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 58022A6CE0A67F5699D75531A3D3AE58 /* SwpTransitionObject.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		3159E6B32B6A17B7DAB9FD026BF8F67E /* SwpCoolAnimators.m in Sources */ = {isa = PBXBuildFile; fileRef = 698BEA4F4086FB6F81CFF6BD7F2D3EBE /* SwpCoolAnimators.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		322243D5A660E100C2F31C88FCE8A5D5 /* SwpAttributedDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = DECA1139487C7631547A88D05A9E1D30 /* SwpAttributedDelegate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		323D42BF40E72B57AEC1123DE475E679 /* SwpCoolAnimators+SwpOrigami.h in Headers */ = {isa = PBXBuildFile; fileRef = 461602B11E7A7C9EE5838198949CE632 /* SwpCoolAnimators+SwpOrigami.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		32FAC1806AFDBCD605E9B14DE6BFDF46 /* SwpAttributedFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EDED4652F18E71207F82CBD585F0D18 /* SwpAttributedFont.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		33DC26CEE72B0A91433DC05C796AAF1D /* UIImage+SwpQrCodeImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 7980B70A98DAD95BBBD3E6D166890754 /* UIImage+SwpQrCodeImage.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		34506754F055A497E9336E30A1E02C1A /* SwpDrawerAnimators.h in Headers */ = {isa = PBXBuildFile; fileRef = AEA0424ADB606EAE9A12F6EDD2856886 /* SwpDrawerAnimators.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		3F986672B5FA4CFA14BE4152B3C7CA4A /* NSUserDefaults+SwpUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 590649B26A1165DE3F69F92E37D5077F /* NSUserDefaults+SwpUserDefaults.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		42B102CED96189470B4E931D12F3BA0F /* SwpCoolAnimators+SwpOrigami.h in Headers */ = {isa = PBXBuildFile; fileRef = E5BC8BB66D6F4152B9928879EFB95FB8 /* SwpCoolAnimators+SwpOrigami.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		44937BDC6451D6E323B48B301A3CBF61 /* SwpCoolAnimators+SwpLines.h in Headers */ = {isa = PBXBuildFile; fileRef = FDC9A159685E46ED27D756B2A71E37C1 /* SwpCoolAnimators+SwpLines.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		466869E41EB306F74C8A6E87CC1539BF /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C98FA82B49A6A223597D58DB7FA7871 /* ViewController+MASAdditions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		4A4447A8D52D2C8A5495362D2D33246D /* SwpCoolAnimators+SwpCenterPageFlip.h in Headers */ = {isa = PBXBuildFile; fileRef = 168974E879C0335742CAE06E0113A602 /* SwpCoolAnimators+SwpCenterPageFlip.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4756248C49B91B615163486094F09BF4 /* SwpCoolAnimators.h in Headers */ = {isa = PBXBuildFile; fileRef = F9301CB310F3389B73999CE4B90CB2C1 /* SwpCoolAnimators.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		48B20E1E69D2C145472AFD9EE751EC74 /* SwpTransitionsHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = B059A2185267CBAAFAE2D7C544285F8F /* SwpTransitionsHeader.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		4B297C391412582365EC69033D7D3499 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 		4B644E06191A86E04107DFBF8B5A4033 /* NSString+SwpMD5Encryption.h in Headers */ = {isa = PBXBuildFile; fileRef = 58D34E94CBE6CB4FF6E5D145AB8E0C1F /* NSString+SwpMD5Encryption.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4C5D42EF0CA34B4753BFE27D75036522 /* SwpCoolAnimators+SwpDebris.h in Headers */ = {isa = PBXBuildFile; fileRef = F02ACE3F0B2BC1ED361D10D302C9896F /* SwpCoolAnimators+SwpDebris.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		50D00495FDA4114CF0DEC733062CC5D4 /* SwpCoolAnimators+SwpPageFlip.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ECBEF4659A08F54F0B93F8E42CD78B8 /* SwpCoolAnimators+SwpPageFlip.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		523F69012549DCADB26D11EFB6593B5B /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = C7EB7ADCCBFB01383EFED290155229B0 /* Masonry.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		535979F5F85C0BE6ABC250EE7B0A99F5 /* SwpDrawerAnimators+SwpSideslip.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D7B5ACAED50637697695FFCE66A6052 /* SwpDrawerAnimators+SwpSideslip.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		548BBD5B63FA097F419829C3EE8EA068 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA119EF5F2B0FD305046EC5C61690B9 /* View+MASAdditions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		5492A44B18C06DA63D7335B6AED7341D /* Pods-SwpTransitionsDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C75F8AA0501E787F8E2FA09A51CFE42 /* Pods-SwpTransitionsDemo-dummy.m */; };
+		54AD624729C32CB2BE282985088B0531 /* UIView+SwpAnimatorsSnapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 4ED3EFD75A8AB824D3D7C0EB5709ABEB /* UIView+SwpAnimatorsSnapshot.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5B2463A6FE1C1969E80ACB5A9CA2739E /* SwpCoolAnimators+SwpLines.h in Headers */ = {isa = PBXBuildFile; fileRef = 28F98B15BED01FC564C573B3DE92930A /* SwpCoolAnimators+SwpLines.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		5B46C39A3F939EDB676981756CC24007 /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B0787951936D7208599C3782001C5BD1 /* Masonry-dummy.m */; };
 		5EBFADB0ACACA114B98082EBD8FDA650 /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BD34CACF51AC0FF8791D6E096775295 /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		601C1426AD6BAD6CDDD8310C6777A8BD /* UIFont+SwpFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F3B2A05396E8ADCB2F4405ACF412622 /* UIFont+SwpFont.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		613A69069FA5900EC7EE39D1D3B498B0 /* UINavigationBar+SwpNavigationBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 7700B5C0A4B74BBE47AA157736D3C193 /* UINavigationBar+SwpNavigationBar.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		61C611ABFFC5FFF35ACE70883CB8F523 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 984F3C040F2CA45FDE518C8D3FDA2155 /* MASLayoutConstraint.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		6209E20926D79222E59F58B962BFAA1E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
-		6402A5EBAD1BFB09CF4AD2AF6B6FDCD4 /* SwpTransitions.m in Sources */ = {isa = PBXBuildFile; fileRef = 233EDEFF4F189B232AC3B7E736AC8D07 /* SwpTransitions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		6402A5EBAD1BFB09CF4AD2AF6B6FDCD4 /* SwpTransitions.m in Sources */ = {isa = PBXBuildFile; fileRef = 608F6B9039F1C22E9BEB7A476AC36AC4 /* SwpTransitions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		6632560C0621F754032120D279BC968E /* UIViewController+SwpTransitions.h in Headers */ = {isa = PBXBuildFile; fileRef = 65C420AEFDC2E40E48EC5D578D83F932 /* UIViewController+SwpTransitions.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		66BB4FE443F18F95DA8E7EFE3055309D /* UIBarButtonItem+SwpSetNavigationBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 305EB01942CE003F0D024E7322EA96C0 /* UIBarButtonItem+SwpSetNavigationBarItem.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		6C7ECF5350E5ADEB0E8EAB7C6219592E /* SwpDrawerAnimators.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D532FA1A37615CC65E64F8C5ACD6A34 /* SwpDrawerAnimators.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6CECA5E91EE014717DBEFA3B4C746BE4 /* SwpCoolAnimators+SwpPortal.h in Headers */ = {isa = PBXBuildFile; fileRef = E73D13B55E49C301FB45E58DDC56CB19 /* SwpCoolAnimators+SwpPortal.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		6DC8461EB3B8F8A17B3C7DD214EC106D /* NSDictionary+SwpGenerateProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = DA22AF247B28F66BCE70B4309DE7D24C /* NSDictionary+SwpGenerateProperty.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		6EAA41E259CD73A26179091EB16BB700 /* SwpTransitions-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DCD575156D3FA1749145DEFD34C521D0 /* SwpTransitions-dummy.m */; };
+		6EAA41E259CD73A26179091EB16BB700 /* SwpTransitions-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2890216FB815004F8C2D88C44D152B89 /* SwpTransitions-dummy.m */; };
 		6FBEF9BEF976F73220F5EA0246FA6674 /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 108B5BDCE05110B0F7CDAC75976306DA /* MASConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		72C1E36A9DD1CCD4F3D077747B4426ED /* NSString+SwpDate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9B04A7492297C0134A0B93305C54A42 /* NSString+SwpDate.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		748F39544ABA95AC6FFC739E5AC4F7D1 /* SwpCoolAnimators+SwpScanning.h in Headers */ = {isa = PBXBuildFile; fileRef = D6703A8C7DC670DEE11D7B4B51138B17 /* SwpCoolAnimators+SwpScanning.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		75E0D4FF3E23E45D9647B42F2AEEAD07 /* SwpCoolAnimators+SwpCenterPageFlip.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E7A367302B1DFD0A0F024744517BB7 /* SwpCoolAnimators+SwpCenterPageFlip.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		75E0D4FF3E23E45D9647B42F2AEEAD07 /* SwpCoolAnimators+SwpCenterPageFlip.m in Sources */ = {isa = PBXBuildFile; fileRef = CA22157DECD4F9BE7DFAC252931F77A8 /* SwpCoolAnimators+SwpCenterPageFlip.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		7862839B3AFC8C49C7AD0848EDE4F07A /* UIButton+SwpButtonLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E8F6508C6B0DAA68CEDE3DDDAF80E04 /* UIButton+SwpButtonLayout.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		7AC0D0965486ED43C064F1BC177ACBC9 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A473E103CACF46A72E035A76FA2011D /* MASUtilities.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		7E4834FBAC28FF7AA8D3F0D928337A7C /* SwpCateGory-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D11866163B536C80B32BED0C32F68A7 /* SwpCateGory-dummy.m */; };
-		7FDF1E39EFA6D92D044E1C7E1320C4F6 /* UIView+SwpAnimatorsSnapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 34D106ED3629E37C68782563F36F0CDF /* UIView+SwpAnimatorsSnapshot.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		8003F981655D8FD48D43C0D45AD8FA1C /* SwpDrawerAnimators+SwpSideslip.h in Headers */ = {isa = PBXBuildFile; fileRef = F5D12391FE39457E0FEDF4BBF6EF0EC4 /* SwpDrawerAnimators+SwpSideslip.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7FDF1E39EFA6D92D044E1C7E1320C4F6 /* UIView+SwpAnimatorsSnapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE195E9FCB4C76FA0E8FCC9FCDDBC06 /* UIView+SwpAnimatorsSnapshot.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		81496B59D875107E7BDABABD464CF2BF /* SwpDrawerAnimatorsHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = EDCB4D43366853851413930D27253604 /* SwpDrawerAnimatorsHeader.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		81C1291C7ABA4942277F5756671AEE37 /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 688C426E6C3E932C18EBCFB65906428D /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		861CA9E54C0A25CDC6FCB15BE12E6767 /* UINavigationController+SwpTransitions.m in Sources */ = {isa = PBXBuildFile; fileRef = 74D1397AA590EEA8EE99B7D0E38B37E5 /* UINavigationController+SwpTransitions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		861CA9E54C0A25CDC6FCB15BE12E6767 /* UINavigationController+SwpTransitions.m in Sources */ = {isa = PBXBuildFile; fileRef = 75315E249B4B49360E974DE7AA80E54F /* UINavigationController+SwpTransitions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		86B2DF4CC6E598AAA73D0CC6EEBA0E96 /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 32D1AF94C3F71E5C2E413BAC4544E113 /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		87AF3D3FD9AA0127172B6FAE28259F5C /* UIView+SwpExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D8C73875E1B036000C945B84BE5A29 /* UIView+SwpExtension.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		899570885E8F511B30F1B768BE485564 /* SwpCateGory.h in Headers */ = {isa = PBXBuildFile; fileRef = FF626601B7A4084379B53AD0515EFDF5 /* SwpCateGory.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		8AF1A7B548118CD90EE6D8E0D51AFA9F /* SwpDrawerAnimators+SwpSideslip.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EC215D9A956868CAC5A956DEC393BD1 /* SwpDrawerAnimators+SwpSideslip.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		8DA2B85724EB4B282473D9179F30C8C6 /* SwpDrawerAnimators+SwpSlideEject.h in Headers */ = {isa = PBXBuildFile; fileRef = 444D79E8E6E2C829DED728890532B072 /* SwpDrawerAnimators+SwpSlideEject.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8AF1A7B548118CD90EE6D8E0D51AFA9F /* SwpDrawerAnimators+SwpSideslip.m in Sources */ = {isa = PBXBuildFile; fileRef = 29ECFC7547FEC3D061D580CA5111267E /* SwpDrawerAnimators+SwpSideslip.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		8DEE8CC9CB7FB210D07395723769FC77 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
 		8E83629DCDAD4752562F97A542067189 /* SwpAttributedFont.h in Headers */ = {isa = PBXBuildFile; fileRef = FBC006DDBBEDE3A52B663F6781C4A12F /* SwpAttributedFont.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		8F0904BE245EA10A7C4974E491A1C459 /* UIViewController+SwpTransitions.m in Sources */ = {isa = PBXBuildFile; fileRef = 10BF2A8F8F922FC723DD929EF41F299C /* UIViewController+SwpTransitions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		9253D44A206ED0C22279AF2257F2497B /* SwpTransitionsInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = AB51774518473CCAE014ACB7F5AE43F4 /* SwpTransitionsInfo.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		8F0904BE245EA10A7C4974E491A1C459 /* UIViewController+SwpTransitions.m in Sources */ = {isa = PBXBuildFile; fileRef = C116CE62D4F987A3BC05DACC77632365 /* UIViewController+SwpTransitions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		9253D44A206ED0C22279AF2257F2497B /* SwpTransitionsInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 353BA95B8D10D94ACC7804D58E8B215B /* SwpTransitionsInfo.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		92596F6D27941BEFA6EA85DBC49927E0 /* UIButton+SwpSetButton.h in Headers */ = {isa = PBXBuildFile; fileRef = F63EE9637DB62E1FD3FC095B1D2628A0 /* UIButton+SwpSetButton.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		92711327ED7920702A69A828271279AE /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 23E6C1350F9D7FCFA1F62CACCF0B58BD /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		99E00D593F76D7E6C96300345E211282 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF211577E7191821D42BB43E2C0DE7B /* MASConstraintMaker.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
@@ -83,50 +87,47 @@
 		9BFAE06AC2F3B426C64EEDBF8C99A69E /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = F58B9B218CE3BC80342BE39835E912D1 /* NSArray+MASAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		9CD72EB64301580D6231E8978FF3DAB6 /* NSArray+SwpOrderByCharacter.h in Headers */ = {isa = PBXBuildFile; fileRef = BA02A0006E72DE0035C01FE08788129A /* NSArray+SwpOrderByCharacter.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		9F68B4B3E663CC5E05ECD1A6CB708A6A /* UITextField+SwpSetTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 220F602F62B38E43C9991A1D112A201B /* UITextField+SwpSetTextField.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		9FCFA617C01679F5BFF02FD334A16411 /* SwpTransitions.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D8FBA4490A5126136847DD2D668A0A9 /* SwpTransitions.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		A01574901E4A3E61BA100C5DE8C92AA3 /* NSMutableAttributedString+SwpAttributed.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EC413C063CA909A69EDC76367442D66 /* NSMutableAttributedString+SwpAttributed.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		A2CC68D8D92FE6823E3367E056B674F3 /* UIImage+SwpCreateImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A4FAE8EC013DB91AE13A86416C69CAA /* UIImage+SwpCreateImage.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		A3E6A7EED8C70B2D9C9CFD676B61D87D /* UINavigationController+SwpTransitions.h in Headers */ = {isa = PBXBuildFile; fileRef = 36B6FC515EF0EA01DAC329F52E98F525 /* UINavigationController+SwpTransitions.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		A689ECC433177B123BC71B180EB585EE /* UIView+SwpViewScreenshots.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DACA5C0DBA3A335F30EA0732B77A3B5 /* UIView+SwpViewScreenshots.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		A7F384852481E62AEDF04478C5BDBBC5 /* UIColor+SwpColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE03A3A74275EE34C8E92D5445ECF41 /* UIColor+SwpColor.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		AB5AB9936FD638C83148C01A5882588B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 		AE5460F85A9404EB035CF5F23552F979 /* UIButton+SwpButtonLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA6AD0A6A7836A4BBA683795D6357F8 /* UIButton+SwpButtonLayout.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		AF8CD367B507A35782CBB9CB5BAA5477 /* SwpCoolAnimators+SwpLines.m in Sources */ = {isa = PBXBuildFile; fileRef = C3E1585887E95FBB24DA3D06C0B99638 /* SwpCoolAnimators+SwpLines.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		AF8CD367B507A35782CBB9CB5BAA5477 /* SwpCoolAnimators+SwpLines.m in Sources */ = {isa = PBXBuildFile; fileRef = E8AE53E55F7B52267FAFD7ABF023B534 /* SwpCoolAnimators+SwpLines.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		AFF8D73E6196CE01627EA16E8CE7E554 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		B155759FB036EFA4A85B0A7F71AECDD1 /* SwpDrawerAnimators+SwpSlideEject.h in Headers */ = {isa = PBXBuildFile; fileRef = 07FCADA876E8D273F8B416AFD6414C6E /* SwpDrawerAnimators+SwpSlideEject.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		B5EC5518E18B05A5334C49ABBF4C78F7 /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E715576B96040DFC55ECFB37EC9FAE8 /* MASConstraintMaker.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B5F1C5715068D547F0CEB411EDFC49D9 /* SwpCoolAnimatorsCategoryHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = F5C96317248BF2F7F6B6F2E59FDCDC9A /* SwpCoolAnimatorsCategoryHeader.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B84E2CBED0593274BB3EAC2B19FAB2FA /* SwpTransitions.h in Headers */ = {isa = PBXBuildFile; fileRef = BF76C06B396BFCA6D5AB38E48F96C02D /* SwpTransitions.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B6404FD0A13554CD3432606594A00717 /* UINavigationController+SwpTransitions.h in Headers */ = {isa = PBXBuildFile; fileRef = F6E595ADE4A50248F07F2E93A66D31D4 /* UINavigationController+SwpTransitions.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		B953667D411D1DCD919CBD314F568A92 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3BCD55C6E41C50A1DDBC6F0C53D8E5 /* NSLayoutConstraint+MASDebugAdditions.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		BA405A07FE8D2B4671A417A64630F533 /* SwpCoolAnimators+SwpPortal.h in Headers */ = {isa = PBXBuildFile; fileRef = 1946559AB7801FD716E799B49D071E38 /* SwpCoolAnimators+SwpPortal.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		BD23B0BAFC39F5D3ED193763C99B7F1F /* UIButton+SwpSetButton.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B6313C75437DF25D4EB5D1859C7E47 /* UIButton+SwpSetButton.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		BDBC4ECA58D41561FBFB296C94B64920 /* SwpTransitionHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 16686199A13B4A2389F0E31011319ACD /* SwpTransitionHeader.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		BE1FEF341152F050AF859321C1BAC561 /* SwpCateGory.m in Sources */ = {isa = PBXBuildFile; fileRef = 89427F34FA05BE0F1F7F8DDCEFAAEE97 /* SwpCateGory.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		BEE50B5DC9BB4E626240BDC714321F23 /* SwpAttributedString.m in Sources */ = {isa = PBXBuildFile; fileRef = 235B804A8F9AFAE47E82DAA0805A5123 /* SwpAttributedString.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		BFE53CAF113F8455882D4619B61D19E1 /* SwpDrawerAnimators.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E0511E4A3083C7AAA1FCD1EF2C8748 /* SwpDrawerAnimators.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		BFE53CAF113F8455882D4619B61D19E1 /* SwpDrawerAnimators.m in Sources */ = {isa = PBXBuildFile; fileRef = 729627A46EDEB028A47AB93C8204D63B /* SwpDrawerAnimators.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C0C0EE0B847E6A49E78E094101482CF2 /* UIImage+SwpImageScreenshots.m in Sources */ = {isa = PBXBuildFile; fileRef = CC67DC53BB85E7F0AE5E56E941C66A0D /* UIImage+SwpImageScreenshots.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		C18BC544A0B8BCC02030AC340B384573 /* NSUserDefaults+SwpUserDefaults.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FEFC59EB16A8B5AE6B27CA0B5DB0F75 /* NSUserDefaults+SwpUserDefaults.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		C52940A5985DF331C57468B007154B0C /* UIImage+SwpImageScreenshots.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B1B1DFFDEFD1028CE2BA33FE145600B /* UIImage+SwpImageScreenshots.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		C5AA80064F3923752EC2F3D754F6283B /* UIView+SwpViewScreenshots.h in Headers */ = {isa = PBXBuildFile; fileRef = 51DC5F1AAE35303DE1AD189BE1C1E1DF /* UIView+SwpViewScreenshots.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		C6841AAB2B70BD776FE6FC381A302916 /* UIView+SwpAnimatorsSnapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 4616ECA13CAD9F684B6715CABCBBD2E8 /* UIView+SwpAnimatorsSnapshot.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		C6E83C10646E2DF6C83A578CE6AF0E5A /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = AC4F054986F63376D4AD52F3DC68AB1F /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		CBCAB5F71AAC0D11EC827F95BE12D3D7 /* UIFont+SwpFont.h in Headers */ = {isa = PBXBuildFile; fileRef = E0E6EB397739A3660C1536D25DD17A5C /* UIFont+SwpFont.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		CEF7E139022FFA4F5C99D4DC5DE67990 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = F4748B97FD6ADDA30B049911DF3ED306 /* MASViewAttribute.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		CF96F19A82CB214E17EA9525335EAFF9 /* SwpCoolAnimators+SwpDebris.m in Sources */ = {isa = PBXBuildFile; fileRef = CCE84FA725C213F243459C0434390E17 /* SwpCoolAnimators+SwpDebris.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		CF96F19A82CB214E17EA9525335EAFF9 /* SwpCoolAnimators+SwpDebris.m in Sources */ = {isa = PBXBuildFile; fileRef = D86DC53C869951D04CCBA525FA193A2E /* SwpCoolAnimators+SwpDebris.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		D02E44E6C8BE060B47DE4EC79DE403D8 /* NSString+SwpBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 546A92A56C4B15588D073614D2C0F0FF /* NSString+SwpBase64.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		D44D61009ABEB47C97ADDE07ED0BA130 /* SwpTransitionObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 984FF8890265D348812ECB08709F7774 /* SwpTransitionObject.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		D8D72BEC4364E9F77BCC6B8AB4E30DF3 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BAB56016DA0B9516A5ADEFAE7CB61EA /* MASViewConstraint.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		D8D7952A58953A6A13055985C8FF6EF9 /* SwpCoolAnimators+SwpPageFlip.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D0221DE452A5E00D5811E6EBBEB5EC9 /* SwpCoolAnimators+SwpPageFlip.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		E0EB666D8F568C2005E7A07EB4B7464B /* SwpAttributedHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = F65885392FFFD8EF0BE497B15E194C8F /* SwpAttributedHeader.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		E12030ED2C9787FA5EFEB7464E637D4E /* SwpCoolAnimators+SwpPageFlip.m in Sources */ = {isa = PBXBuildFile; fileRef = 40A34A3382C5A8B9D3693C9B30071FE0 /* SwpCoolAnimators+SwpPageFlip.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		E9ED0891848CC5818DFC561EF6D8F388 /* SwpCoolAnimators+SwpScanning.m in Sources */ = {isa = PBXBuildFile; fileRef = C29A009C9516F0EB877617C3A5E344E9 /* SwpCoolAnimators+SwpScanning.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E12030ED2C9787FA5EFEB7464E637D4E /* SwpCoolAnimators+SwpPageFlip.m in Sources */ = {isa = PBXBuildFile; fileRef = 464EE657C43B474188E33E14785DD257 /* SwpCoolAnimators+SwpPageFlip.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		E620002546D5385B51C73821D9D00EE2 /* SwpTransitionsInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F492E42F97E612B099A256BA9D51973 /* SwpTransitionsInfo.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E9ED0891848CC5818DFC561EF6D8F388 /* SwpCoolAnimators+SwpScanning.m in Sources */ = {isa = PBXBuildFile; fileRef = 1721C989E59F4E097073C7CEEDA5CB49 /* SwpCoolAnimators+SwpScanning.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		EFF870856F52977046BAB42B17BBD983 /* SwpAttributedString.h in Headers */ = {isa = PBXBuildFile; fileRef = B25341BE56DF5C3EB0445B3CA36CB7BF /* SwpAttributedString.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		F0B56A7D38A399A2F67F9920C9526A66 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
-		F181F73BB4D8D9CB8D1C723E6F228945 /* SwpTransitionsInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AC9E3D37304CE88179154AD337B63EC /* SwpTransitionsInfo.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F1D2C058C656DBCFCF34D95DA6C9A9D1 /* SwpCoolAnimators+SwpScanning.h in Headers */ = {isa = PBXBuildFile; fileRef = D2B72F87EEB014247CE9F59353DD0DE4 /* SwpCoolAnimators+SwpScanning.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		F1FE4BB257910167777DF5B0A5B94545 /* UIImage+SwpCreateImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 4595A7436BF80B01861ECC733E2EFCDC /* UIImage+SwpCreateImage.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		F28FD691AD5C60B4AA1A00ED19B73A68 /* SwpCoolAnimators+SwpPortal.m in Sources */ = {isa = PBXBuildFile; fileRef = ABA48101771DE67676D2D7EDD4BF36C8 /* SwpCoolAnimators+SwpPortal.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		F28FD691AD5C60B4AA1A00ED19B73A68 /* SwpCoolAnimators+SwpPortal.m in Sources */ = {isa = PBXBuildFile; fileRef = F402D1E0CC3E3B49153D0448C487232B /* SwpCoolAnimators+SwpPortal.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		F390D582745DF3516ADD4D910A2ACFFA /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = F9F25BC9A9655B1FA4471FC5480B75CA /* MASCompositeConstraint.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
-		F3E8EA686029EDF9CA731632FD204C40 /* SwpTransitionObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C1F6BAA6319E8D886585564D1A0DFE3 /* SwpTransitionObject.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		F4D37AA28363E846AD8E6953FA920B08 /* UIView+SwpExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 3B26A0CC874DBFE8164E2DAE619656E5 /* UIView+SwpExtension.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		F861D2DADCE8A8F94F1DCB22EB8A6CE2 /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 89D769ECF3B1CBC498577428C4C75440 /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		FA0D98AB9815F71989D7874FD2F92E95 /* SwpCoolAnimators+SwpOrigami.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A70B6C3122A386FA49439B9348A230B /* SwpCoolAnimators+SwpOrigami.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
+		FA0D98AB9815F71989D7874FD2F92E95 /* SwpCoolAnimators+SwpOrigami.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5B74B355CA7977A4049698C8B99B6D /* SwpCoolAnimators+SwpOrigami.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		FB33FAC06F73C873997589BC6852ADBE /* SwpAttributedColor.m in Sources */ = {isa = PBXBuildFile; fileRef = F8FA3BF93263004F1A54A24D2557451E /* SwpAttributedColor.m */; settings = {COMPILER_FLAGS = "-w -Xanalyzer -analyzer-disable-all-checks"; }; };
 		FB415F79751F1A1F2203183C3CEE0723 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 495596A2F4F6EB1FB7D06E40F1DC88D1 /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Project, ); }; };
 /* End PBXBuildFile section */
@@ -156,144 +157,145 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07FCADA876E8D273F8B416AFD6414C6E /* SwpDrawerAnimators+SwpSlideEject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwpDrawerAnimators+SwpSlideEject.h"; sourceTree = "<group>"; };
+		09A7CB9BCD49CEC6FF87F6AA998B5F85 /* SwpTransitions-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwpTransitions-prefix.pch"; sourceTree = "<group>"; };
 		0AA119EF5F2B0FD305046EC5C61690B9 /* View+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "Masonry/View+MASAdditions.m"; sourceTree = "<group>"; };
+		0D532FA1A37615CC65E64F8C5ACD6A34 /* SwpDrawerAnimators.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SwpDrawerAnimators.h; sourceTree = "<group>"; };
 		0DA029E7EC03779F173038A8FCC7A7E2 /* libSwpTransitions.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSwpTransitions.a; path = libSwpTransitions.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EC413C063CA909A69EDC76367442D66 /* NSMutableAttributedString+SwpAttributed.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSMutableAttributedString+SwpAttributed.m"; path = "SwpCateGory/Class/Other/SwpAttributeCateGory/NSMutableAttributedString+SwpAttributed.m"; sourceTree = "<group>"; };
+		1089AE15642DD8815B385612FE0058AB /* SwpCoolAnimators+SwpCenterPageFlip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwpCoolAnimators+SwpCenterPageFlip.h"; sourceTree = "<group>"; };
 		108B5BDCE05110B0F7CDAC75976306DA /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
-		10BF2A8F8F922FC723DD929EF41F299C /* UIViewController+SwpTransitions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SwpTransitions.m"; sourceTree = "<group>"; };
 		1105E0D8DB78679900B42355FEFDA15A /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
-		16686199A13B4A2389F0E31011319ACD /* SwpTransitionHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SwpTransitionHeader.h; sourceTree = "<group>"; };
-		168974E879C0335742CAE06E0113A602 /* SwpCoolAnimators+SwpCenterPageFlip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwpCoolAnimators+SwpCenterPageFlip.h"; sourceTree = "<group>"; };
-		1946559AB7801FD716E799B49D071E38 /* SwpCoolAnimators+SwpPortal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwpCoolAnimators+SwpPortal.h"; sourceTree = "<group>"; };
-		1A70B6C3122A386FA49439B9348A230B /* SwpCoolAnimators+SwpOrigami.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwpCoolAnimators+SwpOrigami.m"; sourceTree = "<group>"; };
+		1721C989E59F4E097073C7CEEDA5CB49 /* SwpCoolAnimators+SwpScanning.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwpCoolAnimators+SwpScanning.m"; sourceTree = "<group>"; };
 		1BE03A3A74275EE34C8E92D5445ECF41 /* UIColor+SwpColor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+SwpColor.m"; path = "SwpCateGory/Class/UIKit/UIColorCateGory/SwpColor/UIColor+SwpColor.m"; sourceTree = "<group>"; };
 		1DACA5C0DBA3A335F30EA0732B77A3B5 /* UIView+SwpViewScreenshots.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+SwpViewScreenshots.m"; path = "SwpCateGory/Class/UIKit/UIViewCateGory/SwpViewScreenshots/UIView+SwpViewScreenshots.m"; sourceTree = "<group>"; };
-		20F57D6E1348EA9F7D57B0F4172218AA /* SwpTransitions.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SwpTransitions.bundle; path = SwpTransitions/Resources/SwpTransitions.bundle; sourceTree = "<group>"; };
+		1F492E42F97E612B099A256BA9D51973 /* SwpTransitionsInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SwpTransitionsInfo.h; sourceTree = "<group>"; };
 		21382202249606223FBCD2BDF1D10F53 /* NSDictionary+SwpGenerateProperty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+SwpGenerateProperty.m"; path = "SwpCateGory/Class/NSObject/NSDictionaryCateGory/SwpGenerateProperty/NSDictionary+SwpGenerateProperty.m"; sourceTree = "<group>"; };
 		2183DFDD23931CF8580528B0ED8A8543 /* NSString+SwpDate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+SwpDate.h"; path = "SwpCateGory/Class/NSObject/NSStringCateGory/SwpDateString/NSString+SwpDate.h"; sourceTree = "<group>"; };
 		220F602F62B38E43C9991A1D112A201B /* UITextField+SwpSetTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+SwpSetTextField.m"; path = "SwpCateGory/Class/UIKit/UITextFieldCateGory/SwpSetTextField/UITextField+SwpSetTextField.m"; sourceTree = "<group>"; };
-		233EDEFF4F189B232AC3B7E736AC8D07 /* SwpTransitions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SwpTransitions.m; sourceTree = "<group>"; };
 		235B804A8F9AFAE47E82DAA0805A5123 /* SwpAttributedString.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SwpAttributedString.m; path = SwpCateGory/Class/Other/SwpAttributeCateGory/SwpAttributedString.m; sourceTree = "<group>"; };
 		23E6C1350F9D7FCFA1F62CACCF0B58BD /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
-		261C239FFD0E6701BAE4057322610184 /* UIViewController+SwpTransitions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SwpTransitions.h"; sourceTree = "<group>"; };
-		2706995A0BC078B5817C5889F4AFC820 /* SwpCoolAnimators.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SwpCoolAnimators.h; sourceTree = "<group>"; };
+		2890216FB815004F8C2D88C44D152B89 /* SwpTransitions-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwpTransitions-dummy.m"; sourceTree = "<group>"; };
+		28F98B15BED01FC564C573B3DE92930A /* SwpCoolAnimators+SwpLines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwpCoolAnimators+SwpLines.h"; sourceTree = "<group>"; };
+		29ECFC7547FEC3D061D580CA5111267E /* SwpDrawerAnimators+SwpSideslip.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwpDrawerAnimators+SwpSideslip.m"; sourceTree = "<group>"; };
 		2A4FAE8EC013DB91AE13A86416C69CAA /* UIImage+SwpCreateImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+SwpCreateImage.m"; path = "SwpCateGory/Class/UIKit/UIImageCateGory/SwpCreateImage/UIImage+SwpCreateImage.m"; sourceTree = "<group>"; };
 		2BD34CACF51AC0FF8791D6E096775295 /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
 		2C75F8AA0501E787F8E2FA09A51CFE42 /* Pods-SwpTransitionsDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwpTransitionsDemo-dummy.m"; sourceTree = "<group>"; };
+		2D8FBA4490A5126136847DD2D668A0A9 /* SwpTransitions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SwpTransitions.h; sourceTree = "<group>"; };
 		2DC71CA9370E8BEED8D3F915718A0D28 /* UIImage+SwpBarCodeImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+SwpBarCodeImage.m"; path = "SwpCateGory/Class/UIKit/UIImageCateGory/SwpBarCodeImage/UIImage+SwpBarCodeImage.m"; sourceTree = "<group>"; };
 		2FEC3C0C80BB71CD7A1448BFF92731F7 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
 		2FF211577E7191821D42BB43E2C0DE7B /* MASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = Masonry/MASConstraintMaker.m; sourceTree = "<group>"; };
 		305EB01942CE003F0D024E7322EA96C0 /* UIBarButtonItem+SwpSetNavigationBarItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIBarButtonItem+SwpSetNavigationBarItem.m"; path = "SwpCateGory/Class/UIKit/UIBarButtonItemCateGory/SwpSetNavigationBarItem/UIBarButtonItem+SwpSetNavigationBarItem.m"; sourceTree = "<group>"; };
 		32D1AF94C3F71E5C2E413BAC4544E113 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Masonry/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
-		34D106ED3629E37C68782563F36F0CDF /* UIView+SwpAnimatorsSnapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+SwpAnimatorsSnapshot.m"; sourceTree = "<group>"; };
+		353BA95B8D10D94ACC7804D58E8B215B /* SwpTransitionsInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SwpTransitionsInfo.m; sourceTree = "<group>"; };
 		3606025834C812E585415AB4A6864C19 /* Pods-SwpTransitionsDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwpTransitionsDemo-frameworks.sh"; sourceTree = "<group>"; };
-		36B6FC515EF0EA01DAC329F52E98F525 /* UINavigationController+SwpTransitions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+SwpTransitions.h"; sourceTree = "<group>"; };
-		3752DF41040F5D793628AA5CF3E1A2F6 /* SwpCoolAnimators.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SwpCoolAnimators.m; sourceTree = "<group>"; };
+		382B1353DE53EC7374A265EE884ADD19 /* SwpDrawerAnimators+SwpSlideEject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwpDrawerAnimators+SwpSlideEject.m"; sourceTree = "<group>"; };
 		3B26A0CC874DBFE8164E2DAE619656E5 /* UIView+SwpExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+SwpExtension.h"; path = "SwpCateGory/Class/UIKit/UIViewCateGory/SwpExtension/UIView+SwpExtension.h"; sourceTree = "<group>"; };
-		3C59BC03001C143A93B7E2EBD78EB612 /* SwpTransitions.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwpTransitions.xcconfig; sourceTree = "<group>"; };
+		3D5B74B355CA7977A4049698C8B99B6D /* SwpCoolAnimators+SwpOrigami.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwpCoolAnimators+SwpOrigami.m"; sourceTree = "<group>"; };
 		3EDED4652F18E71207F82CBD585F0D18 /* SwpAttributedFont.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SwpAttributedFont.m; path = SwpCateGory/Class/Other/SwpAttributeCateGory/SwpAttributedFont.m; sourceTree = "<group>"; };
+		3F9BF87A3D1F65001C197DB031DAF095 /* SwpTransitions.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SwpTransitions.bundle; path = SwpTransitions/Resources/SwpTransitions.bundle; sourceTree = "<group>"; };
 		3FAEA0C97E428588530318D1B58F2C79 /* libSwpCateGory.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSwpCateGory.a; path = libSwpCateGory.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		40A34A3382C5A8B9D3693C9B30071FE0 /* SwpCoolAnimators+SwpPageFlip.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwpCoolAnimators+SwpPageFlip.m"; sourceTree = "<group>"; };
 		4281F2FCCEC4E2770FE53D347004B814 /* UIImage+SwpBarCodeImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+SwpBarCodeImage.h"; path = "SwpCateGory/Class/UIKit/UIImageCateGory/SwpBarCodeImage/UIImage+SwpBarCodeImage.h"; sourceTree = "<group>"; };
-		444D79E8E6E2C829DED728890532B072 /* SwpDrawerAnimators+SwpSlideEject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwpDrawerAnimators+SwpSlideEject.h"; sourceTree = "<group>"; };
 		4595A7436BF80B01861ECC733E2EFCDC /* UIImage+SwpCreateImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+SwpCreateImage.h"; path = "SwpCateGory/Class/UIKit/UIImageCateGory/SwpCreateImage/UIImage+SwpCreateImage.h"; sourceTree = "<group>"; };
 		45C7AF197A616303A8A8A8A5D510E245 /* Masonry.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.xcconfig; sourceTree = "<group>"; };
-		4616ECA13CAD9F684B6715CABCBBD2E8 /* UIView+SwpAnimatorsSnapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+SwpAnimatorsSnapshot.h"; sourceTree = "<group>"; };
-		48E0511E4A3083C7AAA1FCD1EF2C8748 /* SwpDrawerAnimators.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SwpDrawerAnimators.m; sourceTree = "<group>"; };
-		48E7A367302B1DFD0A0F024744517BB7 /* SwpCoolAnimators+SwpCenterPageFlip.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwpCoolAnimators+SwpCenterPageFlip.m"; sourceTree = "<group>"; };
+		461602B11E7A7C9EE5838198949CE632 /* SwpCoolAnimators+SwpOrigami.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwpCoolAnimators+SwpOrigami.h"; sourceTree = "<group>"; };
+		464EE657C43B474188E33E14785DD257 /* SwpCoolAnimators+SwpPageFlip.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwpCoolAnimators+SwpPageFlip.m"; sourceTree = "<group>"; };
 		495596A2F4F6EB1FB7D06E40F1DC88D1 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		4ED3EFD75A8AB824D3D7C0EB5709ABEB /* UIView+SwpAnimatorsSnapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+SwpAnimatorsSnapshot.h"; sourceTree = "<group>"; };
+		4EE195E9FCB4C76FA0E8FCC9FCDDBC06 /* UIView+SwpAnimatorsSnapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+SwpAnimatorsSnapshot.m"; sourceTree = "<group>"; };
 		51DC5F1AAE35303DE1AD189BE1C1E1DF /* UIView+SwpViewScreenshots.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+SwpViewScreenshots.h"; path = "SwpCateGory/Class/UIKit/UIViewCateGory/SwpViewScreenshots/UIView+SwpViewScreenshots.h"; sourceTree = "<group>"; };
 		546A92A56C4B15588D073614D2C0F0FF /* NSString+SwpBase64.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+SwpBase64.m"; path = "SwpCateGory/Class/NSObject/NSStringCateGory/SwpBase64/NSString+SwpBase64.m"; sourceTree = "<group>"; };
 		5532E13963B26012AB8620F8099DCC08 /* NSArray+SwpOrderByCharacter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+SwpOrderByCharacter.m"; path = "SwpCateGory/Class/NSObject/NSArrayCateGory/SwpOrderByCharacter/NSArray+SwpOrderByCharacter.m"; sourceTree = "<group>"; };
 		57FAD4762192EF6FAA7B3846BF150AB6 /* libMasonry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMasonry.a; path = libMasonry.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		58022A6CE0A67F5699D75531A3D3AE58 /* SwpTransitionObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SwpTransitionObject.m; sourceTree = "<group>"; };
 		58D34E94CBE6CB4FF6E5D145AB8E0C1F /* NSString+SwpMD5Encryption.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+SwpMD5Encryption.h"; path = "SwpCateGory/Class/NSObject/NSStringCateGory/SwpMD5/NSString+SwpMD5Encryption.h"; sourceTree = "<group>"; };
 		590649B26A1165DE3F69F92E37D5077F /* NSUserDefaults+SwpUserDefaults.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSUserDefaults+SwpUserDefaults.m"; path = "SwpCateGory/Class/NSObject/NSUserDefaultsCateGory/SwpUserDefaults/NSUserDefaults+SwpUserDefaults.m"; sourceTree = "<group>"; };
-		5AC9E3D37304CE88179154AD337B63EC /* SwpTransitionsInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SwpTransitionsInfo.h; sourceTree = "<group>"; };
-		5C1F6BAA6319E8D886585564D1A0DFE3 /* SwpTransitionObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SwpTransitionObject.h; sourceTree = "<group>"; };
 		5E8F6508C6B0DAA68CEDE3DDDAF80E04 /* UIButton+SwpButtonLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+SwpButtonLayout.h"; path = "SwpCateGory/Class/UIKit/UIButtonCateGory/SwpButtonLayout/UIButton+SwpButtonLayout.h"; sourceTree = "<group>"; };
-		655135243B35A65B051411959DA0CEAC /* SwpTransitionObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SwpTransitionObject.m; sourceTree = "<group>"; };
+		608F6B9039F1C22E9BEB7A476AC36AC4 /* SwpTransitions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SwpTransitions.m; sourceTree = "<group>"; };
+		65C420AEFDC2E40E48EC5D578D83F932 /* UIViewController+SwpTransitions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SwpTransitions.h"; sourceTree = "<group>"; };
 		66FDA41DD7611BAE53D26672A11D5B4B /* UIImage+SwpQrCodeImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+SwpQrCodeImage.m"; path = "SwpCateGory/Class/UIKit/UIImageCateGory/SwpQrCodeImage/UIImage+SwpQrCodeImage.m"; sourceTree = "<group>"; };
 		688C426E6C3E932C18EBCFB65906428D /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
 		69070C09B8CD1FC500B25C217EF68257 /* NSMutableAttributedString+SwpAttributed.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSMutableAttributedString+SwpAttributed.h"; path = "SwpCateGory/Class/Other/SwpAttributeCateGory/NSMutableAttributedString+SwpAttributed.h"; sourceTree = "<group>"; };
+		698BEA4F4086FB6F81CFF6BD7F2D3EBE /* SwpCoolAnimators.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SwpCoolAnimators.m; sourceTree = "<group>"; };
 		6A473E103CACF46A72E035A76FA2011D /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
 		6D0AF0BDADE4F9836B2DE3C3D599F14A /* NSString+SwpBase64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+SwpBase64.h"; path = "SwpCateGory/Class/NSObject/NSStringCateGory/SwpBase64/NSString+SwpBase64.h"; sourceTree = "<group>"; };
+		6D7B5ACAED50637697695FFCE66A6052 /* SwpDrawerAnimators+SwpSideslip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwpDrawerAnimators+SwpSideslip.h"; sourceTree = "<group>"; };
 		6DC64F774F0BE2F34D7FC64BDEC04F6D /* SwpCateGory-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwpCateGory-prefix.pch"; sourceTree = "<group>"; };
 		6E715576B96040DFC55ECFB37EC9FAE8 /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
 		6F3B2A05396E8ADCB2F4405ACF412622 /* UIFont+SwpFont.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIFont+SwpFont.m"; path = "SwpCateGory/Class/UIKit/UIFontCateGory/SwpFont/UIFont+SwpFont.m"; sourceTree = "<group>"; };
-		6F570F490180D533638608AD61240488 /* SwpTransitions-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwpTransitions-prefix.pch"; sourceTree = "<group>"; };
 		6FEFC59EB16A8B5AE6B27CA0B5DB0F75 /* NSUserDefaults+SwpUserDefaults.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSUserDefaults+SwpUserDefaults.h"; path = "SwpCateGory/Class/NSObject/NSUserDefaultsCateGory/SwpUserDefaults/NSUserDefaults+SwpUserDefaults.h"; sourceTree = "<group>"; };
-		74D1397AA590EEA8EE99B7D0E38B37E5 /* UINavigationController+SwpTransitions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+SwpTransitions.m"; sourceTree = "<group>"; };
+		729627A46EDEB028A47AB93C8204D63B /* SwpDrawerAnimators.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SwpDrawerAnimators.m; sourceTree = "<group>"; };
+		75315E249B4B49360E974DE7AA80E54F /* UINavigationController+SwpTransitions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+SwpTransitions.m"; sourceTree = "<group>"; };
 		7700B5C0A4B74BBE47AA157736D3C193 /* UINavigationBar+SwpNavigationBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationBar+SwpNavigationBar.h"; path = "SwpCateGory/Class/UIKit/UINavigationBarCateGory/SwpNavigationBar/UINavigationBar+SwpNavigationBar.h"; sourceTree = "<group>"; };
 		7980B70A98DAD95BBBD3E6D166890754 /* UIImage+SwpQrCodeImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+SwpQrCodeImage.h"; path = "SwpCateGory/Class/UIKit/UIImageCateGory/SwpQrCodeImage/UIImage+SwpQrCodeImage.h"; sourceTree = "<group>"; };
 		7B1B1DFFDEFD1028CE2BA33FE145600B /* UIImage+SwpImageScreenshots.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+SwpImageScreenshots.h"; path = "SwpCateGory/Class/UIKit/UIImageCateGory/SwpImageScreenshots/UIImage+SwpImageScreenshots.h"; sourceTree = "<group>"; };
 		7BAB56016DA0B9516A5ADEFAE7CB61EA /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
+		830D67A66126ECDFC685E00B1B6FEF8F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		89427F34FA05BE0F1F7F8DDCEFAAEE97 /* SwpCateGory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SwpCateGory.m; path = SwpCateGory/Class/SwpCateGory/SwpCateGory.m; sourceTree = "<group>"; };
 		89D769ECF3B1CBC498577428C4C75440 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
 		8C98FA82B49A6A223597D58DB7FA7871 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewController+MASAdditions.m"; path = "Masonry/ViewController+MASAdditions.m"; sourceTree = "<group>"; };
-		8D0221DE452A5E00D5811E6EBBEB5EC9 /* SwpCoolAnimators+SwpPageFlip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwpCoolAnimators+SwpPageFlip.h"; sourceTree = "<group>"; };
 		8D11866163B536C80B32BED0C32F68A7 /* SwpCateGory-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwpCateGory-dummy.m"; sourceTree = "<group>"; };
 		9209B61768D0D9DCA74BF249430F1A38 /* UIColor+SwpColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+SwpColor.h"; path = "SwpCateGory/Class/UIKit/UIColorCateGory/SwpColor/UIColor+SwpColor.h"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		94E4E9D13533FECAFEFF19012854E3EC /* SwpDrawerAnimators+SwpSlideEject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwpDrawerAnimators+SwpSlideEject.m"; sourceTree = "<group>"; };
 		984F3C040F2CA45FDE518C8D3FDA2155 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = Masonry/MASLayoutConstraint.m; sourceTree = "<group>"; };
-		9EC215D9A956868CAC5A956DEC393BD1 /* SwpDrawerAnimators+SwpSideslip.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwpDrawerAnimators+SwpSideslip.m"; sourceTree = "<group>"; };
-		A4978E852EBE35BA181AF9C922C6BDE5 /* SwpCoolAnimators+SwpDebris.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwpCoolAnimators+SwpDebris.h"; sourceTree = "<group>"; };
+		984FF8890265D348812ECB08709F7774 /* SwpTransitionObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SwpTransitionObject.h; sourceTree = "<group>"; };
+		9A0F9698FFA3C0B17F15F1A780A4CCD6 /* SwpTransitions.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = SwpTransitions.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9ECBEF4659A08F54F0B93F8E42CD78B8 /* SwpCoolAnimators+SwpPageFlip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwpCoolAnimators+SwpPageFlip.h"; sourceTree = "<group>"; };
 		A72A215A22630862CE80EECB48DFE282 /* SwpCateGory.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = SwpCateGory.bundle; path = SwpCateGory/Resources/SwpCateGory.bundle; sourceTree = "<group>"; };
 		A76A6AF52BE5901E900804376591AE39 /* SwpAttributedColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwpAttributedColor.h; path = SwpCateGory/Class/Other/SwpAttributeCateGory/SwpAttributedColor.h; sourceTree = "<group>"; };
 		A8B6313C75437DF25D4EB5D1859C7E47 /* UIButton+SwpSetButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+SwpSetButton.m"; path = "SwpCateGory/Class/UIKit/UIButtonCateGory/SwpSetButton/UIButton+SwpSetButton.m"; sourceTree = "<group>"; };
-		AB51774518473CCAE014ACB7F5AE43F4 /* SwpTransitionsInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SwpTransitionsInfo.m; sourceTree = "<group>"; };
-		ABA48101771DE67676D2D7EDD4BF36C8 /* SwpCoolAnimators+SwpPortal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwpCoolAnimators+SwpPortal.m"; sourceTree = "<group>"; };
 		AC383174682AB98F9AD98083F5345194 /* Pods-SwpTransitionsDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwpTransitionsDemo-acknowledgements.plist"; sourceTree = "<group>"; };
 		AC4F054986F63376D4AD52F3DC68AB1F /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
-		AEA0424ADB606EAE9A12F6EDD2856886 /* SwpDrawerAnimators.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SwpDrawerAnimators.h; sourceTree = "<group>"; };
+		B059A2185267CBAAFAE2D7C544285F8F /* SwpTransitionsHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SwpTransitionsHeader.h; sourceTree = "<group>"; };
 		B0787951936D7208599C3782001C5BD1 /* Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Masonry-dummy.m"; sourceTree = "<group>"; };
+		B1A7763A7B2203D0649CB2652A4A1985 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		B25341BE56DF5C3EB0445B3CA36CB7BF /* SwpAttributedString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwpAttributedString.h; path = SwpCateGory/Class/Other/SwpAttributeCateGory/SwpAttributedString.h; sourceTree = "<group>"; };
 		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		B83453D495AB5A25BF45F4D157D5C9E7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		B9BD6E8B952DE929D6166A4656197C6E /* SwpCoolAnimatorsHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SwpCoolAnimatorsHeader.h; sourceTree = "<group>"; };
 		BA02A0006E72DE0035C01FE08788129A /* NSArray+SwpOrderByCharacter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+SwpOrderByCharacter.h"; path = "SwpCateGory/Class/NSObject/NSArrayCateGory/SwpOrderByCharacter/NSArray+SwpOrderByCharacter.h"; sourceTree = "<group>"; };
 		BB1D6DA3BE298EC71545DC12A79FF371 /* NSString+SwpMD5Encryption.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+SwpMD5Encryption.m"; path = "SwpCateGory/Class/NSObject/NSStringCateGory/SwpMD5/NSString+SwpMD5Encryption.m"; sourceTree = "<group>"; };
 		BCE61F8F50B3C2C040A130D8627633E4 /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
-		BF76C06B396BFCA6D5AB38E48F96C02D /* SwpTransitions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SwpTransitions.h; sourceTree = "<group>"; };
-		C29A009C9516F0EB877617C3A5E344E9 /* SwpCoolAnimators+SwpScanning.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwpCoolAnimators+SwpScanning.m"; sourceTree = "<group>"; };
+		C116CE62D4F987A3BC05DACC77632365 /* UIViewController+SwpTransitions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SwpTransitions.m"; sourceTree = "<group>"; };
 		C35845BBFFF4D7935B0351352844D3CB /* UINavigationBar+SwpNavigationBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationBar+SwpNavigationBar.m"; path = "SwpCateGory/Class/UIKit/UINavigationBarCateGory/SwpNavigationBar/UINavigationBar+SwpNavigationBar.m"; sourceTree = "<group>"; };
 		C3C52A12554941E6091AB573B28621E6 /* Pods-SwpTransitionsDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwpTransitionsDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C3CAED0121A5C53CE92F0965F4C8E600 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		C3E1585887E95FBB24DA3D06C0B99638 /* SwpCoolAnimators+SwpLines.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwpCoolAnimators+SwpLines.m"; sourceTree = "<group>"; };
 		C7EB7ADCCBFB01383EFED290155229B0 /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
+		CA22157DECD4F9BE7DFAC252931F77A8 /* SwpCoolAnimators+SwpCenterPageFlip.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwpCoolAnimators+SwpCenterPageFlip.m"; sourceTree = "<group>"; };
 		CA2643710072EFD1968FE95FF659B312 /* Pods-SwpTransitionsDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwpTransitionsDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		CBF8DD1609481B50EFED5DE550C039D2 /* SwpTransitions.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwpTransitions.xcconfig; sourceTree = "<group>"; };
 		CC67DC53BB85E7F0AE5E56E941C66A0D /* UIImage+SwpImageScreenshots.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+SwpImageScreenshots.m"; path = "SwpCateGory/Class/UIKit/UIImageCateGory/SwpImageScreenshots/UIImage+SwpImageScreenshots.m"; sourceTree = "<group>"; };
-		CCE84FA725C213F243459C0434390E17 /* SwpCoolAnimators+SwpDebris.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwpCoolAnimators+SwpDebris.m"; sourceTree = "<group>"; };
 		CE4874413177B032F9E9F2BFAC754C22 /* UIBarButtonItem+SwpSetNavigationBarItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIBarButtonItem+SwpSetNavigationBarItem.h"; path = "SwpCateGory/Class/UIKit/UIBarButtonItemCateGory/SwpSetNavigationBarItem/UIBarButtonItem+SwpSetNavigationBarItem.h"; sourceTree = "<group>"; };
+		D2B72F87EEB014247CE9F59353DD0DE4 /* SwpCoolAnimators+SwpScanning.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwpCoolAnimators+SwpScanning.h"; sourceTree = "<group>"; };
 		D3CCE755DF8544BCCB91D366982431C8 /* UITextField+SwpSetTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextField+SwpSetTextField.h"; path = "SwpCateGory/Class/UIKit/UITextFieldCateGory/SwpSetTextField/UITextField+SwpSetTextField.h"; sourceTree = "<group>"; };
-		D6703A8C7DC670DEE11D7B4B51138B17 /* SwpCoolAnimators+SwpScanning.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwpCoolAnimators+SwpScanning.h"; sourceTree = "<group>"; };
 		D6851CE2D9F0C16B03DEEF21775A3164 /* Pods-SwpTransitionsDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwpTransitionsDemo-resources.sh"; sourceTree = "<group>"; };
 		D6D8C73875E1B036000C945B84BE5A29 /* UIView+SwpExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+SwpExtension.m"; path = "SwpCateGory/Class/UIKit/UIViewCateGory/SwpExtension/UIView+SwpExtension.m"; sourceTree = "<group>"; };
+		D86DC53C869951D04CCBA525FA193A2E /* SwpCoolAnimators+SwpDebris.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwpCoolAnimators+SwpDebris.m"; sourceTree = "<group>"; };
 		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		DA22AF247B28F66BCE70B4309DE7D24C /* NSDictionary+SwpGenerateProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+SwpGenerateProperty.h"; path = "SwpCateGory/Class/NSObject/NSDictionaryCateGory/SwpGenerateProperty/NSDictionary+SwpGenerateProperty.h"; sourceTree = "<group>"; };
 		DA3BCD55C6E41C50A1DDBC6F0C53D8E5 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
-		DCD575156D3FA1749145DEFD34C521D0 /* SwpTransitions-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwpTransitions-dummy.m"; sourceTree = "<group>"; };
 		DECA1139487C7631547A88D05A9E1D30 /* SwpAttributedDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwpAttributedDelegate.h; path = SwpCateGory/Class/Other/SwpAttributeCateGory/SwpAttributedDelegate.h; sourceTree = "<group>"; };
-		E053D9E566AF05F3B2F65668EB4049A7 /* SwpTransitions.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = SwpTransitions.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E0E6EB397739A3660C1536D25DD17A5C /* UIFont+SwpFont.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIFont+SwpFont.h"; path = "SwpCateGory/Class/UIKit/UIFontCateGory/SwpFont/UIFont+SwpFont.h"; sourceTree = "<group>"; };
-		E5BC8BB66D6F4152B9928879EFB95FB8 /* SwpCoolAnimators+SwpOrigami.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwpCoolAnimators+SwpOrigami.h"; sourceTree = "<group>"; };
+		E73D13B55E49C301FB45E58DDC56CB19 /* SwpCoolAnimators+SwpPortal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwpCoolAnimators+SwpPortal.h"; sourceTree = "<group>"; };
+		E8AE53E55F7B52267FAFD7ABF023B534 /* SwpCoolAnimators+SwpLines.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwpCoolAnimators+SwpLines.m"; sourceTree = "<group>"; };
 		E8BBED883D65FC46C734DDDB2B5CB762 /* Pods-SwpTransitionsDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwpTransitionsDemo.release.xcconfig"; sourceTree = "<group>"; };
 		E9AFC89BE1B62042B982592A49051EA2 /* libPods-SwpTransitionsDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-SwpTransitionsDemo.a"; path = "libPods-SwpTransitionsDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9B04A7492297C0134A0B93305C54A42 /* NSString+SwpDate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+SwpDate.m"; path = "SwpCateGory/Class/NSObject/NSStringCateGory/SwpDateString/NSString+SwpDate.m"; sourceTree = "<group>"; };
 		EB680D70ECEAF18DADEEA0E029FBF027 /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
 		EC255179DC57A359D4B718D16E649CFE /* SwpCateGory.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwpCateGory.xcconfig; sourceTree = "<group>"; };
+		EDCB4D43366853851413930D27253604 /* SwpDrawerAnimatorsHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SwpDrawerAnimatorsHeader.h; sourceTree = "<group>"; };
 		EFA6AD0A6A7836A4BBA683795D6357F8 /* UIButton+SwpButtonLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+SwpButtonLayout.m"; path = "SwpCateGory/Class/UIKit/UIButtonCateGory/SwpButtonLayout/UIButton+SwpButtonLayout.m"; sourceTree = "<group>"; };
+		F02ACE3F0B2BC1ED361D10D302C9896F /* SwpCoolAnimators+SwpDebris.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwpCoolAnimators+SwpDebris.h"; sourceTree = "<group>"; };
+		F402D1E0CC3E3B49153D0448C487232B /* SwpCoolAnimators+SwpPortal.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwpCoolAnimators+SwpPortal.m"; sourceTree = "<group>"; };
 		F4748B97FD6ADDA30B049911DF3ED306 /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
 		F58B9B218CE3BC80342BE39835E912D1 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
-		F5C96317248BF2F7F6B6F2E59FDCDC9A /* SwpCoolAnimatorsCategoryHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SwpCoolAnimatorsCategoryHeader.h; sourceTree = "<group>"; };
-		F5D12391FE39457E0FEDF4BBF6EF0EC4 /* SwpDrawerAnimators+SwpSideslip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwpDrawerAnimators+SwpSideslip.h"; sourceTree = "<group>"; };
 		F63EE9637DB62E1FD3FC095B1D2628A0 /* UIButton+SwpSetButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+SwpSetButton.h"; path = "SwpCateGory/Class/UIKit/UIButtonCateGory/SwpSetButton/UIButton+SwpSetButton.h"; sourceTree = "<group>"; };
 		F65885392FFFD8EF0BE497B15E194C8F /* SwpAttributedHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwpAttributedHeader.h; path = SwpCateGory/Class/Other/SwpAttributeCateGory/SwpAttributedHeader.h; sourceTree = "<group>"; };
+		F6E595ADE4A50248F07F2E93A66D31D4 /* UINavigationController+SwpTransitions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+SwpTransitions.h"; sourceTree = "<group>"; };
 		F7ACEECA7843DF799CBD743CB57BCF15 /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
 		F8FA3BF93263004F1A54A24D2557451E /* SwpAttributedColor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SwpAttributedColor.m; path = SwpCateGory/Class/Other/SwpAttributeCateGory/SwpAttributedColor.m; sourceTree = "<group>"; };
+		F9301CB310F3389B73999CE4B90CB2C1 /* SwpCoolAnimators.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SwpCoolAnimators.h; sourceTree = "<group>"; };
 		F9F25BC9A9655B1FA4471FC5480B75CA /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
 		FBC006DDBBEDE3A52B663F6781C4A12F /* SwpAttributedFont.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwpAttributedFont.h; path = SwpCateGory/Class/Other/SwpAttributeCateGory/SwpAttributedFont.h; sourceTree = "<group>"; };
 		FDC8E894038FAC97F7BBB1336A58CCA7 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
-		FDC9A159685E46ED27D756B2A71E37C1 /* SwpCoolAnimators+SwpLines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwpCoolAnimators+SwpLines.h"; sourceTree = "<group>"; };
 		FF626601B7A4084379B53AD0515EFDF5 /* SwpCateGory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SwpCateGory.h; path = SwpCateGory/Class/SwpCateGory/SwpCateGory.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -347,14 +349,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		11AF75EF1501F0976B2838ECFB673E68 /* Pod */ = {
+		2058EA2518197D2AC7F5A0DEBDE2BDC6 /* SwpDrawerCategory */ = {
 			isa = PBXGroup;
 			children = (
-				C3CAED0121A5C53CE92F0965F4C8E600 /* LICENSE */,
-				B83453D495AB5A25BF45F4D157D5C9E7 /* README.md */,
-				E053D9E566AF05F3B2F65668EB4049A7 /* SwpTransitions.podspec */,
+				6D7B5ACAED50637697695FFCE66A6052 /* SwpDrawerAnimators+SwpSideslip.h */,
+				29ECFC7547FEC3D061D580CA5111267E /* SwpDrawerAnimators+SwpSideslip.m */,
+				07FCADA876E8D273F8B416AFD6414C6E /* SwpDrawerAnimators+SwpSlideEject.h */,
+				382B1353DE53EC7374A265EE884ADD19 /* SwpDrawerAnimators+SwpSlideEject.m */,
 			);
-			name = Pod;
+			name = SwpDrawerCategory;
+			path = SwpDrawerCategory;
 			sourceTree = "<group>";
 		};
 		2A608F1E820245DA7D0055EE39A9A74D /* Targets Support Files */ = {
@@ -363,6 +367,16 @@
 				D65ACD21521045A667709805E49E2130 /* Pods-SwpTransitionsDemo */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		2B2A51DC552CA05EB0D60E80B789995C /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				830D67A66126ECDFC685E00B1B6FEF8F /* LICENSE */,
+				B1A7763A7B2203D0649CB2652A4A1985 /* README.md */,
+				9A0F9698FFA3C0B17F15F1A780A4CCD6 /* SwpTransitions.podspec */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		2C44D0CC73D66356F128E0E1F690F500 /* Resources */ = {
@@ -382,16 +396,6 @@
 			name = SwpDateString;
 			sourceTree = "<group>";
 		};
-		3A47E665B088291A5D1C200F57C02311 /* UINavigationController */ = {
-			isa = PBXGroup;
-			children = (
-				36B6FC515EF0EA01DAC329F52E98F525 /* UINavigationController+SwpTransitions.h */,
-				74D1397AA590EEA8EE99B7D0E38B37E5 /* UINavigationController+SwpTransitions.m */,
-			);
-			name = UINavigationController;
-			path = UINavigationController;
-			sourceTree = "<group>";
-		};
 		3BF0205956BFD6786B04A9CD45AA92B9 /* SwpFont */ = {
 			isa = PBXGroup;
 			children = (
@@ -401,15 +405,26 @@
 			name = SwpFont;
 			sourceTree = "<group>";
 		};
-		3D6D90FBDB6E81E4331A4251886F8E24 /* Support Files */ = {
+		3D8E818EC4BE19689D295AE14EA56FEA /* UINavigationController */ = {
 			isa = PBXGroup;
 			children = (
-				3C59BC03001C143A93B7E2EBD78EB612 /* SwpTransitions.xcconfig */,
-				DCD575156D3FA1749145DEFD34C521D0 /* SwpTransitions-dummy.m */,
-				6F570F490180D533638608AD61240488 /* SwpTransitions-prefix.pch */,
+				F6E595ADE4A50248F07F2E93A66D31D4 /* UINavigationController+SwpTransitions.h */,
+				75315E249B4B49360E974DE7AA80E54F /* UINavigationController+SwpTransitions.m */,
 			);
-			name = "Support Files";
-			path = "SwpTransitionsDemo/Pods/Target Support Files/SwpTransitions";
+			name = UINavigationController;
+			path = UINavigationController;
+			sourceTree = "<group>";
+		};
+		420919618386AFBA40CD976CED68BEAE /* SwpTransition */ = {
+			isa = PBXGroup;
+			children = (
+				984FF8890265D348812ECB08709F7774 /* SwpTransitionObject.h */,
+				58022A6CE0A67F5699D75531A3D3AE58 /* SwpTransitionObject.m */,
+				2D8FBA4490A5126136847DD2D668A0A9 /* SwpTransitions.h */,
+				608F6B9039F1C22E9BEB7A476AC36AC4 /* SwpTransitions.m */,
+			);
+			name = SwpTransition;
+			path = SwpTransition;
 			sourceTree = "<group>";
 		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
@@ -429,54 +444,40 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		43F65EA72029066AE7160D266739DF0D /* SwpTransitions */ = {
+		470BBC8EEBA516545F11CAC7F521EDAA /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				44D4F97EFC26371D8DA9019F13BCB7E8 /* Category */,
-				11AF75EF1501F0976B2838ECFB673E68 /* Pod */,
-				7E3932A5A92108FA728A3DAF2E6F3DDC /* Resources */,
-				3D6D90FBDB6E81E4331A4251886F8E24 /* Support Files */,
-				A652642F049CCC7D854F5B7412574426 /* SwpCoolAnimators */,
-				D4BC99D8E90A4FA3F6AD1AFF5A360685 /* SwpDrawerAnimators */,
-				FAD6E8A755B1B8A83B6FC1F9BCA0D11A /* SwpTransition */,
-				F30BAB4F91128485936FACBA63CEC49A /* SwpTransitionHeader */,
-				7DBDD4061A83922E663848F71EB54A94 /* SwpTransitionsInfo */,
+				56A7608CDA16407FFAA08D24E6F6D799 /* SwpCoolAnimators */,
+				A2D52B527B9767E11322A939EBF55ADE /* SwpDrawerAnimators */,
+				420919618386AFBA40CD976CED68BEAE /* SwpTransition */,
+				3D8E818EC4BE19689D295AE14EA56FEA /* UINavigationController */,
+				979FBA7CF752AF89F9FC630BB9F45991 /* UIViewController */,
+			);
+			name = Main;
+			path = SwpTransitions/Class/Main;
+			sourceTree = "<group>";
+		};
+		476648D8A0463A1C4023E9BCD7BA2C63 /* SwpTransitions */ = {
+			isa = PBXGroup;
+			children = (
+				470BBC8EEBA516545F11CAC7F521EDAA /* Main */,
+				2B2A51DC552CA05EB0D60E80B789995C /* Pod */,
+				F00493401810B43FA169A9EBD938E54D /* Resources */,
+				8FFCB0BA4AF001E0DDAB5E865FAD32B1 /* Support Files */,
+				D4FDCDFB1541817822AF28F3CFBE0E74 /* Utils */,
 			);
 			name = SwpTransitions;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		44D4F97EFC26371D8DA9019F13BCB7E8 /* Category */ = {
+		56A7608CDA16407FFAA08D24E6F6D799 /* SwpCoolAnimators */ = {
 			isa = PBXGroup;
 			children = (
-				3A47E665B088291A5D1C200F57C02311 /* UINavigationController */,
-				49723886845EB0615E35571AA0B66112 /* UIView */,
-				A6A71C4B4DFC7EF6B589B19E0CB9F3F9 /* UIViewController */,
+				F0F7AE276A65A7D0C6A2C83CAEB24938 /* SwpCoolAnimators */,
+				B82764D4D29253F7E4633E6C60E055F8 /* SwpCoolCategory */,
 			);
-			name = Category;
-			path = SwpTransitions/Class/Category;
-			sourceTree = "<group>";
-		};
-		49723886845EB0615E35571AA0B66112 /* UIView */ = {
-			isa = PBXGroup;
-			children = (
-				4616ECA13CAD9F684B6715CABCBBD2E8 /* UIView+SwpAnimatorsSnapshot.h */,
-				34D106ED3629E37C68782563F36F0CDF /* UIView+SwpAnimatorsSnapshot.m */,
-			);
-			name = UIView;
-			path = UIView;
-			sourceTree = "<group>";
-		};
-		5911B31D7602347DB9988604A90124EA /* SwpDrawerCategory */ = {
-			isa = PBXGroup;
-			children = (
-				F5D12391FE39457E0FEDF4BBF6EF0EC4 /* SwpDrawerAnimators+SwpSideslip.h */,
-				9EC215D9A956868CAC5A956DEC393BD1 /* SwpDrawerAnimators+SwpSideslip.m */,
-				444D79E8E6E2C829DED728890532B072 /* SwpDrawerAnimators+SwpSlideEject.h */,
-				94E4E9D13533FECAFEFF19012854E3EC /* SwpDrawerAnimators+SwpSlideEject.m */,
-			);
-			name = SwpDrawerCategory;
-			path = SwpDrawerCategory;
+			name = SwpCoolAnimators;
+			path = SwpCoolAnimators;
 			sourceTree = "<group>";
 		};
 		5B45AB51E824C4E1A2A9A46EA34C5D20 /* Support Files */ = {
@@ -508,12 +509,14 @@
 			name = SwpSetNavigationBarItem;
 			sourceTree = "<group>";
 		};
-		5EBC8F15C86733AE06A3C5834189F9AE /* Development Pods */ = {
+		616A04A8BC540573008E34D86F044F01 /* SwpTransitionsInfo */ = {
 			isa = PBXGroup;
 			children = (
-				43F65EA72029066AE7160D266739DF0D /* SwpTransitions */,
+				1F492E42F97E612B099A256BA9D51973 /* SwpTransitionsInfo.h */,
+				353BA95B8D10D94ACC7804D58E8B215B /* SwpTransitionsInfo.m */,
 			);
-			name = "Development Pods";
+			name = SwpTransitionsInfo;
+			path = SwpTransitionsInfo;
 			sourceTree = "<group>";
 		};
 		63E509E3571731AF785DCB0ED74D31EF /* SwpExtension */ = {
@@ -525,11 +528,21 @@
 			name = SwpExtension;
 			sourceTree = "<group>";
 		};
+		7AA331785ACE720CAFE7E8DD3D7A7D18 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				4ED3EFD75A8AB824D3D7C0EB5709ABEB /* UIView+SwpAnimatorsSnapshot.h */,
+				4EE195E9FCB4C76FA0E8FCC9FCDDBC06 /* UIView+SwpAnimatorsSnapshot.m */,
+			);
+			name = Category;
+			path = Category;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				5EBC8F15C86733AE06A3C5834189F9AE /* Development Pods */,
+				CC76F340FA0B685FAD504E0CD80C4378 /* Development Pods */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
 				B068EFC1862591BC0689D84B815A1A59 /* Pods */,
 				08CA5CB57BAB5A4A9FFAC2C08F9E89A4 /* Products */,
@@ -537,22 +550,15 @@
 			);
 			sourceTree = "<group>";
 		};
-		7DBDD4061A83922E663848F71EB54A94 /* SwpTransitionsInfo */ = {
+		7DE4BC0ABBB05022B0E8C20263059C93 /* SwpDrawerAnimators */ = {
 			isa = PBXGroup;
 			children = (
-				5AC9E3D37304CE88179154AD337B63EC /* SwpTransitionsInfo.h */,
-				AB51774518473CCAE014ACB7F5AE43F4 /* SwpTransitionsInfo.m */,
+				0D532FA1A37615CC65E64F8C5ACD6A34 /* SwpDrawerAnimators.h */,
+				729627A46EDEB028A47AB93C8204D63B /* SwpDrawerAnimators.m */,
+				EDCB4D43366853851413930D27253604 /* SwpDrawerAnimatorsHeader.h */,
 			);
-			name = SwpTransitionsInfo;
-			path = SwpTransitions/Class/SwpTransitionsInfo;
-			sourceTree = "<group>";
-		};
-		7E3932A5A92108FA728A3DAF2E6F3DDC /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				20F57D6E1348EA9F7D57B0F4172218AA /* SwpTransitions.bundle */,
-			);
-			name = Resources;
+			name = SwpDrawerAnimators;
+			path = SwpDrawerAnimators;
 			sourceTree = "<group>";
 		};
 		7E769972E25B52A4D0E17839BB7601AF /* SwpBase64 */ = {
@@ -604,39 +610,6 @@
 			name = SwpCateGory;
 			sourceTree = "<group>";
 		};
-		85197DB3E7787D40833F41CD901B110A /* SwpCoolAnimators */ = {
-			isa = PBXGroup;
-			children = (
-				2706995A0BC078B5817C5889F4AFC820 /* SwpCoolAnimators.h */,
-				3752DF41040F5D793628AA5CF3E1A2F6 /* SwpCoolAnimators.m */,
-				F5C96317248BF2F7F6B6F2E59FDCDC9A /* SwpCoolAnimatorsCategoryHeader.h */,
-			);
-			name = SwpCoolAnimators;
-			path = SwpCoolAnimators;
-			sourceTree = "<group>";
-		};
-		8584A8961B747BCC6FB68C9D8A0A5C0D /* SwpCoolCategory */ = {
-			isa = PBXGroup;
-			children = (
-				168974E879C0335742CAE06E0113A602 /* SwpCoolAnimators+SwpCenterPageFlip.h */,
-				48E7A367302B1DFD0A0F024744517BB7 /* SwpCoolAnimators+SwpCenterPageFlip.m */,
-				A4978E852EBE35BA181AF9C922C6BDE5 /* SwpCoolAnimators+SwpDebris.h */,
-				CCE84FA725C213F243459C0434390E17 /* SwpCoolAnimators+SwpDebris.m */,
-				FDC9A159685E46ED27D756B2A71E37C1 /* SwpCoolAnimators+SwpLines.h */,
-				C3E1585887E95FBB24DA3D06C0B99638 /* SwpCoolAnimators+SwpLines.m */,
-				E5BC8BB66D6F4152B9928879EFB95FB8 /* SwpCoolAnimators+SwpOrigami.h */,
-				1A70B6C3122A386FA49439B9348A230B /* SwpCoolAnimators+SwpOrigami.m */,
-				8D0221DE452A5E00D5811E6EBBEB5EC9 /* SwpCoolAnimators+SwpPageFlip.h */,
-				40A34A3382C5A8B9D3693C9B30071FE0 /* SwpCoolAnimators+SwpPageFlip.m */,
-				1946559AB7801FD716E799B49D071E38 /* SwpCoolAnimators+SwpPortal.h */,
-				ABA48101771DE67676D2D7EDD4BF36C8 /* SwpCoolAnimators+SwpPortal.m */,
-				D6703A8C7DC670DEE11D7B4B51138B17 /* SwpCoolAnimators+SwpScanning.h */,
-				C29A009C9516F0EB877617C3A5E344E9 /* SwpCoolAnimators+SwpScanning.m */,
-			);
-			name = SwpCoolCategory;
-			path = SwpCoolCategory;
-			sourceTree = "<group>";
-		};
 		8B1D4CCCDEB279A04C86F9BE21672E88 /* SwpAttributed */ = {
 			isa = PBXGroup;
 			children = (
@@ -672,6 +645,17 @@
 			name = SwpSetTextField;
 			sourceTree = "<group>";
 		};
+		8FFCB0BA4AF001E0DDAB5E865FAD32B1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				CBF8DD1609481B50EFED5DE550C039D2 /* SwpTransitions.xcconfig */,
+				2890216FB815004F8C2D88C44D152B89 /* SwpTransitions-dummy.m */,
+				09A7CB9BCD49CEC6FF87F6AA998B5F85 /* SwpTransitions-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "SwpTransitionsDemo/Pods/Target Support Files/SwpTransitions";
+			sourceTree = "<group>";
+		};
 		9409DEB03A9212C7BCA83B4CE99A76B7 /* SwpSetButton */ = {
 			isa = PBXGroup;
 			children = (
@@ -679,6 +663,26 @@
 				A8B6313C75437DF25D4EB5D1859C7E47 /* UIButton+SwpSetButton.m */,
 			);
 			name = SwpSetButton;
+			sourceTree = "<group>";
+		};
+		979FBA7CF752AF89F9FC630BB9F45991 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				65C420AEFDC2E40E48EC5D578D83F932 /* UIViewController+SwpTransitions.h */,
+				C116CE62D4F987A3BC05DACC77632365 /* UIViewController+SwpTransitions.m */,
+			);
+			name = UIViewController;
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		A2D52B527B9767E11322A939EBF55ADE /* SwpDrawerAnimators */ = {
+			isa = PBXGroup;
+			children = (
+				7DE4BC0ABBB05022B0E8C20263059C93 /* SwpDrawerAnimators */,
+				2058EA2518197D2AC7F5A0DEBDE2BDC6 /* SwpDrawerCategory */,
+			);
+			name = SwpDrawerAnimators;
+			path = SwpDrawerAnimators;
 			sourceTree = "<group>";
 		};
 		A36FA23516D7592AA759D566A9E6D327 /* SwpQrCodeImage */ = {
@@ -690,24 +694,13 @@
 			name = SwpQrCodeImage;
 			sourceTree = "<group>";
 		};
-		A652642F049CCC7D854F5B7412574426 /* SwpCoolAnimators */ = {
+		A57803AA1F8B04FB53EF75CF1732117F /* SwpTransitionsHeader */ = {
 			isa = PBXGroup;
 			children = (
-				85197DB3E7787D40833F41CD901B110A /* SwpCoolAnimators */,
-				8584A8961B747BCC6FB68C9D8A0A5C0D /* SwpCoolCategory */,
+				B059A2185267CBAAFAE2D7C544285F8F /* SwpTransitionsHeader.h */,
 			);
-			name = SwpCoolAnimators;
-			path = SwpTransitions/Class/SwpCoolAnimators;
-			sourceTree = "<group>";
-		};
-		A6A71C4B4DFC7EF6B589B19E0CB9F3F9 /* UIViewController */ = {
-			isa = PBXGroup;
-			children = (
-				261C239FFD0E6701BAE4057322610184 /* UIViewController+SwpTransitions.h */,
-				10BF2A8F8F922FC723DD929EF41F299C /* UIViewController+SwpTransitions.m */,
-			);
-			name = UIViewController;
-			path = UIViewController;
+			name = SwpTransitionsHeader;
+			path = SwpTransitionsHeader;
 			sourceTree = "<group>";
 		};
 		B068EFC1862591BC0689D84B815A1A59 /* Pods */ = {
@@ -728,6 +721,28 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/SwpCateGory";
+			sourceTree = "<group>";
+		};
+		B82764D4D29253F7E4633E6C60E055F8 /* SwpCoolCategory */ = {
+			isa = PBXGroup;
+			children = (
+				1089AE15642DD8815B385612FE0058AB /* SwpCoolAnimators+SwpCenterPageFlip.h */,
+				CA22157DECD4F9BE7DFAC252931F77A8 /* SwpCoolAnimators+SwpCenterPageFlip.m */,
+				F02ACE3F0B2BC1ED361D10D302C9896F /* SwpCoolAnimators+SwpDebris.h */,
+				D86DC53C869951D04CCBA525FA193A2E /* SwpCoolAnimators+SwpDebris.m */,
+				28F98B15BED01FC564C573B3DE92930A /* SwpCoolAnimators+SwpLines.h */,
+				E8AE53E55F7B52267FAFD7ABF023B534 /* SwpCoolAnimators+SwpLines.m */,
+				461602B11E7A7C9EE5838198949CE632 /* SwpCoolAnimators+SwpOrigami.h */,
+				3D5B74B355CA7977A4049698C8B99B6D /* SwpCoolAnimators+SwpOrigami.m */,
+				9ECBEF4659A08F54F0B93F8E42CD78B8 /* SwpCoolAnimators+SwpPageFlip.h */,
+				464EE657C43B474188E33E14785DD257 /* SwpCoolAnimators+SwpPageFlip.m */,
+				E73D13B55E49C301FB45E58DDC56CB19 /* SwpCoolAnimators+SwpPortal.h */,
+				F402D1E0CC3E3B49153D0448C487232B /* SwpCoolAnimators+SwpPortal.m */,
+				D2B72F87EEB014247CE9F59353DD0DE4 /* SwpCoolAnimators+SwpScanning.h */,
+				1721C989E59F4E097073C7CEEDA5CB49 /* SwpCoolAnimators+SwpScanning.m */,
+			);
+			name = SwpCoolCategory;
+			path = SwpCoolCategory;
 			sourceTree = "<group>";
 		};
 		BF91AC1E613AEB225705E9E36DF7E789 /* SwpImageScreenshots */ = {
@@ -784,24 +799,23 @@
 			name = SwpMD5;
 			sourceTree = "<group>";
 		};
-		D4BC99D8E90A4FA3F6AD1AFF5A360685 /* SwpDrawerAnimators */ = {
+		CC76F340FA0B685FAD504E0CD80C4378 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D623EEEB4BB2C9E2D08186BCBB97225C /* SwpDrawerAnimators */,
-				5911B31D7602347DB9988604A90124EA /* SwpDrawerCategory */,
+				476648D8A0463A1C4023E9BCD7BA2C63 /* SwpTransitions */,
 			);
-			name = SwpDrawerAnimators;
-			path = SwpTransitions/Class/SwpDrawerAnimators;
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		D623EEEB4BB2C9E2D08186BCBB97225C /* SwpDrawerAnimators */ = {
+		D4FDCDFB1541817822AF28F3CFBE0E74 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				AEA0424ADB606EAE9A12F6EDD2856886 /* SwpDrawerAnimators.h */,
-				48E0511E4A3083C7AAA1FCD1EF2C8748 /* SwpDrawerAnimators.m */,
+				7AA331785ACE720CAFE7E8DD3D7A7D18 /* Category */,
+				A57803AA1F8B04FB53EF75CF1732117F /* SwpTransitionsHeader */,
+				616A04A8BC540573008E34D86F044F01 /* SwpTransitionsInfo */,
 			);
-			name = SwpDrawerAnimators;
-			path = SwpDrawerAnimators;
+			name = Utils;
+			path = SwpTransitions/Class/Utils;
 			sourceTree = "<group>";
 		};
 		D65ACD21521045A667709805E49E2130 /* Pods-SwpTransitionsDemo */ = {
@@ -871,6 +885,25 @@
 			name = SwpButtonLayout;
 			sourceTree = "<group>";
 		};
+		F00493401810B43FA169A9EBD938E54D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3F9BF87A3D1F65001C197DB031DAF095 /* SwpTransitions.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		F0F7AE276A65A7D0C6A2C83CAEB24938 /* SwpCoolAnimators */ = {
+			isa = PBXGroup;
+			children = (
+				F9301CB310F3389B73999CE4B90CB2C1 /* SwpCoolAnimators.h */,
+				698BEA4F4086FB6F81CFF6BD7F2D3EBE /* SwpCoolAnimators.m */,
+				B9BD6E8B952DE929D6166A4656197C6E /* SwpCoolAnimatorsHeader.h */,
+			);
+			name = SwpCoolAnimators;
+			path = SwpCoolAnimators;
+			sourceTree = "<group>";
+		};
 		F1A72A0DECD4A0E2B5E9694BA7677A03 /* SwpCreateImage */ = {
 			isa = PBXGroup;
 			children = (
@@ -880,56 +913,9 @@
 			name = SwpCreateImage;
 			sourceTree = "<group>";
 		};
-		F30BAB4F91128485936FACBA63CEC49A /* SwpTransitionHeader */ = {
-			isa = PBXGroup;
-			children = (
-				16686199A13B4A2389F0E31011319ACD /* SwpTransitionHeader.h */,
-			);
-			name = SwpTransitionHeader;
-			path = SwpTransitions/Class/SwpTransitionHeader;
-			sourceTree = "<group>";
-		};
-		FAD6E8A755B1B8A83B6FC1F9BCA0D11A /* SwpTransition */ = {
-			isa = PBXGroup;
-			children = (
-				5C1F6BAA6319E8D886585564D1A0DFE3 /* SwpTransitionObject.h */,
-				655135243B35A65B051411959DA0CEAC /* SwpTransitionObject.m */,
-				BF76C06B396BFCA6D5AB38E48F96C02D /* SwpTransitions.h */,
-				233EDEFF4F189B232AC3B7E736AC8D07 /* SwpTransitions.m */,
-			);
-			name = SwpTransition;
-			path = SwpTransitions/Class/SwpTransition;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		54907B55F4CA7CA10D3777C4C6BE2477 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4A4447A8D52D2C8A5495362D2D33246D /* SwpCoolAnimators+SwpCenterPageFlip.h in Headers */,
-				0A613D3775DB80C32465A491359C1056 /* SwpCoolAnimators+SwpDebris.h in Headers */,
-				44937BDC6451D6E323B48B301A3CBF61 /* SwpCoolAnimators+SwpLines.h in Headers */,
-				42B102CED96189470B4E931D12F3BA0F /* SwpCoolAnimators+SwpOrigami.h in Headers */,
-				D8D7952A58953A6A13055985C8FF6EF9 /* SwpCoolAnimators+SwpPageFlip.h in Headers */,
-				BA405A07FE8D2B4671A417A64630F533 /* SwpCoolAnimators+SwpPortal.h in Headers */,
-				748F39544ABA95AC6FFC739E5AC4F7D1 /* SwpCoolAnimators+SwpScanning.h in Headers */,
-				2E5E443ABA5C9FD191CA2EFCFB1C6237 /* SwpCoolAnimators.h in Headers */,
-				B5F1C5715068D547F0CEB411EDFC49D9 /* SwpCoolAnimatorsCategoryHeader.h in Headers */,
-				8003F981655D8FD48D43C0D45AD8FA1C /* SwpDrawerAnimators+SwpSideslip.h in Headers */,
-				8DA2B85724EB4B282473D9179F30C8C6 /* SwpDrawerAnimators+SwpSlideEject.h in Headers */,
-				34506754F055A497E9336E30A1E02C1A /* SwpDrawerAnimators.h in Headers */,
-				BDBC4ECA58D41561FBFB296C94B64920 /* SwpTransitionHeader.h in Headers */,
-				F3E8EA686029EDF9CA731632FD204C40 /* SwpTransitionObject.h in Headers */,
-				B84E2CBED0593274BB3EAC2B19FAB2FA /* SwpTransitions.h in Headers */,
-				F181F73BB4D8D9CB8D1C723E6F228945 /* SwpTransitionsInfo.h in Headers */,
-				A3E6A7EED8C70B2D9C9CFD676B61D87D /* UINavigationController+SwpTransitions.h in Headers */,
-				C6841AAB2B70BD776FE6FC381A302916 /* UIView+SwpAnimatorsSnapshot.h in Headers */,
-				28D9F1E23C44B9D8A525B2DB840BFE68 /* UIViewController+SwpTransitions.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		7F0885716ECB117959F0C86AADD106A7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -985,6 +971,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F00F40ECD0D47DC13456E1254173F5C8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				267AC834CD242F565E1F9450C819278B /* SwpCoolAnimators+SwpCenterPageFlip.h in Headers */,
+				4C5D42EF0CA34B4753BFE27D75036522 /* SwpCoolAnimators+SwpDebris.h in Headers */,
+				5B2463A6FE1C1969E80ACB5A9CA2739E /* SwpCoolAnimators+SwpLines.h in Headers */,
+				323D42BF40E72B57AEC1123DE475E679 /* SwpCoolAnimators+SwpOrigami.h in Headers */,
+				50D00495FDA4114CF0DEC733062CC5D4 /* SwpCoolAnimators+SwpPageFlip.h in Headers */,
+				6CECA5E91EE014717DBEFA3B4C746BE4 /* SwpCoolAnimators+SwpPortal.h in Headers */,
+				F1D2C058C656DBCFCF34D95DA6C9A9D1 /* SwpCoolAnimators+SwpScanning.h in Headers */,
+				4756248C49B91B615163486094F09BF4 /* SwpCoolAnimators.h in Headers */,
+				28D3E2A763E67C34964DB16765A402B6 /* SwpCoolAnimatorsHeader.h in Headers */,
+				535979F5F85C0BE6ABC250EE7B0A99F5 /* SwpDrawerAnimators+SwpSideslip.h in Headers */,
+				B155759FB036EFA4A85B0A7F71AECDD1 /* SwpDrawerAnimators+SwpSlideEject.h in Headers */,
+				6C7ECF5350E5ADEB0E8EAB7C6219592E /* SwpDrawerAnimators.h in Headers */,
+				81496B59D875107E7BDABABD464CF2BF /* SwpDrawerAnimatorsHeader.h in Headers */,
+				D44D61009ABEB47C97ADDE07ED0BA130 /* SwpTransitionObject.h in Headers */,
+				9FCFA617C01679F5BFF02FD334A16411 /* SwpTransitions.h in Headers */,
+				48B20E1E69D2C145472AFD9EE751EC74 /* SwpTransitionsHeader.h in Headers */,
+				E620002546D5385B51C73821D9D00EE2 /* SwpTransitionsInfo.h in Headers */,
+				B6404FD0A13554CD3432606594A00717 /* UINavigationController+SwpTransitions.h in Headers */,
+				54AD624729C32CB2BE282985088B0531 /* UIView+SwpAnimatorsSnapshot.h in Headers */,
+				6632560C0621F754032120D279BC968E /* UIViewController+SwpTransitions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -994,7 +1007,7 @@
 			buildPhases = (
 				AD171D77D582BBB3C027F8558C7C138C /* Sources */,
 				7C549231BDB3A5D983EF9A22DD54968D /* Frameworks */,
-				54907B55F4CA7CA10D3777C4C6BE2477 /* Headers */,
+				F00F40ECD0D47DC13456E1254173F5C8 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -1218,7 +1231,7 @@
 		};
 		11CF945109D5780232F37C9453CE8F0F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3C59BC03001C143A93B7E2EBD78EB612 /* SwpTransitions.xcconfig */;
+			baseConfigurationReference = CBF8DD1609481B50EFED5DE550C039D2 /* SwpTransitions.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1241,7 +1254,7 @@
 		};
 		1640DF3C2ED2C11A05CCC97CA4C6C88C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3C59BC03001C143A93B7E2EBD78EB612 /* SwpTransitions.xcconfig */;
+			baseConfigurationReference = CBF8DD1609481B50EFED5DE550C039D2 /* SwpTransitions.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";

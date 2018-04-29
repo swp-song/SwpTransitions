@@ -3,11 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>Version</key>
-	<string>1.4.1</string>
+	<string>1.4.2</string>
 	<key>Author</key>
 	<string>swp_song</string>
 	<key>GitHub</key>
 	<string>https://github.com/swp-song</string>
+	<key>Documents</key>
+	<string>https://swp-song.com/docs/SwpTransitions</string>
 	<key>SwpTransitions</key>
 	<string>https://github.com/swp-song/SwpTransitions</string>
 	<key>Website</key>

@@ -1,1 +1,1 @@
-../../../../../SwpTransitions/Class/SwpCoolAnimators/SwpCoolCategory/SwpCoolAnimators+SwpScanning.h
+../../../../../SwpTransitions/Class/Main/SwpCoolAnimators/SwpCoolCategory/SwpCoolAnimators+SwpScanning.h

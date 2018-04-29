@@ -1,1 +1,1 @@
-../../../../../SwpTransitions/Class/Category/UINavigationController/UINavigationController+SwpTransitions.h
+../../../../../SwpTransitions/Class/Main/UINavigationController/UINavigationController+SwpTransitions.h

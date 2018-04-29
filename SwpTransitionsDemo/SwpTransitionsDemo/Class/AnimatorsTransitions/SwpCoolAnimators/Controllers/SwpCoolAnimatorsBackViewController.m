@@ -10,7 +10,7 @@
 #import "SwpCoolAnimatorsBackViewController.h"
 
 /* ---------------------- Tool       ---------------------- */
-#import <SwpTransitions/SwpTransitionHeader.h>
+#import <SwpTransitions/SwpTransitionsHeader.h>
 #import <SwpCateGory/UIBarButtonItem+SwpSetNavigationBarItem.h>
 /* ---------------------- Tool       ---------------------- */
 

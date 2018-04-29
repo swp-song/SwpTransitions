@@ -10,7 +10,7 @@
 #import "SwpDrawerAnimatorsToViewController.h"
 
 /* ---------------------- Tool       ---------------------- */
-#import <SwpTransitions/SwpTransitionHeader.h>
+#import <SwpTransitions/SwpTransitionsHeader.h>
 /* ---------------------- Tool       ---------------------- */
 
 /* ---------------------- Model      ---------------------- */

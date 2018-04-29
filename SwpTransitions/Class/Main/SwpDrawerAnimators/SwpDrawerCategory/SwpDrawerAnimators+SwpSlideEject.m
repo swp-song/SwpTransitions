@@ -200,13 +200,14 @@
     return transform3D;
 }
 
-
 /**
  *  @author swp_song
  *
  *  @brief  _swpSlideEjectStepTwoTransformWithView:direction:vertical:stepOneScale:stepTwoScale:   ( 计算 Step Two Transform )
  *
  *  @param  view            view
+ *
+ *  @param  direction       direction
  *
  *  @param  vertical        vertical
  *
