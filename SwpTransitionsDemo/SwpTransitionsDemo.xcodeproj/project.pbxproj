@@ -239,13 +239,13 @@
 		2D754D072057A4D5004B16D1 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				2D754D082057A4D5004B16D1 /* SwpCoolAnimatorsBackViewController.m */,
 				2D754D092057A4D5004B16D1 /* SwpCoolAnimatorsRandomViewController.m */,
+				2D754D0D2057A4D5004B16D1 /* SwpCoolAnimatorsRandomViewController.h */,
 				2D754D0A2057A4D5004B16D1 /* SwpCoolAnimatorsViewController.h */,
+				2D754D0E2057A4D5004B16D1 /* SwpCoolAnimatorsToViewController.h */,
 				2D754D0B2057A4D5004B16D1 /* SwpCoolAnimatorsToViewController.m */,
 				2D754D0C2057A4D5004B16D1 /* SwpCoolAnimatorsBackViewController.h */,
-				2D754D0D2057A4D5004B16D1 /* SwpCoolAnimatorsRandomViewController.h */,
-				2D754D0E2057A4D5004B16D1 /* SwpCoolAnimatorsToViewController.h */,
+				2D754D082057A4D5004B16D1 /* SwpCoolAnimatorsBackViewController.m */,
 				2D754D0F2057A4D5004B16D1 /* SwpCoolAnimatorsViewController.m */,
 			);
 			path = Controllers;
@@ -281,12 +281,12 @@
 		2D754D162057A4D5004B16D1 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				2D754D172057A4D5004B16D1 /* SwpDrawerAnimatorsViewController.m */,
 				2D754D182057A4D5004B16D1 /* SwpDrawerAnimatorsBackViewController.h */,
+				2D754D1C2057A4D5004B16D1 /* SwpDrawerAnimatorsBackViewController.m */,
+				2D754D172057A4D5004B16D1 /* SwpDrawerAnimatorsViewController.m */,
 				2D754D192057A4D5004B16D1 /* SwpDrawerAnimatorsToViewController.h */,
 				2D754D1A2057A4D5004B16D1 /* SwpDrawerAnimatorsViewController.h */,
 				2D754D1B2057A4D5004B16D1 /* SwpDrawerAnimatorsToViewController.m */,
-				2D754D1C2057A4D5004B16D1 /* SwpDrawerAnimatorsBackViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";

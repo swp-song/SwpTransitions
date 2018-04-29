@@ -63,6 +63,7 @@
     UIViewController *toVC          = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
     UIView           *toView        = toVC.view;
     UIView           *containerView = [transitionContext containerView];
+    
     [containerView insertSubview:toView atIndex:0];
     NSArray *outgoingLineViews      = [self _lineViews:fromVC.view intoSlicesOfDis:HLINEHEIGHT Offset:fromVC.view.frame.origin.y containerView:containerView lineDirection:lineDirection];
     NSArray *incomingLineViews      = [self _lineViews:toView intoSlicesOfDis:HLINEHEIGHT Offset:toView.frame.origin.y containerView:containerView lineDirection:lineDirection];

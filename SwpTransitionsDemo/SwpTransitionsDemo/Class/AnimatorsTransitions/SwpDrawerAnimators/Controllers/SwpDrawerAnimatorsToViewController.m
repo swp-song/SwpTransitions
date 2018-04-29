@@ -168,6 +168,7 @@
     SwpDrawerAnimators *animator =
     [SwpDrawerAnimators new]
     .swpDrawerAnimator(model.drawerAnimatorsType)
+    .slideEjectAnimatorScaleRatio(1)
     .swpDrawerAnimatorDirection(model.drawerAnimatorDirection)
     .swpDrawerAnimatorScreenSizes(model.screenSizes.floatValue);
 

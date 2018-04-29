@@ -22,8 +22,6 @@
     return [self swpStitchingString];
 }
 
-
-
 /**
  *  @author swp_song
  *
@@ -52,7 +50,11 @@
 /**
  *  @author swp_song
  *
- *  @brief  swpVerificationPropertyType:    ( 验证属性类型 )
+ *  @brief  swpVerificationPropertyType:value:  ( 验证属性类型 )
+ *
+ *  @param  key     key
+ *
+ *  @param  value   value
  *
  *  @return NSString
  */

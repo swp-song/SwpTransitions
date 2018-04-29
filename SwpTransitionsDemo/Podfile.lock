@@ -1,66 +1,69 @@
 PODS:
   - Masonry (1.1.0)
-  - SwpCateGory (2.6.0):
-    - SwpCateGory/SwpAttributed (= 2.6.0)
-    - SwpCateGory/SwpBarCodeImage (= 2.6.0)
-    - SwpCateGory/SwpBase64 (= 2.6.0)
-    - SwpCateGory/SwpCateGory (= 2.6.0)
-    - SwpCateGory/SwpColor (= 2.6.0)
-    - SwpCateGory/SwpCreateImage (= 2.6.0)
-    - SwpCateGory/SwpDateString (= 2.6.0)
-    - SwpCateGory/SwpExtension (= 2.6.0)
-    - SwpCateGory/SwpFont (= 2.6.0)
-    - SwpCateGory/SwpGenerateProperty (= 2.6.0)
-    - SwpCateGory/SwpImageScreenshots (= 2.6.0)
-    - SwpCateGory/SwpMD5 (= 2.6.0)
-    - SwpCateGory/SwpNavigationBar (= 2.6.0)
-    - SwpCateGory/SwpOrderByCharacter (= 2.6.0)
-    - SwpCateGory/SwpQrCodeImage (= 2.6.0)
-    - SwpCateGory/SwpSetButton (= 2.6.0)
-    - SwpCateGory/SwpSetNavigationBarItem (= 2.6.0)
-    - SwpCateGory/SwpSetTextField (= 2.6.0)
-    - SwpCateGory/SwpUserDefaults (= 2.6.0)
-    - SwpCateGory/SwpViewScreenshots (= 2.6.0)
-  - SwpCateGory/SwpAttributed (2.6.0):
+  - SwpCateGory (2.6.8):
+    - SwpCateGory/SwpAttributed (= 2.6.8)
+    - SwpCateGory/SwpBarCodeImage (= 2.6.8)
+    - SwpCateGory/SwpBase64 (= 2.6.8)
+    - SwpCateGory/SwpButtonLayout (= 2.6.8)
+    - SwpCateGory/SwpCateGory (= 2.6.8)
+    - SwpCateGory/SwpColor (= 2.6.8)
+    - SwpCateGory/SwpCreateImage (= 2.6.8)
+    - SwpCateGory/SwpDateString (= 2.6.8)
+    - SwpCateGory/SwpExtension (= 2.6.8)
+    - SwpCateGory/SwpFont (= 2.6.8)
+    - SwpCateGory/SwpGenerateProperty (= 2.6.8)
+    - SwpCateGory/SwpImageScreenshots (= 2.6.8)
+    - SwpCateGory/SwpMD5 (= 2.6.8)
+    - SwpCateGory/SwpNavigationBar (= 2.6.8)
+    - SwpCateGory/SwpOrderByCharacter (= 2.6.8)
+    - SwpCateGory/SwpQrCodeImage (= 2.6.8)
+    - SwpCateGory/SwpSetButton (= 2.6.8)
+    - SwpCateGory/SwpSetNavigationBarItem (= 2.6.8)
+    - SwpCateGory/SwpSetTextField (= 2.6.8)
+    - SwpCateGory/SwpUserDefaults (= 2.6.8)
+    - SwpCateGory/SwpViewScreenshots (= 2.6.8)
+  - SwpCateGory/SwpAttributed (2.6.8):
     - SwpCateGory/SwpCateGory
-  - SwpCateGory/SwpBarCodeImage (2.6.0):
+  - SwpCateGory/SwpBarCodeImage (2.6.8):
     - SwpCateGory/SwpCateGory
-  - SwpCateGory/SwpBase64 (2.6.0):
+  - SwpCateGory/SwpBase64 (2.6.8):
     - SwpCateGory/SwpCateGory
-  - SwpCateGory/SwpCateGory (2.6.0)
-  - SwpCateGory/SwpColor (2.6.0):
+  - SwpCateGory/SwpButtonLayout (2.6.8):
     - SwpCateGory/SwpCateGory
-  - SwpCateGory/SwpCreateImage (2.6.0):
+  - SwpCateGory/SwpCateGory (2.6.8)
+  - SwpCateGory/SwpColor (2.6.8):
     - SwpCateGory/SwpCateGory
-  - SwpCateGory/SwpDateString (2.6.0):
+  - SwpCateGory/SwpCreateImage (2.6.8):
     - SwpCateGory/SwpCateGory
-  - SwpCateGory/SwpExtension (2.6.0):
+  - SwpCateGory/SwpDateString (2.6.8):
     - SwpCateGory/SwpCateGory
-  - SwpCateGory/SwpFont (2.6.0):
+  - SwpCateGory/SwpExtension (2.6.8):
     - SwpCateGory/SwpCateGory
-  - SwpCateGory/SwpGenerateProperty (2.6.0):
+  - SwpCateGory/SwpFont (2.6.8):
     - SwpCateGory/SwpCateGory
-  - SwpCateGory/SwpImageScreenshots (2.6.0):
+  - SwpCateGory/SwpGenerateProperty (2.6.8):
     - SwpCateGory/SwpCateGory
-  - SwpCateGory/SwpMD5 (2.6.0):
+  - SwpCateGory/SwpImageScreenshots (2.6.8):
     - SwpCateGory/SwpCateGory
-  - SwpCateGory/SwpNavigationBar (2.6.0):
+  - SwpCateGory/SwpMD5 (2.6.8):
     - SwpCateGory/SwpCateGory
-  - SwpCateGory/SwpOrderByCharacter (2.6.0):
+  - SwpCateGory/SwpNavigationBar (2.6.8):
     - SwpCateGory/SwpCateGory
-  - SwpCateGory/SwpQrCodeImage (2.6.0):
+  - SwpCateGory/SwpOrderByCharacter (2.6.8):
     - SwpCateGory/SwpCateGory
-  - SwpCateGory/SwpSetButton (2.6.0):
+  - SwpCateGory/SwpQrCodeImage (2.6.8):
     - SwpCateGory/SwpCateGory
-  - SwpCateGory/SwpSetNavigationBarItem (2.6.0):
+  - SwpCateGory/SwpSetButton (2.6.8):
     - SwpCateGory/SwpCateGory
-  - SwpCateGory/SwpSetTextField (2.6.0):
+  - SwpCateGory/SwpSetNavigationBarItem (2.6.8):
     - SwpCateGory/SwpCateGory
-  - SwpCateGory/SwpUserDefaults (2.6.0):
+  - SwpCateGory/SwpSetTextField (2.6.8):
     - SwpCateGory/SwpCateGory
-  - SwpCateGory/SwpViewScreenshots (2.6.0):
+  - SwpCateGory/SwpUserDefaults (2.6.8):
     - SwpCateGory/SwpCateGory
-  - SwpTransitions (1.4.0)
+  - SwpCateGory/SwpViewScreenshots (2.6.8):
+    - SwpCateGory/SwpCateGory
+  - SwpTransitions (1.4.1)
 
 DEPENDENCIES:
   - Masonry
@@ -78,8 +81,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  SwpCateGory: 598c36c43c11dd59bc91f57f30edd2e1ca74252d
-  SwpTransitions: f26214d93841e87e08caf44b46685d1f81373c2f
+  SwpCateGory: 4c7281646214d7a8f07b6ca41e272442a4965349
+  SwpTransitions: d5477eadcd9f68aa5bfe74cf98b65da0d06fab54
 
 PODFILE CHECKSUM: c78cecd1b31c8b26647ed6e23cfdb599098d33a2
 

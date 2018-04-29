@@ -24,9 +24,15 @@
  */
 - (void)swpPushViewController:(UIViewController *)viewController animated:(SwpTransitions *)animated {
     
-    if (animated) {
-        objc_setAssociatedObject(viewController, &kSwpTransitionsKey, animated, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+
+    if (!viewController) return;
+    
+    if (!animated) {
+        [self pushViewController:viewController animated:YES];
+        return;
     }
+
+    objc_setAssociatedObject(viewController, &kSwpTransitionsKey, animated, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     [self pushViewController:viewController animated:YES];
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -40,11 +46,12 @@
  *  @brief  load    ( Override load )
  */
 + (void)load {
+    
+    //  可以不使用 dispatch_once lod 本身也就调用一次
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        Method systemPush   = class_getInstanceMethod(self.class, @selector(pushViewController:animated:));
-        Method swpPush      = class_getInstanceMethod(self.class, @selector(swp_pushViewController:animated:));
-        method_exchangeImplementations(systemPush, swpPush);
+        //  方法交换
+        swpTransitions_MethodSwizzle(self, @selector(pushViewController:animated:), @selector(swp_pushViewController:animated:));
     });
 }
 
@@ -73,6 +80,40 @@
     [self swp_pushViewController:viewController animated:animated];
 }
 
+/**
+ *  @author swp_song
+ *
+ *  @brief  swp_MethodSwizzle   ( 方法替换 )
+ *
+ *  @param  aClass      aClass
+ *
+ *  @param  originaSEL  originaSEL
+ *
+ *  @param  replaceSEL  replaceSEL
+ */
+FOUNDATION_STATIC_INLINE void swpTransitions_MethodSwizzle(Class aClass, SEL originaSEL, SEL replaceSEL) {
+    
+    
+    Method originaMethod = class_getInstanceMethod(aClass, originaSEL);
+    Method replaceMethod = class_getInstanceMethod(aClass, replaceSEL);
+    
+    //  class_addMethod 验证方法是否存在，不存在返回 NO，这里用来验证
+    if(class_addMethod(aClass, originaSEL, method_getImplementation(replaceMethod), method_getTypeEncoding(replaceMethod))) {
+        
+        //  方法不存在，也就是说方法没实现,我们需要先把这个方法实现, 然后在去替换, 这里使用到的是class_replaceMethod这个方法. class_replaceMethod 本身会尝试调用 class_addMethod 和method_setImplementation，所以直接调用 class_replaceMethod
+        class_replaceMethod(aClass, originaSEL, method_getImplementation(originaMethod), method_getTypeEncoding(originaMethod));
+    } else {
+        //  方法交换
+        method_exchangeImplementations(originaMethod, replaceMethod);
+    }
+}
+
+
+/**
+ *  @author swp_song
+ *
+ *  @brief  _checkDelegate  ( 验证代理方法 )
+ */
 - (void)_checkDelegate {
     
     SwpTransitions *animator = objc_getAssociatedObject(self.topViewController, &kSwpTransitionsKey);
@@ -82,6 +123,7 @@
         self.delegate = nil;
     }
 }
+
 
 
 - (void)_swizzeViewControlelrDealloc {

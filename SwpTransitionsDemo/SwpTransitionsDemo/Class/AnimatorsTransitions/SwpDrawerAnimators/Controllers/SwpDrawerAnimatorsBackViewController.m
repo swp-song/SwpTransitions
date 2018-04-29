@@ -10,6 +10,8 @@
 #import "SwpDrawerAnimatorsBackViewController.h"
 
 /* ---------------------- Tool       ---------------------- */
+#import <SwpTransitions/SwpTransitionHeader.h>
+#import <SwpCateGory/UIBarButtonItem+SwpSetNavigationBarItem.h>
 /* ---------------------- Tool       ---------------------- */
 
 /* ---------------------- Model      ---------------------- */
@@ -64,6 +66,8 @@
     });
     
     [super viewDidLoad];
+    
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem swpSetNavigationBarItemTitle:@"jump" setFontColot:[UIColor blackColor] setFontSize:15 setTag:0 setLeftBarButtonItem:NO setAarget:self setAction:@selector(clickButtonEvent1:)];
     
 }
 
@@ -130,6 +134,11 @@
  */
 - (void)dealloc {
     NSLog(@"%s", __FUNCTION__);
+}
+
+- (void)clickButtonEvent1:(UIBarButtonItem *)buttonItem {
+//    [self.navigationController swpPushViewController:SwpDrawerAnimatorsBackViewController.new animated:nil];
+        [self.navigationController pushViewController:SwpDrawerAnimatorsBackViewController.new animated:YES];
 }
 
 

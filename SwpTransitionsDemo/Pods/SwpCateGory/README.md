@@ -1,6 +1,12 @@
 # SwpCateGory
 
-[![Build Status](https://travis-ci.org/swp-song/SwpCateGory.svg?branch=master)](https://travis-ci.org/swp-song/SwpCateGory) [![Version](https://img.shields.io/cocoapods/v/SwpCateGory.svg?style=flat)](http://cocoapods.org/pods/SwpCateGory) [![License](https://img.shields.io/cocoapods/l/SwpCateGory.svg?style=flat)](http://cocoapods.org/pods/SwpCateGory) [![Platform](https://img.shields.io/cocoapods/p/SwpCateGory.svg?style=flat)](http://cocoapods.org/pods/SwpCateGory)
+[![Xcode](https://img.shields.io/badge/Xcode-9.3-25B1F6.svg)](https://developer.apple.com/xcode)
+[![iOS](https://img.shields.io/badge/iOS-8.0+-1C75AF.svg)](https://developer.apple.com/xcode)
+[![BuildStatus](https://travis-ci.org/swp-song/SwpCateGory.svg?branch=master)](https://travis-ci.org/swp-song/SwpCateGory) 
+[![Version](https://img.shields.io/cocoapods/v/SwpCateGory.svg?style=flat)](http://cocoapods.org/pods/SwpCateGory) 
+[![License](https://img.shields.io/cocoapods/l/SwpCateGory.svg?style=flat)](http://cocoapods.org/pods/SwpCateGory) 
+[![Platform](https://img.shields.io/cocoapods/p/SwpCateGory.svg?style=flat)](http://cocoapods.org/pods/SwpCateGory)
+[![SwpCateGoryAPI](https://img.shields.io/badge/SwpCateGoryAPI-v2.6.8-44E0D3.svg)](https://swp-song.com/docs/SwpCateGory/)
 
 -------
 
@@ -36,6 +42,7 @@ pod 'SwpCateGory/SwpUserDefaults'
 pod 'SwpCateGory/SwpAttributed'
 pod 'SwpCateGory/SwpSetNavigationBarItem'
 pod 'SwpCateGory/SwpSetButton'
+pod 'SwpCateGory/SwpButtonLayout'
 pod 'SwpCateGory/SwpColor'
 pod 'SwpCateGory/SwpFont'
 pod 'SwpCateGory/SwpQrCodeImage'
@@ -55,25 +62,37 @@ pod 'SwpCateGory/SwpViewScreenshots'
 
 -------
 
+### SwpCateGory 文档
+
+> * [SwpCateGory 文档](https://swp-song.com/docs/SwpCateGory/)
+
+-------
 
 ### 版本记录
 
-> * 版本版本：2.6.0
-> * 更新时间：2018-03-27 10:58:12
+> * 版本版本：2.6.8
+> * 更新时间：2018-04-28 23:15:25
 > * 更新内容：
-> 
->> *  新增版本信息。
+>
+>> * 重构 SwpButtonLayout 分类方法
+
+>> -------
+
+> * 版本版本：2.6.7
+> * 更新时间：2018-04-16 07:36:00
+> * 更新内容：
+>
+>> * 修复内部问题。
+
+>> -------
+
+
+
+
+
+
 
 -------
-
-> * 版本版本：2.5.0
-> * 更新时间：2018-03-04 19:22:52
-> * 更新内容：
-> 
->> * 新增 SwpCreateImage 分类。
-
--------
-
 
 
 ### 备注

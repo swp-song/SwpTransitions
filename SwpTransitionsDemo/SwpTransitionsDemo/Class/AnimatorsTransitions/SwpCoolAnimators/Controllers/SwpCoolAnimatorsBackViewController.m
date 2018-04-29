@@ -10,6 +10,8 @@
 #import "SwpCoolAnimatorsBackViewController.h"
 
 /* ---------------------- Tool       ---------------------- */
+#import <SwpTransitions/SwpTransitionHeader.h>
+#import <SwpCateGory/UIBarButtonItem+SwpSetNavigationBarItem.h>
 /* ---------------------- Tool       ---------------------- */
 
 /* ---------------------- Model      ---------------------- */
@@ -66,6 +68,9 @@
     });
     
     [super viewDidLoad];
+    
+    
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem swpSetNavigationBarItemTitle:@"push" setFontColot:[UIColor blackColor] setFontSize:15 setTag:0 setLeftBarButtonItem:NO setAarget:self setAction:@selector(clickButtonEvent1:)];
     
 }
 
@@ -134,6 +139,12 @@
     NSLog(@"%s", __FUNCTION__);
 }
 
+
+- (void)clickButtonEvent1:(UIBarButtonItem *)buttonItem {
+    NSLog(@"测试使用");
+//    [self.navigationController swpPushViewController:SwpCoolAnimatorsBackViewController.new animated:nil];
+//    [self.navigationController pushViewController:SwpCoolAnimatorsBackViewController.new animated:YES];
+}
 
 /**
  *  @author swp_song

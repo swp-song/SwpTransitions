@@ -50,9 +50,13 @@
 /**
  *  @author swp_song
  *
- *  @brief  swpQrCodeImageCreateQRWithString:   ( 生成条形码  )
+ *  @brief  swpQrCodeImageCreateQRWithString:barCodeColor:backGroundColor:  ( 生成条形码 )
  *
- *  @param  string  string
+ *  @param  string              string
+ *
+ *  @param  barCodeColor        barCodeColor
+ *
+ *  @param  backGroundColor     backGroundColor
  *
  *  @return CIImage
  */

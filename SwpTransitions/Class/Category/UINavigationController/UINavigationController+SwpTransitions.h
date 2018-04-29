@@ -23,7 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @param  animated        animated
  */
-- (void)swpPushViewController:(UIViewController *)viewController animated:(SwpTransitions *)animated;
+- (void)swpPushViewController:(UIViewController *)viewController animated:(SwpTransitions * _Nullable)animated;
 
 
 @end
