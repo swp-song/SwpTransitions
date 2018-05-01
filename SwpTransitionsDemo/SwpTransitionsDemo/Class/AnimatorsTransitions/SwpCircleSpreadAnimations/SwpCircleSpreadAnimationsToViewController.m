@@ -1,14 +1,17 @@
+
 //
-//  SwpTransitionsBaseViewController.m
+//  SwpCircleSpreadAnimationsToViewController.m
 //  SwpTransitionsDemo
 //
-//  Created by swp_song on 2017/12/22.
-//  Copyright © 2017年 swp_song. All rights reserved.
+//  Created by swp_song on 2018/5/1.
+//  Copyright © 2018年 swp_song. All rights reserved.
 //
 
-#import "SwpTransitionsBaseViewController.h"
+#import "SwpCircleSpreadAnimationsToViewController.h"
 
 /* ---------------------- Tool       ---------------------- */
+#import <Masonry/Masonry.h>
+#import <SwpTransitions/SwpTransitionsHeader.h>
 /* ---------------------- Tool       ---------------------- */
 
 /* ---------------------- Model      ---------------------- */
@@ -18,27 +21,26 @@
 /* ---------------------- View       ---------------------- */
 
 /* ---------------------- Controller ---------------------- */
+#import "SwpCircleSpreadAnimationsBackViewController.h"
 /* ---------------------- Controller ---------------------- */
 
 
-@interface SwpTransitionsBaseViewController ()
+@interface SwpCircleSpreadAnimationsToViewController ()
 
 #pragma mark - UI   Propertys
 /* ---------------------- UI   Property  ---------------------- */
-@property (nonatomic, strong) UIButton    *clickButtonEvent;
+@property (nonatomic, strong) UIButton *button;
+@property (nonatomic, strong) UISwitch *navigationSwitch;
 /* ---------------------- UI   Property  ---------------------- */
 
 #pragma mark - Data Propertys
 /* ---------------------- Data Property  ---------------------- */
-@property (nonatomic, copy) UIImage *image_;
-@property (nonatomic, copy, setter = buttonClickEvent:) void(^buttonClickEvent)(UIButton *);
 /* ---------------------- Data Property  ---------------------- */
 
 
 @end
 
-@implementation SwpTransitionsBaseViewController
-
+@implementation SwpCircleSpreadAnimationsToViewController
 
 #pragma mark - Lifecycle Methods
 /**
@@ -53,13 +55,13 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-    if (!self.image_) return;
+    self.view.layer.contents = (__bridge id)[UIImage imageNamed:[self checkIPhoneSize:812] ? @"animators_transitions_1_x" : @"animators_transitions_1"].CGImage;
     
     [self setUI];
     
     [self setData];
     
-    [self.clickButtonEvent addTarget:self action:@selector(clickButtonEvent:) forControlEvents:UIControlEventTouchUpInside];
+    [self.button addTarget:self action:@selector(clickButtonEvent:) forControlEvents:(UIControlEventTouchUpInside)];
 }
 
 /**
@@ -157,6 +159,8 @@
  */
 - (void)setNavigationBar {
     
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.navigationSwitch];
+    [self.navigationSwitch addTarget:self action:@selector(navigationSwitch:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 /**
@@ -165,9 +169,8 @@
  *  @brief  setUpUI ( 添加控件 )
  */
 - (void)setUpUI {
-
-    [self.view addSubview:self.clickButtonEvent];
     
+    [self.view addSubview:self.button];
 }
 
 /**
@@ -176,15 +179,15 @@
  *  @brief  setUIAutoLayout ( 设置控件的自动布局 )
  */
 - (void)setUIAutoLayout {
- 
     
-    [self.clickButtonEvent mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.button mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.centerY.equalTo(self.view);
-        make.size.mas_offset(CGSizeMake(100, 40));
+        make.width.equalTo(@(80));
+        make.width.equalTo(self.button.mas_height).multipliedBy(1.0);
     }];
     
-    [self.clickButtonEvent layoutIfNeeded];
-    self.clickButtonEvent.layer.cornerRadius = self.clickButtonEvent.frame.size.height / 2.0;
+    [self.button layoutIfNeeded];
+    self.button.layer.cornerRadius = self.button.frame.size.width / 2.0;
 }
 
 
@@ -223,100 +226,61 @@
 }
 
 
+- (void)clickButtonEvent:(UIButton *)button {
+    
+    [self jumpSwpCircleSpreadAnimationsBackViewController:button isPush:self.navigationSwitch.on];
+}
+
 /**
  *  @author swp_song
  *
- *  @brief  clickButtonEvent:   ( 设置背景图片 )
+ *  @brief  navigationSwitch:   ( 按钮绑定方法 )
+ *
+ *  @param  switch_ switch_
+ */
+- (void)navigationSwitch:(UISwitch *)switch_ {
+    
+}
+
+/**
+ *  @author swp_song
+ *
+ *  @brief  jumpSwpCircleSpreadAnimationsBackViewController:    ( 跳转转场 )
  *
  *  @param  button  button
- */
-- (void)clickButtonEvent:(UIButton *)button {
-    if (self.buttonClickEvent) self.buttonClickEvent(button);
-}
-
-
-#pragma mark - Public Methods
-/**
- *  @author swp_song
  *
- *  @brief  image   ( 设置背景图片 )
+ *  @param  isPush  isPush
  */
-- (__kindof SwpTransitionsBaseViewController * _Nonnull (^)(UIImage *))image {
+- (void)jumpSwpCircleSpreadAnimationsBackViewController:(UIButton *)button isPush:(BOOL)isPush {
     
-    return ^(UIImage *image) {
-        self.image_ = image;
-        self.view.layer.contents = (__bridge id)image.CGImage;
-        return self;
-    };
-}
-
-/**
- *  @author swp_song
- *
- *  @brief  imageName   ( 设置背景图片 )
- */
-- (__kindof SwpTransitionsBaseViewController * _Nonnull (^)(NSString *))imageName {
+    SwpCircleSpreadAnimations *swpCircleSpreadAnimations = SwpCircleSpreadAnimations.swpCircleSpreadAnimation(button.center, button.frame.size.width / 2.0);
     
-    return ^(NSString *imageName) {
-        
-        if (!imageName.length) {
-            self.image_ = nil;
-            return self;
-        }
-        self.image_ = [UIImage imageNamed:[self checkIPhoneSize:812] ? [NSString stringWithFormat:@"%@_x", imageName] : imageName];
-        self.view.layer.contents = (__bridge id)self.image_.CGImage;
-        return self;
-    };
-}
-
-/**
- *  @author swp_song
- *
- *  @brief  buttonTitle ( 设置按钮文字 )
- */
-- (__kindof SwpTransitionsBaseViewController * _Nonnull (^)(NSString *))buttonTitle {
-
-    return ^(NSString *buttonTitle) {
-        [self.clickButtonEvent setTitle:buttonTitle forState:UIControlStateNormal];
-        [self.clickButtonEvent setTitle:buttonTitle forState:UIControlStateHighlighted];
-        return self;
-    };
-}
-
-/**
- *  @author swp_song
- *
- *  @brief  buttonClickEvent:   ( BaseViewController 回调方法，点击按钮调用 )
- *
- *  @param  buttonClickEvent    buttonClickEvent
- */
-- (void)buttonClickEvent:(void (^)(UIButton * _Nonnull))buttonClickEvent {
-    _buttonClickEvent = buttonClickEvent;
+    SwpCircleSpreadAnimationsBackViewController *swpCircleSpreadAnimationsBackViewController = SwpCircleSpreadAnimationsBackViewController.new.isPush(isPush);
+    if (isPush) {
+        [self.navigationController swpPushViewController:swpCircleSpreadAnimationsBackViewController animated:swpCircleSpreadAnimations];
+    } else {
+        [self.navigationController swpTransitionsPresentViewController:swpCircleSpreadAnimationsBackViewController animated:swpCircleSpreadAnimations];
+    }
 }
 
 
-/**
- *  @author swp_song
- *
- *  @brief  buttonClickEventChain:  ( BaseViewController 回调方法，点击按钮调用 )
- */
-- (__kindof SwpTransitionsBaseViewController * _Nonnull (^)(void (^ _Nonnull)(UIButton * _Nonnull)))buttonClickEventChain {
-    
-    return ^(void(^buttonClickEvent)(UIButton *button)) {
-        [self buttonClickEvent:buttonClickEvent];
-        return self;
-    };
-}
-
-#pragma mark - Init UI Methods
-- (UIButton *)clickButtonEvent {
-    
-    return !_clickButtonEvent ? _clickButtonEvent = ({
+- (UIButton *)button {
+    return !_button ? _button = ({
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
         button.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.2];
         button.titleLabel.font = [UIFont systemFontOfSize:14];
+        [button setTitle:@"点我跳转" forState:(UIControlStateNormal)];
         button;
-    }) : _clickButtonEvent;
+    }) : _button;
+}
+
+
+
+- (UISwitch *)navigationSwitch {
+    return !_navigationSwitch ? _navigationSwitch = ({
+        UISwitch *switch_ = [UISwitch new];
+        switch_;
+    }) : _navigationSwitch;
 }
 
 

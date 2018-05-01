@@ -25,13 +25,12 @@
 /**
  *  @author swp_song
  *
- *  @brief  swpTransitionsSetToAnimation:   ( 控制器跳转调用 )
+ *  @brief  swpTransitionsToAnimation:  ( 控制器跳转调用 )
  *
  *  @param  transitionContext   transitionContext
  */
-- (void)swpTransitionsSetToAnimation:(id<UIViewControllerContextTransitioning>)transitionContext {
-    
-    [super swpTransitionsSetToAnimation:transitionContext];
+- (void)swpTransitionsToAnimation:(id<UIViewControllerContextTransitioning>)transitionContext {
+    [super swpTransitionsToAnimation:transitionContext];
     
     if (self.toAnimation) {
         self.toAnimation(transitionContext);
@@ -42,12 +41,12 @@
 /**
  *  @author swp_song
  *
- *  @brief  swpTransitionsSetBackAnimation: ( 控制器返回调用 )
+ *  @brief  swpTransitionsBackAnimation:    ( 控制器返回调用 )
  *
  *  @param  transitionContext   transitionContext
  */
-- (void)swpTransitionsSetBackAnimation:(id<UIViewControllerContextTransitioning>)transitionContext {
-    [super swpTransitionsSetBackAnimation:transitionContext];
+- (void)swpTransitionsBackAnimation:(id<UIViewControllerContextTransitioning>)transitionContext {
+    [super swpTransitionsBackAnimation:transitionContext];
     
     if (self.backAnimation) {
         self.backAnimation(transitionContext);

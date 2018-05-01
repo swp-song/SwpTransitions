@@ -1,14 +1,16 @@
+
 //
-//  SwpTransitionsBaseViewController.m
+//  SwpTransitionsAnimationsViewController.m
 //  SwpTransitionsDemo
 //
-//  Created by swp_song on 2017/12/22.
-//  Copyright © 2017年 swp_song. All rights reserved.
+//  Created by swp_song on 2018/5/1.
+//  Copyright © 2018年 swp_song. All rights reserved.
 //
 
-#import "SwpTransitionsBaseViewController.h"
+#import "SwpTransitionsAnimationsViewController.h"
 
 /* ---------------------- Tool       ---------------------- */
+#import <Masonry/Masonry.h>
 /* ---------------------- Tool       ---------------------- */
 
 /* ---------------------- Model      ---------------------- */
@@ -20,24 +22,22 @@
 /* ---------------------- Controller ---------------------- */
 /* ---------------------- Controller ---------------------- */
 
+@interface SwpTransitionsAnimationsViewController ()
 
-@interface SwpTransitionsBaseViewController ()
 
 #pragma mark - UI   Propertys
 /* ---------------------- UI   Property  ---------------------- */
-@property (nonatomic, strong) UIButton    *clickButtonEvent;
+@property (nonatomic, strong) UIButton *button;
+@property (nonatomic, strong) UISwitch *navigationSwitch;
 /* ---------------------- UI   Property  ---------------------- */
 
 #pragma mark - Data Propertys
 /* ---------------------- Data Property  ---------------------- */
-@property (nonatomic, copy) UIImage *image_;
-@property (nonatomic, copy, setter = buttonClickEvent:) void(^buttonClickEvent)(UIButton *);
+@property (nonatomic, copy) SwpTransitionsAnimationsViewControllerClickButtonEvent clickButtonEvent;
 /* ---------------------- Data Property  ---------------------- */
-
-
 @end
 
-@implementation SwpTransitionsBaseViewController
+@implementation SwpTransitionsAnimationsViewController
 
 
 #pragma mark - Lifecycle Methods
@@ -48,18 +48,13 @@
  */
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     // Do any additional setup after loading the view.
-    
-    self.view.backgroundColor = [UIColor whiteColor];
-    
-    if (!self.image_) return;
     
     [self setUI];
     
     [self setData];
     
-    [self.clickButtonEvent addTarget:self action:@selector(clickButtonEvent:) forControlEvents:UIControlEventTouchUpInside];
+    [self.button addTarget:self action:@selector(clickButtonEvent:) forControlEvents:(UIControlEventTouchUpInside)];
 }
 
 /**
@@ -71,6 +66,7 @@
  */
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    
 }
 
 /**
@@ -135,6 +131,8 @@
  */
 - (void)setData {
     
+   
+ 
 }
 
 #pragma mark - Set UI Methods
@@ -157,6 +155,8 @@
  */
 - (void)setNavigationBar {
     
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.navigationSwitch];
+    [self.navigationSwitch addTarget:self action:@selector(navigationSwitch:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 /**
@@ -165,9 +165,11 @@
  *  @brief  setUpUI ( 添加控件 )
  */
 - (void)setUpUI {
-
-    [self.view addSubview:self.clickButtonEvent];
     
+    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.layer.contents = (__bridge id)[UIImage imageNamed:[self checkIPhoneSize:812] ? @"animators_transitions_1_x" : @"animators_transitions_1"].CGImage;
+    
+    [self.view addSubview:self.button];
 }
 
 /**
@@ -176,17 +178,15 @@
  *  @brief  setUIAutoLayout ( 设置控件的自动布局 )
  */
 - (void)setUIAutoLayout {
- 
     
-    [self.clickButtonEvent mas_makeConstraints:^(MASConstraintMaker *make) {
+    [self.button mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.centerY.equalTo(self.view);
         make.size.mas_offset(CGSizeMake(100, 40));
     }];
     
-    [self.clickButtonEvent layoutIfNeeded];
-    self.clickButtonEvent.layer.cornerRadius = self.clickButtonEvent.frame.size.height / 2.0;
+    [self.button layoutIfNeeded];
+    self.button.layer.cornerRadius = self.button.frame.size.height / 2.0;
 }
-
 
 /**
  *  @author swp_song
@@ -226,13 +226,26 @@
 /**
  *  @author swp_song
  *
- *  @brief  clickButtonEvent:   ( 设置背景图片 )
+ *  @brief  navigationSwitch:   ( 按钮绑定方法 )
+ *
+ *  @param  aSwitch aSwitch
+ */
+- (void)navigationSwitch:(UISwitch *)aSwitch {
+    
+}
+
+/**
+ *  @author swp_song
+ *
+ *  @brief  clickButtonEvent:   ( 按钮绑定方法 )
  *
  *  @param  button  button
  */
 - (void)clickButtonEvent:(UIButton *)button {
-    if (self.buttonClickEvent) self.buttonClickEvent(button);
+    if (self.clickButtonEvent) self.clickButtonEvent(button, self.navigationSwitch.on);
 }
+
+#pragma mark - Public Methods
 
 
 #pragma mark - Public Methods
@@ -241,10 +254,9 @@
  *
  *  @brief  image   ( 设置背景图片 )
  */
-- (__kindof SwpTransitionsBaseViewController * _Nonnull (^)(UIImage *))image {
+- (__kindof SwpTransitionsAnimationsViewController * _Nonnull (^)(UIImage *))image {
     
     return ^(UIImage *image) {
-        self.image_ = image;
         self.view.layer.contents = (__bridge id)image.CGImage;
         return self;
     };
@@ -255,16 +267,14 @@
  *
  *  @brief  imageName   ( 设置背景图片 )
  */
-- (__kindof SwpTransitionsBaseViewController * _Nonnull (^)(NSString *))imageName {
+- (__kindof SwpTransitionsAnimationsViewController * _Nonnull (^)(NSString *))imageName {
     
     return ^(NSString *imageName) {
-        
         if (!imageName.length) {
-            self.image_ = nil;
             return self;
         }
-        self.image_ = [UIImage imageNamed:[self checkIPhoneSize:812] ? [NSString stringWithFormat:@"%@_x", imageName] : imageName];
-        self.view.layer.contents = (__bridge id)self.image_.CGImage;
+        UIImage *image = [UIImage imageNamed:[self checkIPhoneSize:812] ? [NSString stringWithFormat:@"%@_x", imageName] : imageName];
+        self.view.layer.contents = (__bridge id)image.CGImage;
         return self;
     };
 }
@@ -274,50 +284,57 @@
  *
  *  @brief  buttonTitle ( 设置按钮文字 )
  */
-- (__kindof SwpTransitionsBaseViewController * _Nonnull (^)(NSString *))buttonTitle {
-
+- (__kindof SwpTransitionsAnimationsViewController * _Nonnull (^)(NSString *))buttonTitle {
+    
     return ^(NSString *buttonTitle) {
-        [self.clickButtonEvent setTitle:buttonTitle forState:UIControlStateNormal];
-        [self.clickButtonEvent setTitle:buttonTitle forState:UIControlStateHighlighted];
+        [self.button setTitle:buttonTitle forState:UIControlStateNormal];
+        [self.button setTitle:buttonTitle forState:UIControlStateHighlighted];
         return self;
     };
 }
 
+
 /**
  *  @author swp_song
  *
- *  @brief  buttonClickEvent:   ( BaseViewController 回调方法，点击按钮调用 )
+ *  @brief  swpTransitionsAnimationsViewControllerClickButtonEvent: ( SwpTransitionsAnimationsViewController 回调方法，点击按钮调用 )
  *
- *  @param  buttonClickEvent    buttonClickEvent
+ *  @param  clickButtonEvent    clickButtonEvent
  */
-- (void)buttonClickEvent:(void (^)(UIButton * _Nonnull))buttonClickEvent {
-    _buttonClickEvent = buttonClickEvent;
+- (void)swpTransitionsAnimationsViewControllerClickButtonEvent:(SwpTransitionsAnimationsViewControllerClickButtonEvent)clickButtonEvent {
+    _clickButtonEvent = clickButtonEvent;
 }
 
-
 /**
  *  @author swp_song
  *
- *  @brief  buttonClickEventChain:  ( BaseViewController 回调方法，点击按钮调用 )
+ *  @brief  swpTransitionsAnimationsViewControllerClickButtonEvent  ( SwpTransitionsAnimationsViewController 回调方法，点击按钮调用 )
  */
-- (__kindof SwpTransitionsBaseViewController * _Nonnull (^)(void (^ _Nonnull)(UIButton * _Nonnull)))buttonClickEventChain {
-    
-    return ^(void(^buttonClickEvent)(UIButton *button)) {
-        [self buttonClickEvent:buttonClickEvent];
+- (__kindof SwpTransitionsAnimationsViewController * _Nonnull(^)(SwpTransitionsAnimationsViewControllerClickButtonEvent))swpTransitionsAnimationsViewControllerClickButtonEvent {
+    return ^(SwpTransitionsAnimationsViewControllerClickButtonEvent clickButtonEvent) {
+        [self swpTransitionsAnimationsViewControllerClickButtonEvent:clickButtonEvent];
         return self;
     };
 }
 
 #pragma mark - Init UI Methods
-- (UIButton *)clickButtonEvent {
-    
-    return !_clickButtonEvent ? _clickButtonEvent = ({
+- (UIButton *)button {
+    return !_button ? _button = ({
         UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
         button.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.2];
         button.titleLabel.font = [UIFont systemFontOfSize:14];
+        [button setTitle:@"点我返回" forState:(UIControlStateNormal)];
         button;
-    }) : _clickButtonEvent;
+    }) : _button;
 }
+
+- (UISwitch *)navigationSwitch {
+    return !_navigationSwitch ? _navigationSwitch = ({
+        UISwitch.new;
+    }) : _navigationSwitch;
+}
+
+
 
 
 

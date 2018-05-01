@@ -1,18 +1,19 @@
 //
-//  SwpTransitionsListViewController.m
+//  SwpDrawerAnimationsViewController.m
 //  SwpTransitionsDemo
 //
-//  Created by swp_song on 2017/12/31.
-//  Copyright © 2017年 swp_song. All rights reserved.
+//  Created by swp_song on 2018/3/9.
+//  Copyright © 2018年 swp_song. All rights reserved.
 //
 
-#import "SwpTransitionsListViewController.h"
+#import "SwpDrawerAnimationsViewController.h"
 
 /* ---------------------- Tool       ---------------------- */
+#import <SwpTransitions/SwpTransitionsHeader.h>
 /* ---------------------- Tool       ---------------------- */
 
 /* ---------------------- Model      ---------------------- */
-#import "SwpTransitionsModel.h"
+#import "SwpDrawerModel.h"
 /* ---------------------- Model      ---------------------- */
 
 /* ---------------------- View       ---------------------- */
@@ -20,16 +21,14 @@
 /* ---------------------- View       ---------------------- */
 
 /* ---------------------- Controller ---------------------- */
-#import "SwpCoolAnimationsViewController.h"
+#import "SwpDrawerToAnimationsViewController.h"
 /* ---------------------- Controller ---------------------- */
 
-
-@interface SwpTransitionsListViewController ()
+@interface SwpDrawerAnimationsViewController ()
 
 #pragma mark - UI   Propertys
 /* ---------------------- UI   Property  ---------------------- */
 @property (nonatomic, strong) SwpTransitionsTableView *swpTransitionsTableView;
-
 /* ---------------------- UI   Property  ---------------------- */
 
 #pragma mark - Data Propertys
@@ -40,8 +39,7 @@
 
 @end
 
-@implementation SwpTransitionsListViewController
-
+@implementation SwpDrawerAnimationsViewController
 
 #pragma mark - Lifecycle Methods
 /**
@@ -50,16 +48,19 @@
  *  @brief  viewDidLoad ( 视图载入完成, 调用 )
  */
 - (void)viewDidLoad {
-    [super viewDidLoad];
+    
     // Do any additional setup after loading the view.
     
+    NSLog(@"swpTransitionsInfo    = %@", [SwpTransitionsInfo swpTransitionsInfo]);
+    NSLog(@"swpTransitionsVersion = %@", [SwpTransitionsInfo swpTransitionsVersion]);
+    
+    [super viewDidLoad];
+
     [self setUI];
     
     [self setData];
     
-    [self swpTransitionsListViewControllerBlock];
-    
-
+    [self swpCoolAnimatorsViewControllerBlock];
 }
 
 /**
@@ -157,7 +158,7 @@
  *  @brief  setNavigationBar    ( 设置导航栏 )
  */
 - (void)setNavigationBar {
-
+    
 }
 
 /**
@@ -166,7 +167,7 @@
  *  @brief  setUpUI ( 添加控件 )
  */
 - (void)setUpUI {
- 
+    
     [self.view addSubview:self.swpTransitionsTableView];
 }
 
@@ -182,16 +183,14 @@
     }];
 }
 
-
 /**
  *  @author swp_song
  *
- *  @brief  swpTransitionsListViewControllerBlock ( SwpTransitionsListViewController Block )
+ *  @brief  swpCoolAnimatorsViewControllerBlock ( SwpCoolAnimatorsViewController Block )
  */
-- (void)swpTransitionsListViewControllerBlock {
+- (void)swpCoolAnimatorsViewControllerBlock {
     
     [self swpTransitionsTableViewBlock:self.swpTransitionsTableView];
-    // CenterFoldFlip
 }
 
 
@@ -205,31 +204,33 @@
 - (void)swpTransitionsTableViewBlock:(SwpTransitionsTableView *)swpTransitionsTableView {
     
     __weak typeof(self) weakSelf = self;
-    swpTransitionsTableView.swpTransitionsTableViewClickCellEventChain(^(SwpTransitionsTableView *swpTransitionsTableView, NSIndexPath *indexPath, SwpTransitionsModel *swpTransitions){
+    swpTransitionsTableView.swpTransitionsTableViewClickCellEventChain(^(SwpTransitionsTableView *swpTransitionsTableView, NSIndexPath *indexPath, SwpDrawerModel *model){
         __strong __typeof(weakSelf)strongSelf = weakSelf;
-        [strongSelf.navigationController pushViewController:[NSClassFromString(swpTransitions.jumpController) new] animated:YES];
+        SwpDrawerToAnimationsViewController *swpDrawerToAnimationsViewController =
+        [SwpDrawerToAnimationsViewController new]
+        .model(model);
+        [strongSelf.navigationController pushViewController:swpDrawerToAnimationsViewController animated:YES];
     });
 }
 
+
 #pragma mark - Init UI Methods
 - (SwpTransitionsTableView *)swpTransitionsTableView {
-
+    
     return !_swpTransitionsTableView ? _swpTransitionsTableView = ({
         SwpTransitionsTableView *swpTransitionsTableView = [SwpTransitionsTableView new];
         swpTransitionsTableView;
     }) : _swpTransitionsTableView;
 }
 
+
+#pragma mark - Init Data Methods
 - (NSArray *)datas_ {
-    
     return !_datas_ ? _datas_ = ({
-        [SwpTransitionsModel swpTransitionsWithDictionarys:[NSArray arrayWithContentsOfFile:[NSBundle.mainBundle pathForResource:@"SwpTransitionsModel" ofType:@"plist"]]];
+        [SwpDrawerModel swpDrawerWithDictionarys:[NSArray arrayWithContentsOfFile:[NSBundle.mainBundle pathForResource:@"SwpDrawerModel" ofType:@"plist"]]];
     }) : _datas_;
     
 }
-
-
-
 
 
 /*

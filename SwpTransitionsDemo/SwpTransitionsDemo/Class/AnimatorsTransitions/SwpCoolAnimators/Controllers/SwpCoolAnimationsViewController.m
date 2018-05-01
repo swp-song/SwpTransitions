@@ -1,18 +1,19 @@
 //
-//  SwpTransitionsListViewController.m
+//  SwpCoolAnimationsViewController.m
 //  SwpTransitionsDemo
 //
-//  Created by swp_song on 2017/12/31.
-//  Copyright © 2017年 swp_song. All rights reserved.
+//  Created by swp_song on 2018/1/1.
+//  Copyright © 2018年 swp_song. All rights reserved.
 //
 
-#import "SwpTransitionsListViewController.h"
+#import "SwpCoolAnimationsViewController.h"
 
 /* ---------------------- Tool       ---------------------- */
+#import <SwpTransitions/SwpTransitionsHeader.h>
 /* ---------------------- Tool       ---------------------- */
 
 /* ---------------------- Model      ---------------------- */
-#import "SwpTransitionsModel.h"
+#import "SwpCoolModel.h"
 /* ---------------------- Model      ---------------------- */
 
 /* ---------------------- View       ---------------------- */
@@ -20,16 +21,15 @@
 /* ---------------------- View       ---------------------- */
 
 /* ---------------------- Controller ---------------------- */
-#import "SwpCoolAnimationsViewController.h"
+#import "SwpCoolToAnimationsViewController.h"
 /* ---------------------- Controller ---------------------- */
 
 
-@interface SwpTransitionsListViewController ()
+@interface SwpCoolAnimationsViewController ()
 
 #pragma mark - UI   Propertys
 /* ---------------------- UI   Property  ---------------------- */
 @property (nonatomic, strong) SwpTransitionsTableView *swpTransitionsTableView;
-
 /* ---------------------- UI   Property  ---------------------- */
 
 #pragma mark - Data Propertys
@@ -40,7 +40,7 @@
 
 @end
 
-@implementation SwpTransitionsListViewController
+@implementation SwpCoolAnimationsViewController
 
 
 #pragma mark - Lifecycle Methods
@@ -53,13 +53,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    NSLog(@"swpTransitionsInfo    = %@", [SwpTransitionsInfo swpTransitionsInfo]);
+    NSLog(@"swpTransitionsVersion = %@", [SwpTransitionsInfo swpTransitionsVersion]);
+    
     [self setUI];
     
     [self setData];
     
-    [self swpTransitionsListViewControllerBlock];
-    
-
+    [self swpCoolAnimatorsViewControllerBlock];
 }
 
 /**
@@ -157,7 +158,7 @@
  *  @brief  setNavigationBar    ( 设置导航栏 )
  */
 - (void)setNavigationBar {
-
+    
 }
 
 /**
@@ -182,16 +183,14 @@
     }];
 }
 
-
 /**
  *  @author swp_song
  *
- *  @brief  swpTransitionsListViewControllerBlock ( SwpTransitionsListViewController Block )
+ *  @brief  swpCoolAnimatorsViewControllerBlock ( SwpCoolAnimatorsViewController Block )
  */
-- (void)swpTransitionsListViewControllerBlock {
+- (void)swpCoolAnimatorsViewControllerBlock {
     
     [self swpTransitionsTableViewBlock:self.swpTransitionsTableView];
-    // CenterFoldFlip
 }
 
 
@@ -205,25 +204,28 @@
 - (void)swpTransitionsTableViewBlock:(SwpTransitionsTableView *)swpTransitionsTableView {
     
     __weak typeof(self) weakSelf = self;
-    swpTransitionsTableView.swpTransitionsTableViewClickCellEventChain(^(SwpTransitionsTableView *swpTransitionsTableView, NSIndexPath *indexPath, SwpTransitionsModel *swpTransitions){
+    swpTransitionsTableView.swpTransitionsTableViewClickCellEventChain(^(SwpTransitionsTableView *swpTransitionsTableView, NSIndexPath *indexPath, SwpCoolModel *model){
         __strong __typeof(weakSelf)strongSelf = weakSelf;
-        [strongSelf.navigationController pushViewController:[NSClassFromString(swpTransitions.jumpController) new] animated:YES];
+        SwpCoolToAnimationsViewController *swpCoolToAnimationsViewController = [SwpCoolToAnimationsViewController new];
+        swpCoolToAnimationsViewController.transitionsType(model.coolType);
+        [strongSelf.navigationController pushViewController:swpCoolToAnimationsViewController animated:YES];
     });
 }
 
 #pragma mark - Init UI Methods
 - (SwpTransitionsTableView *)swpTransitionsTableView {
-
+    
     return !_swpTransitionsTableView ? _swpTransitionsTableView = ({
         SwpTransitionsTableView *swpTransitionsTableView = [SwpTransitionsTableView new];
         swpTransitionsTableView;
     }) : _swpTransitionsTableView;
 }
 
+#pragma mark - Init Data Methods
 - (NSArray *)datas_ {
     
     return !_datas_ ? _datas_ = ({
-        [SwpTransitionsModel swpTransitionsWithDictionarys:[NSArray arrayWithContentsOfFile:[NSBundle.mainBundle pathForResource:@"SwpTransitionsModel" ofType:@"plist"]]];
+        [SwpCoolModel swpCoolWithDictionarys:[NSArray arrayWithContentsOfFile:[NSBundle.mainBundle pathForResource:@"SwpCoolModel" ofType:@"plist"]]];
     }) : _datas_;
     
 }

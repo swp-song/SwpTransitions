@@ -14,6 +14,8 @@
     #import "SwpCustomAnimations.h"
     #import "SwpDrawerAnimations.h"
     #import "SwpCoolAnimationsHeader.h"
+    #import "SwpCircleSpreadAnimations.h"
+    #import "SwpCircleSpreadAnimationsHeader.h"
     #import "UIViewController+SwpTransitions.h"
     #import "UINavigationController+SwpTransitions.h"
 

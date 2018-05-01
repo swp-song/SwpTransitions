@@ -15,28 +15,29 @@ UIKIT_EXTERN NSString * const kSwpTransitionsKey;
 @interface SwpTransitions : NSObject <UIViewControllerTransitioningDelegate, UINavigationControllerDelegate>
 {
     @protected
-    NSTimeInterval  _backDuration;
     NSTimeInterval  _toDuration;
+    NSTimeInterval  _backDuration;
+    BOOL            _isInteractive;
 }
 
 
 /**
  *  @author swp_song
  *
- *  @brief  swpTransitionsSetToAnimation:   ( 控制器跳转调用 )
+ *  @brief  swpTransitionsToAnimation:  ( 控制器跳转调用 )
  *
  *  @param  transitionContext   transitionContext
  */
-- (void)swpTransitionsSetToAnimation:(id<UIViewControllerContextTransitioning>)transitionContext;
+- (void)swpTransitionsToAnimation:(id<UIViewControllerContextTransitioning>)transitionContext;
 
 /**
  *  @author swp_song
  *
- *  @brief  swpTransitionsSetBackAnimation: ( 控制器返回调用 )
+ *  @brief  swpTransitionsBackAnimation:    ( 控制器返回调用 )
  *
  *  @param  transitionContext   transitionContext
  */
-- (void)swpTransitionsSetBackAnimation:(id<UIViewControllerContextTransitioning>)transitionContext;
+- (void)swpTransitionsBackAnimation:(id<UIViewControllerContextTransitioning>)transitionContext;
 
 /**
  *  @author swp_song
@@ -51,6 +52,31 @@ UIKIT_EXTERN NSString * const kSwpTransitionsKey;
  *  @brief  toDuration  (  设置返回，转场时长 )
  */
 - (__kindof SwpTransitions * _Nonnull (^)(NSTimeInterval))backDuration;
+
+/**
+ *  @author swp_song
+ *
+ *  @brief  aToDuration ( 获取跳转，转场时长 )
+ *
+ *  @return NSTimeInterval
+ */
+- (NSTimeInterval)aToDuration;
+
+/**
+ *  @author swp_song
+ *
+ *  @brief  aBackDuration   ( 获取返回，转场时长 )
+ *
+ *  @return NSTimeInterval
+ */
+- (NSTimeInterval)aBackDuration;
+
+/**
+ *  @author swp_song
+ *
+ *  @brief  interactive ( 双向交互，防止手势松开，缺少过度动画问题 )
+ */
+- (__kindof SwpTransitions * _Nonnull (^)(BOOL))interactive;
 
 @end
 NS_ASSUME_NONNULL_END

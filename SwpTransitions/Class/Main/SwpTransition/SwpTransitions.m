@@ -93,22 +93,22 @@ NSString * const kSwpTransitionsKey = @"kSwpTransitionsKey";
 /**
  *  @author swp_song
  *
- *  @brief  swpTransitionsSetToAnimation:   ( 控制器跳转调用 )
+ *  @brief  swpTransitionsToAnimation:  ( 控制器跳转调用 )
  *
  *  @param  transitionContext   transitionContext
  */
-- (void)swpTransitionsSetToAnimation:(id<UIViewControllerContextTransitioning>)transitionContext {
+- (void)swpTransitionsToAnimation:(id<UIViewControllerContextTransitioning>)transitionContext {
     //  跳转执行专场动画
 }
 
 /**
  *  @author swp_song
  *
- *  @brief  swpTransitionsSetBackAnimation: ( 控制器返回调用 )
+ *  @brief  swpTransitionsBackAnimation:    ( 控制器返回调用 )
  *
  *  @param  transitionContext   transitionContext
  */
-- (void)swpTransitionsSetBackAnimation:(id<UIViewControllerContextTransitioning>)transitionContext {
+- (void)swpTransitionsBackAnimation:(id<UIViewControllerContextTransitioning>)transitionContext {
     //  关闭执行转场动画
 }
 
@@ -125,7 +125,6 @@ NSString * const kSwpTransitionsKey = @"kSwpTransitionsKey";
     };
 }
 
-
 /**
  *  @author swp_song
  *
@@ -139,6 +138,43 @@ NSString * const kSwpTransitionsKey = @"kSwpTransitionsKey";
     };
 }
 
+/**
+ *  @author swp_song
+ *
+ *  @brief  aToDuration ( 获取跳转，转场时长 )
+ *
+ *  @return NSTimeInterval
+ */
+- (NSTimeInterval)aToDuration {
+    return _toDuration;
+}
+
+/**
+ *  @author swp_song
+ *
+ *  @brief  aBackDuration   ( 获取返回，转场时长 )
+ *
+ *  @return NSTimeInterval
+ */
+- (NSTimeInterval)aBackDuration {
+    return _backDuration;
+}
+
+
+
+/**
+ *  @author swp_song
+ *
+ *  @brief  interactive ( 双向交互，防止手势松开，缺少过度动画问题 )
+ */
+- (__kindof SwpTransitions * _Nonnull (^)(BOOL))interactive {
+    return ^(BOOL interactive) {
+        self->_isInteractive = interactive;
+        return self;
+    };
+}
+
+
 #pragma mark - Init Data Methods
 - (SwpTransitionObject *)toTransition {
     
@@ -147,7 +183,7 @@ NSString * const kSwpTransitionsKey = @"kSwpTransitionsKey";
         __weak typeof(self) weakSelf = self;
         [SwpTransitionObject swpTransitionObject:_toDuration animationBlock:^(id<UIViewControllerContextTransitioning>  _Nonnull transitionContext) {
             __strong __typeof(weakSelf)strongSelf = weakSelf;
-            [strongSelf swpTransitionsSetToAnimation:transitionContext];
+            [strongSelf swpTransitionsToAnimation:transitionContext];
         }];
     }) : _toTransition;
 }
@@ -160,7 +196,7 @@ NSString * const kSwpTransitionsKey = @"kSwpTransitionsKey";
         __weak typeof(self) weakSelf = self;
         [SwpTransitionObject swpTransitionObject:_backDuration animationBlock:^(id<UIViewControllerContextTransitioning>  _Nonnull transitionContext) {
             __strong __typeof(weakSelf)strongSelf = weakSelf;
-            [strongSelf swpTransitionsSetBackAnimation:transitionContext];
+            [strongSelf swpTransitionsBackAnimation:transitionContext];
         }];
     }) : _backTranstion;
 }
