@@ -6,7 +6,7 @@
 [![Version](https://img.shields.io/cocoapods/v/SwpTransitions.svg?style=flat)](http://cocoapods.org/pods/SwpTransitions) 
 [![License](https://img.shields.io/cocoapods/l/SwpTransitions.svg?style=flat)](http://cocoapods.org/pods/SwpTransitions) 
 [![Platform](https://img.shields.io/cocoapods/p/SwpTransitions.svg?style=flat)](http://cocoapods.org/pods/SwpTransitions)
-[![SwpTransitionsAPI](https://img.shields.io/badge/SwpTransitionsAPI-v2.0.0-44E0D3.svg)](https://swp-song.com/docs/SwpTransitions/)
+[![SwpTransitionsAPI](https://img.shields.io/badge/SwpTransitionsAPI-v2.0.1-44E0D3.svg)](https://swp-song.com/docs/SwpTransitions/)
 
 -------
 
@@ -44,6 +44,14 @@
 
 ### 版本记录
 
+> * 版本版本：2.0.1
+> * 更新时间：2018-05-01 11:13:57
+> * 更新内容：
+> 
+>> * 上传遗失文件
+
+>> -------
+
 > * 版本版本：2.0.0
 > * 更新时间：2018-05-01 10:46:45
 > * 更新内容：
@@ -52,13 +60,7 @@
 
 >> -------
 
-> * 版本版本：1.4.2
-> * 更新时间：2018-04-29 17:08:45
-> * 更新内容：
-> 
->> * 新增文档，修改文件结构。
 
->> -------
 
 -------
 
