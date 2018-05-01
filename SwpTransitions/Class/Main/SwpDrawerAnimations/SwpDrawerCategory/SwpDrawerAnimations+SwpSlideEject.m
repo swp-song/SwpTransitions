@@ -77,7 +77,7 @@ FOUNDATION_STATIC_INLINE UIView * SlideEjectToAnimation(id<UIViewControllerConte
     [containerView addSubview:tempView];
     [containerView addSubview:toVC.view];
     
-    NSInteger   symbol          = direction == SwpDrawerAnimationsDirectionLeft || direction == SwpDrawerAnimationsDirectionTop ? -1 : 1;
+    NSInteger   symbol          = direction == SwpDrawerAnimationDirectionLeft || direction == SwpDrawerAnimationDirectionTop ? -1 : 1;
     CGFloat     toViewStartx    = vertical ? 0 : (containerView.frame.size.width - fabs(parallaxDistance)) * symbol;
     CGFloat     toViewStartY    = vertical ? (containerView.frame.size.height - fabs(parallaxDistance)) * symbol : 0;
     toVC.view.frame             = CGRectOffset(containerView.bounds,toViewStartx, toViewStartY);
@@ -153,23 +153,23 @@ FOUNDATION_STATIC_INLINE CGFloat _SlideEjectMoveMaxDistance(UIView *containerVie
     CGFloat aDistance = 0.0f;
     
     switch (direction) {
-        case SwpDrawerAnimationsDirectionTop: {
+        case SwpDrawerAnimationDirectionTop: {
             aDistance = distance ? -distance : -containerView.frame.size.height;
             break;
         }
       
-        case SwpDrawerAnimationsDirectionLeft: {
+        case SwpDrawerAnimationDirectionLeft: {
             aDistance = distance ? -distance : -containerView.frame.size.width;
             break;
         }
             
             
-        case SwpDrawerAnimationsDirectionBottom: {
+        case SwpDrawerAnimationDirectionBottom: {
             aDistance = distance ? distance : containerView.frame.size.height;
             break;
         }
             
-        case SwpDrawerAnimationsDirectionRight: {
+        case SwpDrawerAnimationDirectionRight: {
             aDistance = distance ? distance : containerView.frame.size.width;
             break;
         }
@@ -183,7 +183,7 @@ FOUNDATION_STATIC_INLINE CATransform3D _SlideEjectStepTwoTransform(UIView *view,
     
     CATransform3D transform3D = CATransform3DIdentity;
     transform3D.m34     = _SlideEjectStepOneTransform(direction, vertical, stepOneScale).m34;
-    NSInteger   symbol  = direction == SwpDrawerAnimationsDirectionRight || direction == SwpDrawerAnimationsDirectionBottom ? -1 : 1;
+    NSInteger   symbol  = direction == SwpDrawerAnimationDirectionRight || direction == SwpDrawerAnimationDirectionBottom ? -1 : 1;
     CGFloat     x       = vertical ?  0: view.frame.size.width * 0.08 * symbol;
     CGFloat     y       = vertical ?  view.frame.size.height * 0.08 * symbol: 0;
     transform3D         = CATransform3DTranslate(transform3D, x, y, 0);
@@ -198,7 +198,7 @@ FOUNDATION_STATIC_INLINE CATransform3D _SlideEjectStepOneTransform(SwpDrawerAnim
     CATransform3D transform3D   = CATransform3DIdentity;
     transform3D.m34             = 1.0 / -900;
     transform3D                 = CATransform3DScale(transform3D, stepOneScale, stepOneScale, 1);
-    NSInteger symbol            = direction == SwpDrawerAnimationsDirectionLeft || direction == SwpDrawerAnimationsDirectionBottom ? 1 : -1;
+    NSInteger symbol            = direction == SwpDrawerAnimationDirectionLeft || direction == SwpDrawerAnimationDirectionBottom ? 1 : -1;
     transform3D                 = CATransform3DRotate(transform3D, 15.0f * M_PI / 180.0f * rotationRatio * symbol, vertical, !vertical, 0);
     return transform3D;
 }

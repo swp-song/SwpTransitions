@@ -70,7 +70,7 @@ FOUNDATION_STATIC_INLINE UIView * _SideslipToAnimation(id<UIViewControllerContex
     [containerView insertSubview:toVC.view belowSubview:tempView];
     
     
-    NSInteger   symbol          = direction == SwpDrawerAnimationsDirectionLeft || direction == SwpDrawerAnimationsDirectionTop ? -1 : 1;
+    NSInteger   symbol          = direction == SwpDrawerAnimationDirectionLeft || direction == SwpDrawerAnimationDirectionTop ? -1 : 1;
     CGFloat     toViewStartx    = vertical ? 0 : (containerView.frame.size.width - fabs(parallaxDistance)) * symbol;
     CGFloat     toViewStartY    = vertical ? (containerView.frame.size.height - fabs(parallaxDistance)) * symbol : 0;
     toVC.view.frame             = CGRectOffset(containerView.bounds,toViewStartx, toViewStartY);
@@ -136,22 +136,22 @@ FOUNDATION_STATIC_INLINE void _SideslipBackAnimation(id<UIViewControllerContextT
     
      CGFloat aDistance = 0.0f;
      switch (direction) {
-         case SwpDrawerAnimationsDirectionTop: {
+         case SwpDrawerAnimationDirectionTop: {
              aDistance = distance ? -distance : -containerView.frame.size.height;
              break;
          }
         
-         case SwpDrawerAnimationsDirectionLeft: {
+         case SwpDrawerAnimationDirectionLeft: {
              aDistance = distance ? -distance : -containerView.frame.size.width;
              break;
          }
              
-         case SwpDrawerAnimationsDirectionBottom: {
+         case SwpDrawerAnimationDirectionBottom: {
              aDistance = distance ? distance : containerView.frame.size.height;
              break;
          }
              
-         case SwpDrawerAnimationsDirectionRight: {
+         case SwpDrawerAnimationDirectionRight: {
              aDistance = distance ? distance : containerView.frame.size.width;
              break;
          }

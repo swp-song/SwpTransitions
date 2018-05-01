@@ -6,7 +6,7 @@
 [![Version](https://img.shields.io/cocoapods/v/SwpTransitions.svg?style=flat)](http://cocoapods.org/pods/SwpTransitions) 
 [![License](https://img.shields.io/cocoapods/l/SwpTransitions.svg?style=flat)](http://cocoapods.org/pods/SwpTransitions) 
 [![Platform](https://img.shields.io/cocoapods/p/SwpTransitions.svg?style=flat)](http://cocoapods.org/pods/SwpTransitions)
-[![SwpTransitionsAPI](https://img.shields.io/badge/SwpTransitionsAPI-v2.0.1-44E0D3.svg)](https://swp-song.com/docs/SwpTransitions/)
+[![SwpTransitionsAPI](https://img.shields.io/badge/SwpTransitionsAPI-v2.0.2-44E0D3.svg)](https://swp-song.com/docs/SwpTransitions/)
 
 -------
 
@@ -44,6 +44,14 @@
 
 ### 版本记录
 
+> * 版本版本：2.0.2
+> * 更新时间：2018-05-01 11:51:21
+> * 更新内容：
+> 
+>> *  优化数据类型
+
+>> -------
+
 > * 版本版本：2.0.1
 > * 更新时间：2018-05-01 11:13:57
 > * 更新内容：
@@ -51,16 +59,6 @@
 >> * 上传遗失文件
 
 >> -------
-
-> * 版本版本：2.0.0
-> * 更新时间：2018-05-01 10:46:45
-> * 更新内容：
-> 
->> * 更换类，现在自定转场类，改动较大
-
->> -------
-
-
 
 -------
 

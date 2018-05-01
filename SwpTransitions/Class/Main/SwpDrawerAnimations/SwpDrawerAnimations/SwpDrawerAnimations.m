@@ -60,7 +60,7 @@
     switch (self.drawer) {
             
             //  抽屉，左右侧滑效果
-        case SwpDrawerSideslipAnimations:
+        case SwpDrawerSideslipAnimation:
             
             self.tempView = [self swpSideslipToAnimation:transitionContext direction:self.direction aDistance:self.size vertical:self.isVertical scaleRatio:_slideEjectAnimatorScaleRatio];
             
@@ -68,7 +68,7 @@
             break;
             
             //  抽屉，弹出侧滑效果
-        case SwpDrawerSlideEjectAnimations:
+        case SwpDrawerSlideEjectAnimation:
             
             self.tempView = [self swpSlideEjectToAnimation:transitionContext direction:self.direction aDistance:self.size vertical:self.isVertical stepOneScale:self.stepOneScale stepTwoScale:self.stepTwoScale];
             
@@ -96,13 +96,13 @@
     switch (self.drawer) {
             
               //  抽屉，左右侧滑效果
-        case SwpDrawerSideslipAnimations:
+        case SwpDrawerSideslipAnimation:
             
             [self swpSideslipBackAnimation:transitionContext tempView:self.tempView gestureView:self.gestureView];
             break;
             
             //  抽屉，弹出侧滑效果
-        case SwpDrawerSlideEjectAnimations:
+        case SwpDrawerSlideEjectAnimation:
             
             [self swpSlideEjectBackAnimation:transitionContext tempView:self.tempView gestureView:self.gestureView direction:self.direction vertical:self.isVertical stepOneScale:self.stepOneScale];
             
@@ -132,13 +132,13 @@
 - (instancetype)init {
     
     if (self = [super init]) {
-        _drawer                         = SwpDrawerSideslipAnimations;
-        _direction                      = SwpDrawerAnimationsDirectionLeft;
+        _drawer                         = SwpDrawerSideslipAnimation;
+        _direction                      = SwpDrawerAnimationDirectionLeft;
         _stepOneScale                   = 0.95;
         _stepTwoScale                   = 0.85;
         _slideEjectAnimatorScaleRatio   = 1.00;
         _size                           = 260;
-        _vertical = _direction == SwpDrawerAnimationsDirectionTop || _direction == SwpDrawerAnimationsDirectionBottom;
+        _vertical = _direction == SwpDrawerAnimationDirectionTop || _direction == SwpDrawerAnimationDirectionBottom;
     }
     return self;
 }
@@ -165,7 +165,7 @@
         _stepOneScale                   = 0.95;
         _stepTwoScale                   = 0.85;
         _slideEjectAnimatorScaleRatio   = 1.00;
-        _vertical = _direction == SwpDrawerAnimationsDirectionTop || _direction == SwpDrawerAnimationsDirectionBottom;
+        _vertical = _direction == SwpDrawerAnimationDirectionTop || _direction == SwpDrawerAnimationDirectionBottom;
     }
     return self;
 }
@@ -268,7 +268,7 @@
 - (SwpDrawerAnimations * _Nonnull (^)(SwpDrawerAnimationsDirection))swpDrawerAnimationDirection {
     return ^(SwpDrawerAnimationsDirection direction) {
         self.direction = direction;
-        self.vertical = self.direction == SwpDrawerAnimationsDirectionTop || self.direction == SwpDrawerAnimationsDirectionBottom;
+        self.vertical = self.direction == SwpDrawerAnimationDirectionTop || self.direction == SwpDrawerAnimationDirectionBottom;
         return self;
     };
 }

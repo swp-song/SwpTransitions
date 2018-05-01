@@ -13,38 +13,38 @@ NS_ASSUME_NONNULL_BEGIN
 
 /*
  - SwpDrawerAnimationsType
- - SwpDrawerSideslipAnimations:     抽屉，左右侧滑效果 < QQ，侧滑效果 >
- - SwpDrawerSlideEjectAnimations:   抽屉，弹出效果     < 淘宝，选择商品效果 >
+ - SwpDrawerSideslipAnimation:     抽屉，左右侧滑效果 < QQ，侧滑效果 >
+ - SwpDrawerSlideEjectAnimation:   抽屉，弹出效果     < 淘宝，选择商品效果 >
  */
 typedef NS_ENUM(NSInteger, SwpDrawerAnimationsType) {
     
     /// 抽屉，左右侧滑效果 < QQ，侧滑效果 >
-    SwpDrawerSideslipAnimations = 0,
+    SwpDrawerSideslipAnimation = 0,
     
     /// 抽屉，弹出效果     < 淘宝，选择商品效果 >
-    SwpDrawerSlideEjectAnimations,
+    SwpDrawerSlideEjectAnimation,
 };
 
 /*
  - SwpDrawerAnimationsDirection
- - SwpDrawerAnimationsDirectionTop:     抽屉效果，上
- - SwpDrawerAnimationsDirectionLeft:    抽屉效果，左
- - SwpDrawerAnimationsDirectionBottom:  抽屉效果，下
- - SwpDrawerAnimationsDirectionRight:   抽屉效果，右
+ - SwpDrawerAnimationDirectionTop:     抽屉效果，上
+ - SwpDrawerAnimationDirectionLeft:    抽屉效果，左
+ - SwpDrawerAnimationDirectionBottom:  抽屉效果，下
+ - SwpDrawerAnimationDirectionRight:   抽屉效果，右
  */
 typedef NS_ENUM(NSUInteger, SwpDrawerAnimationsDirection) {
     
     ///  抽屉效果，上
-    SwpDrawerAnimationsDirectionTop,
+    SwpDrawerAnimationDirectionTop,
     
     /// 抽屉效果，左
-    SwpDrawerAnimationsDirectionLeft,
+    SwpDrawerAnimationDirectionLeft,
     
     /// 抽屉效果，下
-    SwpDrawerAnimationsDirectionBottom,
+    SwpDrawerAnimationDirectionBottom,
     
     /// 抽屉效果，右
-    SwpDrawerAnimationsDirectionRight,
+    SwpDrawerAnimationDirectionRight,
 };
 
 @interface SwpDrawerAnimations : SwpTransitions
