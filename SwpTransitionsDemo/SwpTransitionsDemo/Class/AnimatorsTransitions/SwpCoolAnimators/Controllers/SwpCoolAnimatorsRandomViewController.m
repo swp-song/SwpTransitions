@@ -5,7 +5,7 @@
 //  SwpTransitionsDemo
 //
 //  Created by swp_song on 2018/1/3.
-//Copyright © 2018年 swp_song. All rights reserved.
+//  Copyright © 2018年 swp_song. All rights reserved.
 //
 
 #import "SwpCoolAnimatorsRandomViewController.h"
@@ -155,12 +155,12 @@
 - (void)jumpSwpCoolAnimatorsBackViewController:(BOOL)isPush {
     
     SwpCoolAnimatorsBackViewController *swpCoolAnimatorsBackViewController = [SwpCoolAnimatorsBackViewController new].isPush(isPush);
-    SwpCoolAnimators *swpCoolAnimator = SwpCoolAnimators.swpCoolAnimatorInitRandom();
+    SwpCoolAnimations *swpCoolAnimations = SwpCoolAnimations.swpCoolAnimationsRandom();
     
     if (isPush) {
-        [self.navigationController swpPushViewController:swpCoolAnimatorsBackViewController animated:swpCoolAnimator];
+        [self.navigationController swpPushViewController:swpCoolAnimatorsBackViewController animated:swpCoolAnimations];
     } else {
-        [self.navigationController swpTransitionsPresentViewController:swpCoolAnimatorsBackViewController animated:swpCoolAnimator];
+        [self.navigationController swpTransitionsPresentViewController:swpCoolAnimatorsBackViewController animated:swpCoolAnimations];
     }
 }
 

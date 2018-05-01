@@ -11,8 +11,11 @@
 NS_ASSUME_NONNULL_BEGIN
 @interface SwpTransitionsModel : NSObject
 
+/** 元数据 */
 @property (nonatomic, copy, readonly) NSDictionary  *metaData;
+/** title */
 @property (nonatomic, copy, readonly) NSString      *title;
+/** 跳转控制器 */
 @property (nonatomic, copy, readonly) NSString      *jumpController;
 
 /**

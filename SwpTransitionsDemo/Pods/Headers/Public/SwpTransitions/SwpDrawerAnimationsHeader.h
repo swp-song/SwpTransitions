@@ -1,0 +1,1 @@
+../../../../../SwpTransitions/Class/Main/SwpDrawerAnimations/SwpDrawerAnimations/SwpDrawerAnimationsHeader.h

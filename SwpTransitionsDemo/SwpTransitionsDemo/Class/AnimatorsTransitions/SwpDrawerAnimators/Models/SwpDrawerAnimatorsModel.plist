@@ -4,82 +4,82 @@
 <array>
 	<dict>
 		<key>title</key>
-		<string>Swp Drawer Sideslip Animator Top</string>
-		<key>screenSizes</key>
+		<string>Swp Drawer Sideslip Animation Top</string>
+		<key>size</key>
 		<integer>500</integer>
-		<key>drawerAnimatorsType</key>
+		<key>drawer</key>
 		<integer>0</integer>
-		<key>drawerAnimatorDirection</key>
+		<key>direction</key>
 		<string>0</string>
 	</dict>
 	<dict>
 		<key>title</key>
-		<string>Swp Drawer Sideslip Animator Left</string>
-		<key>screenSizes</key>
+		<string>Swp Drawer Sideslip Animation Left</string>
+		<key>size</key>
 		<integer>260</integer>
-		<key>drawerAnimatorsType</key>
+		<key>drawer</key>
 		<integer>0</integer>
-		<key>drawerAnimatorDirection</key>
+		<key>direction</key>
 		<string>1</string>
 	</dict>
 	<dict>
 		<key>title</key>
-		<string>Swp Drawer Sideslip Animator Bottom</string>
-		<key>screenSizes</key>
+		<string>Swp Drawer Sideslip Animation Bottom</string>
+		<key>size</key>
 		<integer>500</integer>
-		<key>drawerAnimatorsType</key>
+		<key>drawer</key>
 		<integer>0</integer>
-		<key>drawerAnimatorDirection</key>
+		<key>direction</key>
 		<string>2</string>
 	</dict>
 	<dict>
 		<key>title</key>
-		<string>Swp Drawer Sideslip Animator Right</string>
-		<key>screenSizes</key>
+		<string>Swp Drawer Sideslip Animation Right</string>
+		<key>size</key>
 		<integer>260</integer>
-		<key>drawerAnimatorsType</key>
+		<key>drawer</key>
 		<integer>0</integer>
-		<key>drawerAnimatorDirection</key>
+		<key>direction</key>
 		<string>3</string>
 	</dict>
 	<dict>
 		<key>title</key>
-		<string>Swp Drawer Slide Eject Animator Top</string>
-		<key>screenSizes</key>
+		<string>Swp Drawer Slide Eject Animation Top</string>
+		<key>size</key>
 		<integer>500</integer>
-		<key>drawerAnimatorsType</key>
+		<key>drawer</key>
 		<integer>1</integer>
-		<key>drawerAnimatorDirection</key>
+		<key>direction</key>
 		<string>0</string>
 	</dict>
 	<dict>
 		<key>title</key>
-		<string>Swp Drawer Slide Eject Animator Left</string>
-		<key>screenSizes</key>
+		<string>Swp Drawer Slide Eject Animation Left</string>
+		<key>size</key>
 		<integer>260</integer>
-		<key>drawerAnimatorsType</key>
+		<key>drawer</key>
 		<integer>1</integer>
-		<key>drawerAnimatorDirection</key>
+		<key>direction</key>
 		<string>1</string>
 	</dict>
 	<dict>
 		<key>title</key>
-		<string>Swp Drawer Slide Eject Animator Bottom</string>
-		<key>screenSizes</key>
+		<string>Swp Drawer Slide Eject Animation Bottom</string>
+		<key>size</key>
 		<integer>400</integer>
-		<key>drawerAnimatorsType</key>
+		<key>drawer</key>
 		<integer>1</integer>
-		<key>drawerAnimatorDirection</key>
+		<key>direction</key>
 		<string>2</string>
 	</dict>
 	<dict>
 		<key>title</key>
-		<string>Swp Drawer Slide Eject Animator Right</string>
-		<key>screenSizes</key>
+		<string>Swp Drawer Slide Eject Animation Right</string>
+		<key>size</key>
 		<integer>260</integer>
-		<key>drawerAnimatorsType</key>
+		<key>drawer</key>
 		<integer>1</integer>
-		<key>drawerAnimatorDirection</key>
+		<key>direction</key>
 		<string>3</string>
 	</dict>
 </array>

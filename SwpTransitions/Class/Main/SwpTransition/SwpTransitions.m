@@ -18,17 +18,11 @@ NSString * const kSwpTransitionsKey = @"kSwpTransitionsKey";
 
 #pragma mark - Data Propertys
 /* ---------------------- Data Property  ---------------------- */
-/* 跳转，转场 */
-@property (nonatomic, strong, nullable) SwpTransitionObject *toTransition_;
-/* 关闭，转场 */
-@property (nonatomic, strong, nullable) SwpTransitionObject *backTranstion_;
-/* 跳转，转场时长 默认 0.5s */
-@property (nonatomic, assign) NSTimeInterval toDuration_;
-/* 关闭，转场时长 默认 0.5s */
-@property (nonatomic, assign) NSTimeInterval backDuration_;
-
+/* 跳转转场 */
+@property (nonatomic, strong, nullable) SwpTransitionObject *toTransition;
+/* 返回转场 */
+@property (nonatomic, strong, nullable) SwpTransitionObject *backTranstion;
 @property (nonatomic, assign) UINavigationControllerOperation operation;
-
 /* ---------------------- Data Property  ---------------------- */
 @end
 
@@ -46,7 +40,7 @@ NSString * const kSwpTransitionsKey = @"kSwpTransitionsKey";
 - (instancetype)init {
     
     if (self = [super init]) {
-        self.toDuration_ = self.backDuration_ = 0.5f;
+        _toDuration = _backDuration = 0.5;
     }
     return self;
 }
@@ -69,7 +63,7 @@ NSString * const kSwpTransitionsKey = @"kSwpTransitionsKey";
  *  @return id<UIViewControllerAnimatedTransitioning>
  */
 - (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source {
-    return self.toTransition_;
+    return self.toTransition;
 }
 
 /**
@@ -82,7 +76,7 @@ NSString * const kSwpTransitionsKey = @"kSwpTransitionsKey";
  *  @return id<UIViewControllerAnimatedTransitioning>
  */
 - (id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed {
-    return self.backTranstion_;
+    return self.backTranstion;
 }
 
 
@@ -90,7 +84,7 @@ NSString * const kSwpTransitionsKey = @"kSwpTransitionsKey";
 
 - (id<UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC{
     _operation = operation;
-    return operation == UINavigationControllerOperationPush ? self.toTransition_ : self.backTranstion_;
+    return operation == UINavigationControllerOperationPush ? self.toTransition : self.backTranstion;
 }
 
 
@@ -99,7 +93,7 @@ NSString * const kSwpTransitionsKey = @"kSwpTransitionsKey";
 /**
  *  @author swp_song
  *
- *  @brief  swpTransitionsSetToAnimation:   ( 转场开始执行动画方法 )
+ *  @brief  swpTransitionsSetToAnimation:   ( 控制器跳转调用 )
  *
  *  @param  transitionContext   transitionContext
  */
@@ -110,12 +104,11 @@ NSString * const kSwpTransitionsKey = @"kSwpTransitionsKey";
 /**
  *  @author swp_song
  *
- *  @brief  swpTransitionsSetBackAnimation: ( 转场关闭执行动画方法  )
+ *  @brief  swpTransitionsSetBackAnimation: ( 控制器返回调用 )
  *
  *  @param  transitionContext   transitionContext
  */
 - (void)swpTransitionsSetBackAnimation:(id<UIViewControllerContextTransitioning>)transitionContext {
-    
     //  关闭执行转场动画
 }
 
@@ -127,7 +120,7 @@ NSString * const kSwpTransitionsKey = @"kSwpTransitionsKey";
 - (__kindof SwpTransitions * _Nonnull (^)(NSTimeInterval))toDuration {
     
     return ^(NSTimeInterval toDuration) {
-        self.toDuration_ = toDuration <=0 ? 0.5 : toDuration;
+        self->_toDuration = toDuration <= 0 ? 0.5 : toDuration;
         return self;
     };
 }
@@ -141,61 +134,35 @@ NSString * const kSwpTransitionsKey = @"kSwpTransitionsKey";
 - (__kindof SwpTransitions * _Nonnull (^)(NSTimeInterval))backDuration {
     
     return ^(NSTimeInterval backDuration) {
-        self.backDuration_ = backDuration <=0 ? 0.5 : backDuration;
+        self->_backDuration = backDuration <= 0 ? 0.5 : backDuration;
         return self;
     };
 }
 
-
-/**
- *  @author swp_song
- *
- *  @brief  transitionsToDuration   ( 获取跳转，转场时间 )
- *
- *  @return NSTimeInterval
- */
-- (NSTimeInterval)transitionsToDuration {
-    return self.toDuration_;
-}
-
-
-/**
- *  @author swp_song
- *
- *  @brief  transitionsBackDuration ( 获取关闭，转场时间 )
- *
- *  @return NSTimeInterval
- */
-- (NSTimeInterval)transitionsBackDuration {
-    return self.backDuration_;
-}
-
-
-
 #pragma mark - Init Data Methods
-- (SwpTransitionObject *)toTransition_ {
+- (SwpTransitionObject *)toTransition {
     
-    return !_toTransition_ ? _toTransition_ = ({
+    return !_toTransition ? _toTransition = ({
         
         __weak typeof(self) weakSelf = self;
-        [SwpTransitionObject swpTransitionObject:weakSelf.toDuration_ animationBlock:^(id<UIViewControllerContextTransitioning>  _Nonnull transitionContext) {
+        [SwpTransitionObject swpTransitionObject:_toDuration animationBlock:^(id<UIViewControllerContextTransitioning>  _Nonnull transitionContext) {
             __strong __typeof(weakSelf)strongSelf = weakSelf;
             [strongSelf swpTransitionsSetToAnimation:transitionContext];
         }];
-    }) : _toTransition_;
+    }) : _toTransition;
 }
 
 
-- (SwpTransitionObject *)backTranstion_ {
+- (SwpTransitionObject *)backTranstion {
     
-    return !_backTranstion_ ? _backTranstion_ = ({
+    return !_backTranstion ? _backTranstion = ({
         
         __weak typeof(self) weakSelf = self;
-        [SwpTransitionObject swpTransitionObject:weakSelf.toDuration_ animationBlock:^(id<UIViewControllerContextTransitioning>  _Nonnull transitionContext) {
+        [SwpTransitionObject swpTransitionObject:_backDuration animationBlock:^(id<UIViewControllerContextTransitioning>  _Nonnull transitionContext) {
             __strong __typeof(weakSelf)strongSelf = weakSelf;
             [strongSelf swpTransitionsSetBackAnimation:transitionContext];
         }];
-    }) : _backTranstion_;
+    }) : _backTranstion;
 }
 
 

@@ -10,7 +10,6 @@
 #import "SwpDrawerAnimatorsBackViewController.h"
 
 /* ---------------------- Tool       ---------------------- */
-#import <SwpTransitions/SwpTransitionsHeader.h>
 #import <SwpCateGory/UIBarButtonItem+SwpSetNavigationBarItem.h>
 /* ---------------------- Tool       ---------------------- */
 

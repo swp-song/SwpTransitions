@@ -8,26 +8,31 @@
 
 #import <Foundation/Foundation.h>
 
-
 NS_ASSUME_NONNULL_BEGIN
 
 UIKIT_EXTERN NSString * const kSwpTransitionsKey;
 
 @interface SwpTransitions : NSObject <UIViewControllerTransitioningDelegate, UINavigationControllerDelegate>
+{
+    @protected
+    NSTimeInterval  _backDuration;
+    NSTimeInterval  _toDuration;
+}
 
 
 /**
  *  @author swp_song
  *
- *  @brief  swpTransitionsSetToAnimation:   ( 转场开始执行动画方法 )
+ *  @brief  swpTransitionsSetToAnimation:   ( 控制器跳转调用 )
  *
  *  @param  transitionContext   transitionContext
  */
 - (void)swpTransitionsSetToAnimation:(id<UIViewControllerContextTransitioning>)transitionContext;
+
 /**
  *  @author swp_song
  *
- *  @brief  swpTransitionsSetBackAnimation: ( 转场关闭执行动画方法  )
+ *  @brief  swpTransitionsSetBackAnimation: ( 控制器返回调用 )
  *
  *  @param  transitionContext   transitionContext
  */
@@ -36,35 +41,16 @@ UIKIT_EXTERN NSString * const kSwpTransitionsKey;
 /**
  *  @author swp_song
  *
- *  @brief  toDuration      ( 设置跳转，转场时长 )
+ *  @brief  toDuration  ( 设置跳转，转场时长 )
  */
 - (__kindof SwpTransitions * _Nonnull (^)(NSTimeInterval))toDuration;
 
 /**
  *  @author swp_song
  *d
- *  @brief  toDuration  (  设置关闭，转场时长 )
+ *  @brief  toDuration  (  设置返回，转场时长 )
  */
 - (__kindof SwpTransitions * _Nonnull (^)(NSTimeInterval))backDuration;
-
-/**
- *  @author swp_song
- *
- *  @brief  transitionsToDuration   ( 获取跳转，转场时间 )
- *
- *  @return NSTimeInterval
- */
-- (NSTimeInterval)transitionsToDuration;
-
-/**
- *  @author swp_song
- *
- *  @brief  transitionsBackDuration ( 获取关闭，转场时间 )
- *
- *  @return NSTimeInterval
- */
-- (NSTimeInterval)transitionsBackDuration;
-
 
 @end
 NS_ASSUME_NONNULL_END

@@ -52,10 +52,7 @@
 - (void)viewDidLoad {
     
     // Do any additional setup after loading the view.
-    
-    NSLog(@"swpTransitionsInfo    = %@", [SwpTransitionsInfo swpTransitionsInfo]);
-    NSLog(@"swpTransitionsVersion = %@", [SwpTransitionsInfo swpTransitionsVersion]);
-    
+
     __weak typeof(self) weakSelf = self;
     
     self
@@ -162,27 +159,35 @@
  */
 - (void)jumpSwpDrawerAnimatorsBackViewController:(NSInteger)transitionsType isPush:(BOOL)isPush model:(SwpDrawerAnimatorsModel *)model {
     
-    
+
+    __weak typeof(self)weakSelf = self;
     SwpDrawerAnimatorsBackViewController *swpDrawerAnimatorsBackViewController = [SwpDrawerAnimatorsBackViewController new].isPush(isPush);
 
-    SwpDrawerAnimators *animator =
-    [SwpDrawerAnimators new]
-    .swpDrawerAnimator(model.drawerAnimatorsType)
-    .slideEjectAnimatorScaleRatio(1)
-    .swpDrawerAnimatorDirection(model.drawerAnimatorDirection)
-    .swpDrawerAnimatorScreenSizes(model.screenSizes.floatValue);
+    SwpDrawerAnimations *animator = SwpDrawerAnimations.new
+    
+    //  动画类型
+    .swpDrawerAnimation(model.drawer)
+    
+    //  缩放比例
+    .slideEjectAnimationScaleRatio(1)
+    
+    //  动画方向
+    .swpDrawerAnimationDirection(model.direction)
+    
+    //  屏幕尺寸
+    .swpDrawerAnimationSize(model.size.floatValue)
+    
+    //  启用点击事件
+    .swpDrawerAnimationEnableClickGestureEvent(^(){
+        __strong __typeof(weakSelf)strongSelf = weakSelf;
+        [strongSelf viewControllerBack];
+    });;
 
     if (isPush) {
         [self.navigationController swpPushViewController:swpDrawerAnimatorsBackViewController animated:animator];
     } else {
         [self.navigationController swpTransitionsPresentViewController:swpDrawerAnimatorsBackViewController animated:animator];
     }
-    
-    __weak typeof(self)weakSelf = self;
-    animator.swpDrawerAnimatorEnableClickGestureEvent(^(){
-        __strong __typeof(weakSelf)strongSelf = weakSelf;
-        [strongSelf viewControllerBack];
-    });
     
 }
 

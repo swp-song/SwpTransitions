@@ -1,1 +1,0 @@
-../../../../../SwpTransitions/Class/Main/SwpDrawerAnimators/SwpDrawerCategory/SwpDrawerAnimators+SwpSlideEject.h

@@ -15,9 +15,9 @@
 #pragma mark - Data Propertys
 /* ---------------------- Data Property ---------------------- */
 /* 转场时长 */
-@property (nonatomic, assign) NSTimeInterval duration_;
+@property (nonatomic, assign) NSTimeInterval duration;
 /* 转场回调 */
-@property (nonatomic, copy  ) SwpAnimationTransitionConfig config_;
+@property (nonatomic, copy  ) SwpAnimationTransitionConfig config;
 /* ---------------------- Data Property ---------------------- */
 
 @end
@@ -37,7 +37,7 @@
  *  @return NSTimeInterval
  */
 - (NSTimeInterval)transitionDuration:(id<UIViewControllerContextTransitioning>)transitionContext {
-    return self.duration_;
+    return self.duration;
 }
 
 
@@ -49,7 +49,7 @@
  *  @param  transitionContext    transitionContext
  */
 - (void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext {
-    if (self.config_) self.config_(transitionContext);
+    if (self.config) self.config(transitionContext);
 }
 
 /**
@@ -81,8 +81,8 @@
 - (instancetype)initWithDuration:(NSTimeInterval)duration animationBlock:(SwpAnimationTransitionConfig)config {
     
     if (self = [super init]) {
-        self.duration_  = duration;
-        self.config_    = config;
+        self.duration  = duration;
+        self.config    = config;
     }
     return self;
 }

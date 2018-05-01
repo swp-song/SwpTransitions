@@ -54,6 +54,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    NSLog(@"swpTransitionsInfo    = %@", [SwpTransitionsInfo swpTransitionsInfo]);
+    NSLog(@"swpTransitionsVersion = %@", [SwpTransitionsInfo swpTransitionsVersion]);
+    
     [self setUI];
     
     [self setData];

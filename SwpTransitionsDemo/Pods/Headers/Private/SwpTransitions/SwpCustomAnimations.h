@@ -1,0 +1,1 @@
+../../../../../SwpTransitions/Class/Main/SwpCustomAnimations/SwpCustomAnimations.h

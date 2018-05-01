@@ -4,21 +4,27 @@
 <array>
 	<dict>
 		<key>title</key>
-		<string>Swp Cool Animators</string>
+		<string>Swp Cool Animations</string>
 		<key>jumpController</key>
 		<string>SwpCoolAnimatorsViewController</string>
 	</dict>
 	<dict>
 		<key>title</key>
-		<string>Swp Cool Animators Random</string>
+		<string>Swp Cool Animations Random</string>
 		<key>jumpController</key>
 		<string>SwpCoolAnimatorsRandomViewController</string>
 	</dict>
 	<dict>
 		<key>title</key>
-		<string>Swp Drawer Animators</string>
+		<string>Swp Drawer Animations</string>
 		<key>jumpController</key>
 		<string>SwpDrawerAnimatorsViewController</string>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Swp Custom Animations</string>
+		<key>jumpController</key>
+		<string>SwpCustomAnimatorsViewController</string>
 	</dict>
 </array>
 </plist>

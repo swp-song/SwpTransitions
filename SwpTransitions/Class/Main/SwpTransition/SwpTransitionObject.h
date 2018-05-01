@@ -8,6 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
+
+/**
+ *  @author swp_song
+ *
+ *  @brief  SwpAnimationTransitionConfig    ( SwpTransitionObject 转场回调参数 )
+ *
+ *  @param  transitionContext   transitionContext
+ */
 typedef void(^SwpAnimationTransitionConfig)(id<UIViewControllerContextTransitioning> _Nonnull transitionContext);
 
 NS_ASSUME_NONNULL_BEGIN

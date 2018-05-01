@@ -49,11 +49,7 @@
  */
 - (void)viewDidLoad {
     
-    // Do any additional setup after loading the view.
-    
-    NSLog(@"swpTransitionsInfo    = %@", [SwpTransitionsInfo swpTransitionsInfo]);
-    NSLog(@"swpTransitionsVersion = %@", [SwpTransitionsInfo swpTransitionsVersion]);
-    
+    // Do any additional setup after loading the view.    
     __weak typeof(self) weakSelf = self;
     
     self
@@ -161,12 +157,12 @@
 - (void)jumpSwpCoolAnimatorsBackViewController:(NSInteger)transitionsType isPush:(BOOL)isPush {
     
     SwpCoolAnimatorsBackViewController *swpCoolAnimatorsBackViewController = [SwpCoolAnimatorsBackViewController new].isPush(isPush);
-    SwpCoolAnimators *swpCoolAnimator = SwpCoolAnimators.swpCoolAnimatorInitWithAnimatorsOption(transitionsType);
+    SwpCoolAnimations *swpCoolAnimations = SwpCoolAnimations.swpCoolAnimationsInitWithOption(transitionsType).toDuration(0.5).backDuration(1);
     
     if (isPush) {
-        [self.navigationController swpPushViewController:swpCoolAnimatorsBackViewController animated:swpCoolAnimator];
+        [self.navigationController swpPushViewController:swpCoolAnimatorsBackViewController animated:swpCoolAnimations];
     } else {
-        [self.navigationController swpTransitionsPresentViewController:swpCoolAnimatorsBackViewController animated:swpCoolAnimator];
+        [self.navigationController swpTransitionsPresentViewController:swpCoolAnimatorsBackViewController animated:swpCoolAnimations];
     }
     
 }

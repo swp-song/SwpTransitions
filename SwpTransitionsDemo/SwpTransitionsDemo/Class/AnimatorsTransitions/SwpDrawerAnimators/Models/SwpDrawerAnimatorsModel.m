@@ -23,9 +23,9 @@
 - (instancetype)initWithDictionary:(NSDictionary *)dictionary {
     
     if (self = [super initWithDictionary:dictionary]) {
-        _drawerAnimatorsType        = [dictionary[@"drawerAnimatorsType"] integerValue];
-        _screenSizes                = dictionary[@"screenSizes"];
-        _drawerAnimatorDirection    = [dictionary[@"drawerAnimatorDirection"] integerValue];
+        _drawer     = [dictionary[@"drawer"] integerValue];
+        _size       = dictionary[@"size"];
+        _direction  = [dictionary[@"direction"] integerValue];
     }
     return self;
 }

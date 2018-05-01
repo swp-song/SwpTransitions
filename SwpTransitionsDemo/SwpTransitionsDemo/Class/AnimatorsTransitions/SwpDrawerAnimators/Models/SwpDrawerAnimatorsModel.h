@@ -13,11 +13,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 /*  */
-@property (nonatomic, assign, readonly) NSInteger drawerAnimatorsType;
-@property (nonatomic, assign, readonly) NSInteger drawerAnimatorDirection;
-
-
-@property (nonatomic, copy  , readonly) NSNumber *screenSizes;
+@property (nonatomic, assign, readonly) NSInteger drawer;
+@property (nonatomic, assign, readonly) NSInteger direction;
+@property (nonatomic, copy  , readonly) NSNumber *size;
 
 
 
